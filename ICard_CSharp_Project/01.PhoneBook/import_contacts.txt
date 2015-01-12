@@ -1,0 +1,3 @@
+Stamat; Petkov; 0875345678; Sofia, Dondukov 13
+Georgi; Charnev; 0883040567; Vidin, Pobeda 3
+Ilian; Ivanov; 0876768734; Veliko Turnov, Kokiche 43

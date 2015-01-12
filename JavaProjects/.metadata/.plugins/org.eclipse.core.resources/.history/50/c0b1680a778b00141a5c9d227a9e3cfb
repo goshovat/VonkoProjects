@@ -1,0 +1,38 @@
+package geometry.planeShapes;
+
+import geometry.Shape;
+import geometry.Vertex;
+import geometry.Interfaces.AreaMeasurable;
+import geometry.Interfaces.PerimeterMeasurable;
+
+public class Circle extends Shape
+	implements AreaMeasurable, PerimeterMeasurable {
+	
+	private double radius;
+	
+	public Circle(double col, double row, double radius) {
+		Vertex vertex = new PlaneVertex(col, row);
+		super.vertices.add(vertex);
+		this.radius = radius;
+	}
+	
+	public double getCol() {
+		return this.vertices.get(0).getCol();
+	}
+	
+	public double getRow() {
+		return this.vertices.get(0).getRow();
+	}
+	
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getPerimeter() {
+		// TODO Auto-generated method stub
+		return 0;
+	}	
+}

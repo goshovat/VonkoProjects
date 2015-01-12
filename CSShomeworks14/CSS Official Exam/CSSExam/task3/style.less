@@ -1,0 +1,199 @@
+﻿
+.clearfix() {
+    zoom: 1;
+
+    &:after {
+        content: "";
+        height: 0;
+        display: block;
+        clear: both;
+    }
+}
+
+html, body, div, h1, h2, u, li, strong, span, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-size: 18px;
+    font-family: Arial;
+}
+
+#root {
+    width: 620px;
+}
+
+body {
+
+    div#root {
+
+        h1 {
+            color: #2aa0bd;
+            font-style: italic;
+            text-align: center;
+            font-size: 34px;
+            padding: 8px 0 0 7px;
+        }
+
+        div.chat-container {
+            background: #4ae871; /* Old browsers */
+            background: -moz-linear-gradient(top, #4ae871 0%, #4ae871 46%, #f1ffbc 76%, #f1ffbc 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4ae871), color-stop(46%,#4ae871), color-stop(76%,#f1ffbc), color-stop(100%,#f1ffbc)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #4ae871 0%,#4ae871 46%,#f1ffbc 76%,#f1ffbc 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #4ae871 0%,#4ae871 46%,#f1ffbc 76%,#f1ffbc 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #4ae871 0%,#4ae871 46%,#f1ffbc 76%,#f1ffbc 100%); /* IE10+ */
+            background: linear-gradient(to bottom, #4ae871 0%,#4ae871 46%,#f1ffbc 76%,#f1ffbc 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ae871', endColorstr='#f1ffbc',GradientType=0 ); /* IE6-9 */
+            margin-top: 23px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            padding: 22px 5px 45px 6px;
+
+            h2 {
+                color: #2aa0bd;
+            }
+
+            & > div {
+                min-height: 353px;
+                position: relative;
+
+                div.messages {
+
+                    ul {
+                        margin-top: 39px;
+                        width: 100%;
+                        padding: 0;
+
+                        li {
+                            position: relative;
+                            left: 9px;
+                            width: 270px;
+                            display: block;
+                            border-bottom: 1px solid black;
+                            color: #2aa0bd;
+                            font-size: 17px;
+
+                            strong {
+                                display: block;
+                                font-style: italic;
+                                font-weight: normal;
+                            }
+
+                            span {
+                                display: block;
+                                font-size: 18px;
+                                word-wrap: break-word;
+                            }
+
+                            &:nth-of-type(2n+1) {
+                                text-align: left;
+                            }
+
+                            &:nth-of-type(2n) {
+                                text-align: right;
+                            }
+
+                            &:last-of-type {
+                                border-bottom: none;
+                            }
+
+                            &.other {
+
+                                strong {
+                                    font-size: 17px;
+                                    padding-top: 1px;
+                                    letter-spacing: 0.3px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                div.sent-message {
+                    position: absolute;
+                    bottom: -63px;
+                    left: -1px;
+
+                    button, input {
+                        background: transparent;
+                        font-size: 20px;
+                        border-radius: 10px 10px 0 0;
+                        border: 1px solid #cccccc;
+                        padding: 5px 15px 5px 15px;
+                        color: #2aa0bd;
+                    }
+
+                    input {
+                        width: 170px;
+
+                        &:focus {
+                            outline: 2px solid #8caee5;
+                        }
+                    }
+
+                    button {
+
+                        &:hover {
+                            background: #4ae871; /* Old browsers */
+                            background: -moz-linear-gradient(top, #4ae871 0%, #4ae871 19%, #f1ffbc 70%, #f1ffbc 100%); /* FF3.6+ */
+                            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4ae871), color-stop(19%,#4ae871), color-stop(70%,#f1ffbc), color-stop(100%,#f1ffbc)); /* Chrome,Safari4+ */
+                            background: -webkit-linear-gradient(top, #4ae871 0%,#4ae871 19%,#f1ffbc 70%,#f1ffbc 100%); /* Chrome10+,Safari5.1+ */
+                            background: -o-linear-gradient(top, #4ae871 0%,#4ae871 19%,#f1ffbc 70%,#f1ffbc 100%); /* Opera 11.10+ */
+                            background: -ms-linear-gradient(top, #4ae871 0%,#4ae871 19%,#f1ffbc 70%,#f1ffbc 100%); /* IE10+ */
+                            background: linear-gradient(to bottom, #4ae871 0%,#4ae871 19%,#f1ffbc 70%,#f1ffbc 100%); /* W3C */
+                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ae871', endColorstr='#f1ffbc',GradientType=0 ); /* IE6-9 */
+                        }
+                    }
+                }
+            }
+        }
+
+        div#me {
+            float: left;
+            margin-left: 8px;
+        }
+
+        div#other {
+            position: relative;
+            right: 3px;
+            float: right;
+            width: 289px;
+
+            h2 {
+                position: relative;
+                left: 17px;
+                display: inline-block;
+            }
+
+
+            li {
+
+                &:nth-of-type(2n+1) {
+                    text-align: right;
+                }
+
+                &:nth-of-type(2n) {
+                    text-align: left;
+                }
+
+                &.other {
+
+                    strong {
+                        padding-top: 0;
+                    }
+
+                }
+            }
+        }
+    }
+}

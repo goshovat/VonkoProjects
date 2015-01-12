@@ -1,0 +1,240 @@
+﻿/*Resets*/
+
+div, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/*Font importation*/
+@font-face {
+    font-family: Digital;
+    src: url("Calculator.ttf");
+}
+
+body {
+    color: #3e4a57;
+}
+
+/*The div "fixer" is put in order to hold the responsivness of the table.
+Otherwise the table breaks when the window is resized*/
+div#fixer {
+    width: 550px;
+}
+
+/*Styling the window of the calculator*/
+div#outter {
+    border: none;
+    display: inline-block;
+    border-radius: 0.4em;
+    box-shadow: 0px 0px 10px #3e4a57;
+    padding: 0.6em;
+    0.4em 0.4em;
+    background: #e1ebf7; /* Old browsers */
+    background: #ebeff4; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #ebeff4 0%, #b2d0ea 26%, #dce4ea 47%, #b0d3f2 71%, #c6dcef 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#ebeff4), color-stop(26%,#b2d0ea), color-stop(47%,#dce4ea), color-stop(71%,#b0d3f2), color-stop(100%,#c6dcef)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg, #ebeff4 0%,#b2d0ea 26%,#dce4ea 47%,#b0d3f2 71%,#c6dcef 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg, #ebeff4 0%,#b2d0ea 26%,#dce4ea 47%,#b0d3f2 71%,#c6dcef 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg, #ebeff4 0%,#b2d0ea 26%,#dce4ea 47%,#b0d3f2 71%,#c6dcef 100%); /* IE10+ */
+    background: linear-gradient(45deg, #ebeff4 0%,#b2d0ea 26%,#dce4ea 47%,#b0d3f2 71%,#c6dcef 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebeff4', endColorstr='#c6dcef',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+img {
+    margin-left: 2px;
+}
+
+
+div#outter > input {
+    position: relative;
+    float: right;
+    top: -10px;
+}
+
+
+div#outter > span {
+    position: relative;
+    margin-left: 0.2em;
+    bottom: 0.2em;
+    color: black;
+}
+
+/*The menu panel*/
+div#inner {
+    position: relative;
+    border: 1px solid #949494;
+    box-shadow: 0 0 5px white;
+    padding: 0;
+    text-align: left;
+    background: #f2f2f2; /* Old browsers */
+    background: -moz-linear-gradient(top, #f2f2f2 0%, #e8e8e8 2%, #cfd2e3 3%, #cfd2e3 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(2%,#e8e8e8), color-stop(3%,#cfd2e3), color-stop(100%,#cfd2e3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f2f2f2 0%,#e8e8e8 2%,#cfd2e3 3%,#cfd2e3 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f2f2f2 0%,#e8e8e8 2%,#cfd2e3 3%,#cfd2e3 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f2f2f2 0%,#e8e8e8 2%,#cfd2e3 3%,#cfd2e3 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #f2f2f2 0%,#e8e8e8 2%,#cfd2e3 3%,#cfd2e3 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#cfd2e3',GradientType=0 ); /* IE6-9 */
+}
+
+    div#inner a {
+        text-decoration: none;
+        color: black;
+        font-size: 0.9em;
+        border: 1px solid transparent;
+        border-radius: 0.3em;
+        padding: 0 0.4em 0 0.4em;
+        position: relative;
+        top: 1px;
+    }
+
+        div#inner a:hover {
+            border: 1px solid #90959a;
+        }
+
+        div#inner a:first-of-type {
+            margin-left: 0.2em;
+        }
+
+
+/*The table*/
+table#mainTable {
+    border-top: 1px solid #90959a;
+    padding: 0.5em;
+    border-spacing: 0.3em;
+    background: #ecf4fb; /* Old browsers */
+    background: -moz-linear-gradient(top, #ecf4fb 0%, #dae2ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ecf4fb), color-stop(100%,#dae2ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ecf4fb 0%,#dae2ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ecf4fb 0%,#dae2ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ecf4fb 0%,#dae2ee 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ecf4fb 0%,#dae2ee 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecf4fb', endColorstr='#dae2ee',GradientType=0 ); /* IE6-9 */
+}
+
+
+/*The display of the calculator*/
+td#display {
+    text-align: right;
+    font-size: 1.5em;
+    border-radius: 0.1em;
+    padding: 0.6em 0.2em 0.2em 0.2em;
+    font-family: Digital;
+    font-weight: bold;
+    color: black;
+    background: #e5edf6; /* Old browsers */
+    background: -moz-linear-gradient(top, #e5edf6 0%, #e5edf6 28%, #ffffff 70%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5edf6), color-stop(28%,#e5edf6), color-stop(70%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e5edf6 0%,#e5edf6 28%,#ffffff 70%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e5edf6 0%,#e5edf6 28%,#ffffff 70%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e5edf6 0%,#e5edf6 28%,#ffffff 70%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #e5edf6 0%,#e5edf6 28%,#ffffff 70%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5edf6', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+
+td {
+    border: 1px solid #949494;
+    border-spacing: 0.4em;
+    border-radius: 0.1em;
+}
+
+/*The styles of the small table with numbers at the top*/
+
+table#numericTable {
+    font-size: 0.7em;
+    font-family: Cursive;
+    font-weight: lighter;
+    border-spacing: 0;
+    width: 100%;
+    padding:0 0 0 0.4em;
+}
+
+    table#numericTable td {
+        padding-left:0.8em;
+        border: none;
+    }
+
+table#numericTable tr:nth-of-type(2n) td {
+    color:#949494;
+}
+
+table#numericTable tr:nth-of-type(2n) td:nth-of-type(8) {
+    text-align:center;
+}
+
+/*The cells with radio buttons on the left*/
+
+td.radioTd {
+    padding-right: 1.7em;
+    font-size: 0.8em;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+
+/*The buttons of the calculator*/
+td.button {
+    padding: 0;
+    text-align: center;
+    border: none;
+    height: 1.5em;
+}
+
+    td.button input {
+        width: 100%;
+        height: 30px;
+        border: 1px solid #949494;
+        color: #445366;
+        border-radius: 0.2em;
+        background: #f0f6fc; /* Old browsers */
+        background: -moz-linear-gradient(top, #f0f6fc 0%, #f0f6fc 38%, #d0e0ed 62%, #d0e0ed 94%, #ffffff 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f6fc), color-stop(38%,#f0f6fc), color-stop(62%,#d0e0ed), color-stop(94%,#d0e0ed), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #f0f6fc 0%,#f0f6fc 38%,#d0e0ed 62%,#d0e0ed 94%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #f0f6fc 0%,#f0f6fc 38%,#d0e0ed 62%,#d0e0ed 94%,#ffffff 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #f0f6fc 0%,#f0f6fc 38%,#d0e0ed 62%,#d0e0ed 94%,#ffffff 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #f0f6fc 0%,#f0f6fc 38%,#d0e0ed 62%,#d0e0ed 94%,#ffffff 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f6fc', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    }
+
+
+        td.button input.numbers {
+            background: #f0f9fe;
+            font-size: 1em;
+        }
+
+
+        td.button input:hover {
+            box-shadow: 0 0 7px #fccb5a;
+            background: #f5ede8; /* Old browsers */
+            background: -moz-linear-gradient(top, #f5ede8 0%, #f5ede8 38%, #fccb5a 61%, #fccb5a 89%, #f9f1de 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5ede8), color-stop(38%,#f5ede8), color-stop(61%,#fccb5a), color-stop(89%,#fccb5a), color-stop(100%,#f9f1de)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #f5ede8 0%,#f5ede8 38%,#fccb5a 61%,#fccb5a 89%,#f9f1de 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #f5ede8 0%,#f5ede8 38%,#fccb5a 61%,#fccb5a 89%,#f9f1de 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #f5ede8 0%,#f5ede8 38%,#fccb5a 61%,#fccb5a 89%,#f9f1de 100%); /* IE10+ */
+            background: linear-gradient(to bottom, #f5ede8 0%,#f5ede8 38%,#fccb5a 61%,#fccb5a 89%,#f9f1de 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5ede8', endColorstr='#f9f1de',GradientType=0 ); /* IE6-9 */
+        }
+
+        /*Styling of the disabled buttons*/
+        td.button input[disabled="disabled"] {
+            background: transparent;
+            font-weight: bold;
+        }
+
+            td.button input[disabled="disabled"]:hover {
+                background: transparent;
+                box-shadow: none;
+            }
+
+            td.button input[disabled="disabled"]#notBold {
+                font-weight: normal;
+            }
+
+        /*Styling of the buttons requiring slightly different style*/
+        td.button input#equals {
+            height: 66px;
+            font-size: 1.5em;
+        }

@@ -1,0 +1,45 @@
+package geometry.spaceShapes;
+
+public class Sphere extends SpaceShape  {
+
+	private double radius;
+	
+	public Sphere
+	(double col, double row, double layer, double radius) {
+		super(new SpaceVertex[] 
+				{new SpaceVertex(col, row, layer)});
+		this.radius = radius;
+	}
+	
+	public double getCenterCol() {
+		return super.vertices.get(0).getCol();
+	}
+	public double getCenterRow() {
+		return super.vertices.get(0).getRow();
+	}
+	public double getRadius() {
+		return this.radius;
+	}	
+	public void setRadius(double radius) {
+		if (radius < 0)
+			throw new IllegalArgumentException("The radius of a sphere cannot be negative!");
+		
+		this.radius = radius;
+	}
+
+	@Override
+	public double getArea() {
+		return 4 * Math.PI * this.radius * this.radius;
+	}
+
+	@Override
+	public double getVolume() {
+		return (4 / 3) * Math.PI * this.radius * this.radius * this.radius; 
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("Sphere - Center: %.2f, %.2f, Radius: %.2f",
+				this.getCenterCol(), this.getCenterRow(), this.radius);
+	}
+}

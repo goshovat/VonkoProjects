@@ -1,0 +1,74 @@
+body {
+	background:black;
+}
+
+table {
+	border-spacing:0;
+	background:white;
+}
+
+th {
+	font-family:Segoe UI, Arial;
+	font-weight: lighter;
+	font-size:0.8em;
+	text-align:left;
+	/* Here I tried to make the borders
+	precisely as the picture*/
+	border-left:1px inset gray;
+	border-right:1px outset white;
+	border-bottom:1px outset gray;
+	padding:0 0 0.4em 0.2em;
+	background:#5cc006;
+	color:white;
+}
+
+input:focus {
+	outline:none;
+}
+
+th:first-of-type {
+	border-left:none;
+}
+
+th:last-of-type {
+	padding-right:0.8em;
+}
+
+td {
+	text-align:left;
+	border-left:1px solid gray;
+	padding:0.2em 3em 0.2em 0.2em;
+}
+
+td.country {
+	padding-left:2em;	
+	background:url("germany.png") no-repeat;
+	background-size:1.4em;
+    background-position:0.2em; 
+}
+
+td:first-of-type {
+	border-left:none;
+}
+
+tr:nth-of-type(2n+1) {
+	background:#ffffff;
+}
+
+tr:nth-of-type(2n) {
+	background:rgba(229,229,210,0.4);
+}
+
+
+tr:nth-of-type(2) td.country, tr:nth-of-type(3) td.country {
+	 background:url("mexico.png") no-repeat;
+	 background-size:1.4em;
+     background-position:0.2em;	 
+}
+
+tr:nth-of-type(4) td.country {
+	 background:url("britain.png") no-repeat;
+	 background-size:1.4em;
+     background-position:0.2em;
+}
+

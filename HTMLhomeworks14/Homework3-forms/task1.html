@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Task1</title>
+		<link rel = "stylesheet" href = "task1.css"/>
+	</head>
+	<body>
+		<form name = "registration" method = "post" action = "#">	
+			<table>
+				<tfoot>
+					<tr>
+						<td colspan = "2">
+							<input type = "submit" name = "submit" value = "Submit"/>
+							<input type = "reset"  name = "reset" value = "Clear This Form"/>
+						</td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td>
+							<label for = "lastName">Last Name</label>
+						</td>
+						<td>
+							<input type = "text" name = "lastName" id="lastName" value = "Nakov" pattern = "^[a-zA-Z]+((\s|\-)[a-zA-Z]+)?$" required = "required"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for ="firstName">First Name</label>
+						</td>
+						<td>
+							<input type = "text" name = "firstName" id = "firstName" value = "Svetlin" pattern = "^[a-zA-Z]+((\s|\-)[a-zA-Z]+)?$" required = "required"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for = "address">Address</label>
+						</td>
+						<td>
+							<textarea name = "address" id = "address" required = "required">17 Hristo Botev Str. floor 3, apt. 12</textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for = "city">City</label>
+						</td>
+						<td>
+							<input type = "text" name ="city" id ="city" value ="Kaspichan" required = "required" pattern = "^[a-zA-Z]+((\s|\-)[a-zA-Z]+)?$"/>
+							<span><label for = "state">State</label></span>
+							<input type = "text" name = "state" id ="state" pattern = "^[a-zA-Z]+((\s|\-)[a-zA-Z]+)?$" required = "required"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for = "postalCode">Zip/Postal Code</label>
+						</td>
+						<td>
+							<input type = "text" name = "postalCode" id = "postalCode" value = "9325" required = "required"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for = "country">Country</label>
+						</td>
+						<td>
+							<select name = "country" id ="country">
+								<option id = "Bulgaria" selected = "selected">Bulgaria</option>
+								<option id = "USA">USA</option>
+								<option id = "sovietUnion">Soviet Union</option> 
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for = "phone1">Phone(country code, area code, number)</label>
+						</td>
+						<td>
+							(+<input type = "text" name = "phone1" id = "phone1" pattern = "^([0-9]|[1-9][0-9]|[1-9][0-9][0-9])$" value = "359" required = "required"/>)
+							<input type = "text" name = "phone2" pattern = "[0-9]{1,2}" value = "88" required = "required"/>-
+							<input type = "text" name = "phone3" pattern = "\b\d{7}\b" value = "8334343" required = "required"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for = "email">E-mail</label>
+						</td>
+						<td>
+							<input type = "text" name = "email" id ="email" value = "nakov@kaspichan.org" required = "required" pattern = "^\w+[\w-\.]*\@\w+((-\w+)|(\w*))\.[a-z]{2,3}$"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for ="month">Birth Date</label>
+						</td>
+						<td>
+								<label for ="month">Month</label>
+								<input type = "text" name = "month" id = "month" value = "06" required = "required" pattern = "[0-9]{1,2}"/>
+								<label for ="day">Day</label>
+								<input type = "text" name = "day" id = "day" value = "14" required = "required" pattern = "[0-9]{1,2}" />
+								<label for ="year">Year(4 Digit)</label>
+								<input type = "text" name = "year" id = "year" value = "1980" required = "required" pattern = "^\d{4}$" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for = "gender">Gender</label>
+						</td>
+						<td>
+							<select name="gender" id = "gender">
+								<option id = "male" selected="selected">Male</option>
+								<option id = "female">Female</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for ="spring2006">Starting Date</label>
+						</td>
+						<td>
+							<input type = "radio" name ="startDate" value = "Spring 2006" id = "spring2006" checked/><label for = "spring2006">Spring 2006</label>
+							<input type = "radio" name = "startDate" value = "Summer 2006" id = "summer2006"/><label for = "summer2006">Summer 2006</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for = "comments">Comments/Questions</label>
+						</td>
+						<td>
+							<textarea name = "comments" id = "comments" required = "required">Please send us more information about the lodging</textarea>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</body>
+</html>

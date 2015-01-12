@@ -1,0 +1,5 @@
+package oneLevShop.products;
+
+public abstract class Product implements Buyable {
+
+}

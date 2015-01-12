@@ -1,0 +1,67 @@
+body {
+	background:black;
+
+	table {
+		background:white;
+		border-radius:0.4em;
+		border-spacing:0;
+		border-spacing:1em;
+
+		th {
+			padding-bottom:0.3em;
+			border-bottom:2px solid gray;
+			border-spacing:0;
+			
+			a {
+				font-size:1.5em;
+				color:#00AAEF;
+
+				&:visited {
+					color:#00AAEF;
+					
+				}
+			}
+		}
+		 
+			
+		td#first  {
+			border:2px solid gray;
+			
+			table {
+					border-spacing:0;
+					padding-bottom:0.8em;
+
+					fieldset {
+						border:2px solid gray;
+
+						legend {
+							margin-left:10%;
+						}
+					}
+			}
+
+		}
+
+		td#second {
+				padding-right:0.5em;
+
+				label {
+
+					span.left {
+						float:left;
+						margin-left:1em;
+						margin-right:1em;
+					}
+
+				}
+
+				input {
+					display:block;
+					margin-bottom:1em;
+
+				}
+
+		}
+
+	}
+}

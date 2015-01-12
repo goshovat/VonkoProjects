@@ -1,0 +1,36 @@
+package geometry.spaceShapes;
+
+import geometry.Shape;
+import geometry.Interfaces.AreaMeasurable;
+import geometry.Interfaces.VolumeMeasurable;
+
+public class SquarePyramid extends Shape
+implements AreaMeasurable, VolumeMeasurable {
+	
+	private double width;
+	private double height;
+	
+	public SquarePyramid
+	(double col, double row, double width, double height) {
+		
+	}
+	
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+	@Override
+	public double getVolume() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+}

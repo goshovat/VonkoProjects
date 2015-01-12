@@ -1,0 +1,177 @@
+@default-border-color: #d3d7da;
+@gr-from-color:#FFFFFF;
+@gr-to-color:#f1f2f3;
+@a-color:#c72d2f;
+@yellow-box-border:#ffff00;
+@yellow-box-bg:#ffffdd;
+
+.linear-gradient(@from-color, @to-color) {
+    background: @from-color; /* Old browsers */
+    background: -moz-linear-gradient(top, @from-color 20%, @to-color 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,@from-color), color-stop(100%,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @from-color 20%,@to-color 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, @from-color 20%,@to-color 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @from-color 20%,@to-color 100%); /* IE10+ */
+    background: linear-gradient(to bottom, @from-color 20%,@to-color 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from-color', endColorstr='@to-color',GradientType=0 ); /* IE6-9 */
+}
+
+.clearfix() {
+    zoom: 1;
+
+    &:after {
+        content: "";
+        height: 0;
+        display: block;
+        clear: both;
+    }
+}
+
+html, body, div, hgroup, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: @a-color;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    font-size: 16px;
+
+    div#wrapper {
+        width: 960px;
+        .clearfix();
+        padding: 20px 20px;
+
+        & > div {
+            display: inline-block;
+            width: 144px;
+            float: left;
+            border: 2px solid @default-border-color;
+            padding:10px 0 0 4px;
+
+            &:first-of-type {
+                padding-bottom:37px;
+
+                hgroup {
+                    background:url(imgs/install.png) 0 4px no-repeat;
+                }
+
+                p {
+                    width:128px;
+                }
+            }
+
+            &:nth-of-type(2) {
+
+                hgroup {
+                    background:url(imgs/tuneUp.png) 0 4px no-repeat;
+                }
+
+                div {
+                    width:100px;
+                }
+            }
+
+            &:nth-of-type(3) {
+                height:250px;
+
+                hgroup {
+                    background:url(imgs/manage.png) 0 4px no-repeat;
+                }
+
+                div {
+                    width:115px;
+                    padding:0;
+                }
+            }
+
+            &:nth-of-type(4) {
+                padding-bottom:19px;
+
+                hgroup {
+                    padding-top:20px;
+                    width:120px;
+                    background:url(imgs/openSource.png) 0 4px no-repeat;
+                }
+
+                p {
+                    width:140px;
+                }
+
+                div {
+                    width:115px;
+                }
+            }
+
+            &:nth-of-type(5) {
+                padding-bottom:40px;
+
+                hgroup {
+                    padding-top:20px;
+                    width:120px;
+                    background:url(imgs/twitter.png) 0 4px no-repeat;
+                }
+
+                div.yellowBox {
+                    width:138px;
+                    border:1px solid @yellow-box-border;
+                    background:@yellow-box-bg;                   
+                }
+            }
+
+            &:nth-of-type(6) {
+
+                hgroup {
+                    padding-top:20px;
+                    width:120px;
+                    background:url(imgs/about.png) 0 4px no-repeat;
+                }
+
+                div {
+                    width:99px;
+                }
+            }
+
+            &:nth-of-type(2n+1) {
+                border-right: none;
+            }
+
+            &:nth-of-type(2n) {
+                .linear-gradient(@gr-from-color, @gr-to-color);
+            }
+
+            &:nth-of-type(3), &:nth-of-type(5) {
+                border-left:none;
+            }
+
+            hgroup {
+                padding-left:40px;
+                margin-bottom:16px;
+
+                h3,h2 {
+                    font-size:16px;
+                }
+
+            }
+
+            p {
+                margin-bottom:5px;
+            }
+
+            div {
+
+                span {
+                    text-transform:uppercase;
+                } 
+            }
+        }
+    }
+}

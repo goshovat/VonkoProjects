@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Drop Down List</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/task1.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+	<select id="dropdown">
+		<option value="1">Vonko</option>
+		<option value="2" selected>Somko</option>
+		<option value="3">Goshko</option>
+		<option value="4">Pencho</option>
+		<option value="5">Sashko</option>
+		<option value="6">Marto</option>
+		<option value="7">Drugiq Marto</option>
+	</select>
+
+    <script src="scripts/dropdownPlugin.js"></script>
+    <script type="text/javascript">   	
+    	$('#dropdown').dropdown().hide().fadeIn(1000);
+    </script>
+</body>
+
+</html>

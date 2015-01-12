@@ -1,0 +1,172 @@
+﻿@gr-start-color: #000000;
+@gr-stop-color: #545353;
+@display: inline-block;
+@img-border: 1px solid #7c7c7c;
+@inside-width: 500px;
+@border-article: 1px dotted #666666;
+@color-green: #006600;
+
+.clearfix {
+    zoom: 1;
+
+    &:after {
+        content: "";
+        height: 0;
+        display: block;
+        clear: both;
+    }
+}
+
+.linear-gradient(@from-color, @to-color) {
+    background: @from-color; /* Old browsers */
+    background: -moz-linear-gradient(top, @from-color 0%, @to-color 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@from-color), color-stop(100%,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @from-color 0%,@to-color 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, @from-color 0%,@to-color 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @from-color 0%,@to-color 100%); /* IE10+ */
+    background: linear-gradient(to bottom, @from-color 0%,@to-color 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from-color', endColorstr='@to-color',GradientType=0 ); /* IE6-9 */
+}
+
+html, body, section, header, h1, article, img, div, a, h2, p, footer, button {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+
+body {
+    font: normal 12px Arial, Verdana, sans-serif;
+
+    section {
+        width: 619px;
+        margin: 3px 16px;
+
+        header {
+
+            h1 {
+                .linear-gradient(@gr-start-color, @gr-stop-color);
+                color: white;
+                text-transform: uppercase;
+                font-size: 12px;
+                border-radius: 5px;
+                padding: 7px 0 5px 10px;
+            }
+        }
+
+        article {
+            .clearfix();
+            padding: 10px 0 15px 0;
+            border-bottom: @border-article;
+
+            & > img {
+                float: left;
+                border: @img-border;
+                border-radius: 5px;
+            }
+
+            &:nth-of-type(2), &:nth-of-type(3) {
+                padding-top:20px;
+            }
+
+            div {
+                float: right;
+                width: @inside-width;
+
+                a {
+                    position:relative;
+                    left:-2px;
+                    font-family:Arial;
+                    letter-spacing:0.6px;
+                    font-size:12px;
+                    color: @color-green;
+                    font-weight: bold;
+                    margin-right: 9px;
+                }
+
+                span.date {
+                    color: #666666;
+                    font-size:11px;
+                }
+            }
+
+            header {
+                float: right;
+                clear: right;
+                width: @inside-width;
+
+                h2 {
+                    position:relative;
+                    left:-2px;
+                    letter-spacing:0.3px;
+                    margin-top:5px;
+                    font-size:16px;
+                }
+            }
+
+            p {
+                position:relative;
+                left:-2px;
+                margin-top:10px;
+                float: right;
+                clear: right;
+                width: @inside-width;
+            }
+
+            footer {
+                position:relative;
+                left:-8px;
+                margin-top:10px;
+                width: @inside-width;
+                font-size:11px;
+                float: right;
+                clear: right;
+
+                img {
+                   position:relative;
+                   top:7px;
+
+                   &:nth-of-type(2) {
+                       left:-2px;
+                       top:6px;
+                   }
+                }
+
+                & > span:first-of-type {
+                    position:relative;
+                    left:-2px;
+                }
+
+               
+                button:first-of-type {
+                    position:absolute;
+                    background:url(imgs/yes.png) 3px 7px no-repeat;
+                    width:28px;
+                    height:28px;
+                    border:none;
+                }
+
+                & > span:nth-of-type(3) {
+                    margin-left:26px;
+                }
+
+                    button:nth-of-type(2) {
+                    position:absolute;
+                    background:url(imgs/no.png) 3px 10px no-repeat;
+                    width:28px;
+                    height:30px;
+                    border:none;
+                }
+
+                 & > span:nth-of-type(4) {
+                    margin-left:26px;
+                }
+            }
+        }
+    }
+}

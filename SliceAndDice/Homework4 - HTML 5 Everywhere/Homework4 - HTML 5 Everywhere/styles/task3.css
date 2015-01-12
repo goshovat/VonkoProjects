@@ -1,0 +1,58 @@
+form,
+div,
+section,
+input,
+form,
+legend,
+label {
+  margin: 0;
+  padding: 0;
+}
+body div#wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+body div#wrapper section form {
+  padding: 1%;
+}
+body div#wrapper section form fieldset {
+  border-radius: 10px;
+  padding: 1%;
+  border: 3px solid #004060;
+}
+body div#wrapper section form fieldset legend {
+  display: inline-block;
+  margin-left: 20%;
+  text-align: center;
+  font-style: italic;
+  font-size: 2em;
+}
+body div#wrapper section form fieldset legend span#sitename {
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: bold;
+  color: #1f6a90;
+}
+body div#wrapper section form fieldset label {
+  font-size: 1.2em;
+  width: 60%;
+  margin-bottom: 1%;
+}
+body div#wrapper section form fieldset input {
+  padding: 0.3em 0.7em;
+  border-radius: 5px;
+  border: 2px solid #004060;
+  color: #004060;
+  font-family: 'Segoe UI', Arial;
+}
+body div#wrapper section form fieldset input:focus {
+  outline: none;
+}
+body div#wrapper section form fieldset input[type="submit"] {
+  display: block;
+}
+body div#wrapper section form fieldset label,
+body div#wrapper section form fieldset input {
+  display: inline-block;
+}
+/*# sourceMappingURL=task3.css.map */

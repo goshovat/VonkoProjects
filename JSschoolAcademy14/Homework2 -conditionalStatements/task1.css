@@ -1,0 +1,30 @@
+label {
+	font-size:1.3em;
+	font-family:Verdana;
+}
+
+input {
+	display:block;
+	margin-bottom:0.5em;
+}
+
+input:last-of-type {
+	margin-bottom:2em;
+}
+
+a {
+	padding:0.3em;
+	border:1px solid blue;
+	border-radius:0.5em;
+	color:blue;
+	background:yellow;
+	font-size:1.3em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div {
+	color:blue;
+	font-size:1.5em;
+	font-weight:bold;
+}

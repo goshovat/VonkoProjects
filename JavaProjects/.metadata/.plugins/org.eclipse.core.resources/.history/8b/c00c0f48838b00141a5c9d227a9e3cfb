@@ -1,0 +1,9 @@
+package geometry.planeShapes;
+
+import geometry.Shape;
+
+public abstract class PlaneShape extends Shape {
+	protected List<PlanarVertex> vertices;
+	
+	
+}

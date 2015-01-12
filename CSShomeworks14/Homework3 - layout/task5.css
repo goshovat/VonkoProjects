@@ -1,0 +1,129 @@
+﻿body, form, div, section, ul, li {
+    margin:0;
+    padding:0;
+    font-family:Corbel;
+}
+
+body {
+    background:gray;
+}
+
+/*Styling of the outter window-in this case <form>*/
+
+form {
+    background:white;
+    display:inline-block;
+    border-radius:0.3em;
+    padding:0 0.8em 0.8em 0.8em;
+    margin:1em;
+}
+
+
+header nav {
+    display:block;
+    margin-bottom:0.5em;
+    padding:0 0.5em 0 0.5em;
+}
+
+/*I'm using the border bottom of the ul to create 
+ the gray line*/
+
+header nav ul {
+    border-bottom:2px solid gray;
+    text-align:center;
+    padding:0.3em 0 0.5em 0;
+}
+
+/*We make the list horizontal*/
+
+header nav ul li {
+    display:inline-block;
+}
+
+header nav ul li a {
+    color:#09c8e2;
+    font-size: 1.5em;
+    font-weight:bold;
+}
+
+/*I'will use the class left to few elements*/
+
+.left {
+    float:left;
+}
+
+aside {
+padding:5em 0.5em 0.5em 0.5em;
+}
+
+/*I put block to the inputs to make them below one-another*/
+
+aside input {
+    display:block;
+    margin-bottom:1em;
+    width:14em;
+}
+
+/*Below this input we have bigger margin*/
+
+aside input:nth-of-type(2) {
+    display:block;
+    margin-bottom:2em;
+}
+
+
+aside label {
+    margin-bottom:0.5em;
+    font-size:1.2em;
+}
+
+/*This is the container of the macs*/
+
+section#fieldsetContainer {
+    display:inline-block;
+    border:2px solid gray;
+    padding:0 0.4em 0.6em 0.2em;
+}
+
+/*I arranged the rows of the Macs using different horizontal
+ ULs. This is made so the requirement for the fluid design is met.
+ If the width of the container is set the design will be fixed*/
+
+ul {
+    list-style-type:none;
+}
+
+/*Making the UL's horizontal*/
+
+ul li {
+    display:inline-block;
+}
+
+/*Unless we give fixed width here the divs will not position as desired.
+ Because they are inline-block they behave like inline elements*/
+
+fieldset {
+    width:10.5em;
+    border:2px solid gray;
+}
+
+legend {
+    text-align:center;
+    padding-right:0.7em;
+}
+
+/*Here I create the tabular lauout with divs instead. Notice 
+ that the image is left-floated*/
+
+div {
+    display:inline-block;
+    margin-top:0.5em;
+}
+
+div:first-of-type {
+    margin-top:1em;
+}
+
+span {
+    margin-left:0.7em;
+}

@@ -1,0 +1,85 @@
+﻿body,div, section, img, ul, li {
+    margin:0;
+    padding:0;
+}
+
+
+ul {
+    list-style-type:none;
+}
+
+li {
+    margin:1%;
+    zoom:1;
+}
+
+li:after {
+    display:block;
+    height:0;
+    content:"";
+    clear:both;
+}
+
+div.image_holder {
+    position:relative;
+    padding-right:8px;
+    padding-bottom:8px;
+    float:left;
+    display:inline-block;
+    overflow:hidden;
+    z-index:4;
+} 
+
+img {
+    display:block;
+    outline:0;
+    border:none;
+    zoom:1;
+}
+
+span.top_right {
+    position:absolute;   
+    right:0;
+    top:0;
+    background:url(../imgs/task2_top_right_shadow.png);   
+    width:8px;
+    height:100%;
+}
+
+span.right {
+    position:absolute;
+    right:0;
+    top:7px;
+    background:url(../imgs/task2_right_shadow.png);
+    width:8px;
+    height:100%;
+}
+
+.bottom_left {
+    position:absolute;
+    background:url(../imgs/task2_bottom_left_shadow.png);
+    width:8px;
+    height:8px;
+    bottom:0;
+    left:0;
+}
+
+span.bottom {
+    position:absolute;
+    display:block;
+    background:url(../imgs/task2_bottom_shadow.png);
+    left:7px;
+    bottom:0;
+    height:8px;
+    width:100%;
+}
+
+span.bottom_right {
+    display:inline-block;
+    position:absolute;
+    bottom:0;
+    right:0;
+    background:url(../imgs/task2_bottom_right_shadow.png);
+    width:8px;
+    height:8px;
+}

@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WebApplication5", "..\..\..\documents\visual studio 2012\Projects\WebApplication5\WebApplication5\WebApplication5.vbproj", "{1E1FF094-BF32-4327-BAAA-06F0CF02502A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSS Homework2 - presentation", "CSS Homework2 - presentation", "{24FC1991-A0B5-4BE8-8AF4-42496D4D21D0}"
+	ProjectSection(SolutionItems) = preProject
+		task1.css = task1.css
+		task1.html = task1.html
+		task2.css = task2.css
+		task2.html = task2.html
+		task3.css = task3.css
+		task3.html = task3.html
+		task4.css = task4.css
+		task4.html = task4.html
+		task4.js = task4.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E1FF094-BF32-4327-BAAA-06F0CF02502A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E1FF094-BF32-4327-BAAA-06F0CF02502A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E1FF094-BF32-4327-BAAA-06F0CF02502A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E1FF094-BF32-4327-BAAA-06F0CF02502A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

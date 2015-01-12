@@ -1,0 +1,14 @@
+package oneLevShop.products;
+
+import oneLevShop.AgeRestriction;
+
+public class Appliance extends ElectronicsProduct {
+	private static final int APPLIANCE_GUARANTEE = 6;
+
+	public Appliance(String name, double price, int quantity,
+			AgeRestriction ageRestriction) {
+		super(name, price, quantity, ageRestriction, APPLIANCE_GUARANTEE);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,18 @@
+package oneLevShop;
+
+import org.omg.CORBA.portable.ApplicationException;
+
+import oneLevShop.interfaces.Expirable;
+import oneLevShop.products.Product;
+
+public class PurchaseManager {
+	
+	public static void processPurchase(Product product, Customer customer) {
+		if(product.getQuantity() == 0)
+			throw new RuntimeException("The product is out of stock!");
+		
+		if (product instanceof Expirable) {
+			Expirable expirableProduct = (Expirable)product;
+		}
+	}
+}

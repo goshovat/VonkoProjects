@@ -1,0 +1,218 @@
+/*The usual resets*/
+
+body,header,div,h1,a,form,label,input,nav,ul,li,section,article,aside,footer,p {
+	margin:0;
+	padding:0;
+}
+
+/*Here some variables wii be defined*/
+$text-color:white;
+$border:1px solid black;
+$radius:0.8em;
+$special-a-color:#bc78f7;
+$input-bg:#b35ef3;
+$button-bg:#c588f3;
+
+/*Here some mixins will be defined*/
+@mixin clearfix {
+	zoom:1;
+	
+	&:after {
+			content:"";
+			display:block;
+			height:0;
+			clear:both;
+		}
+	}
+
+@mixin clearfixBefore 	{
+		zoom:1;
+
+		&:before {
+			clear:both;
+			content:"";
+			height:0;
+			display:block;
+		}
+}
+
+
+	@mixin gradient($from-color,$to-color,$from-pos,$to-pos) {
+	background:$from-color; 
+	background: -moz-linear-gradient(top,  $from-color 0%, $from-color 0%, $to-color $from-pos, $to-color $to-pos); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from-color), color-stop(0%,$from-color), color-stop($from-pos,$to-color), color-stop($to-pos,$to-color)); 
+	background: -webkit-linear-gradient(top,  $from-color 0%,$from-color 0%,$to-color $from-pos,$to-color $to-pos); 
+	background: -o-linear-gradient(top,  $from-color 0%,$from-color 0%,$to-color $from-pos,$to-color $to-pos); 
+	background: -ms-linear-gradient(top,  $from-color 0%,$from-color 0%,$to-color $from-pos,$to-color $to-pos); 
+	background: linear-gradient(to bottom,  $from-color 0%,$from-color 0%,$to-color $from-pos,$to-color $to-pos); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from-color', endColorstr='$to-color',GradientType=0 ); 
+}
+
+body {
+	 padding:0 0.3em 0 1em;
+	 color: $text-color;
+	 @include gradient(#D392FD,#9215F2,20%,100%);
+
+/*Here we style the logo and reg-form*/
+
+	div#header-container {
+			@include clearfix;
+			padding:1.5em 5em 0 0.8em;
+
+			div#logo-container {
+				float:left;
+			}
+	
+			div#reg-form-container {
+				float:right;
+
+				label {
+					color:$text-color;
+				}
+
+				input {
+					background:$input-bg;
+					margin-bottom:0.5em;
+					border:1px solid #603382;
+					border-radius:1em;
+
+					&:nth-of-type(2) {
+						margin-left:1px;
+					}
+				}
+
+				button {
+					background:$button-bg;
+					color: $text-color;
+					border:1px outset #603382;
+					border-radius:0.7em;
+					padding:0.3em 0.8em 0.3em 0.8em;
+				}
+		}
+
+	}
+
+/*Here we style the navigation*/
+
+	nav {
+		
+		& > ul {
+			border:1px solid black;
+			border-radius:$radius;
+			list-style-type:none;
+			margin:1em 0 2em 1.5em;
+			width:67%;
+		
+			& > li {
+				display:inline-block;
+				padding:0.8em 0.4em 0.5em 1.3em;
+				cursor:pointer;
+			
+				a {
+					text-decoration:none;
+					font-size:1.2em;
+					color: $text-color;
+				}
+
+				ul {
+					display:none;
+					position:absolute;
+				}
+
+				&:hover {
+
+					a:hover {
+						text-decoration:underline;
+					}
+
+					&> ul {
+						@include gradient(#D392FD,#9215F2,100%,100%);
+						display:block;
+						border:$border;
+						border-radius:0.5em;
+						padding:0 0.2em;
+						z-index:5;
+
+						li {
+							display:block;
+							padding:0.8em 0.3em;
+							border-bottom:$border;
+
+							&:last-of-type {
+								border-bottom:none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+/*The styling of the section on the left*/
+	section {
+		width:64%;
+		float:left;
+		
+		article {
+			border: $border;
+			border-radius:$radius;
+			padding:1.3em 0.8em 1.5em 1.1em;
+			margin-bottom:2em;
+
+			h1 {
+				margin-bottom:0.3em;
+				padding-left:0.3em;
+			}
+
+			footer {
+				text-align:right;
+				margin-top:0.4em;
+
+				a {
+					color:$special-a-color;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+
+/*Styling of the sidebar on the right*/
+	aside {
+		width:30%;
+		float:right;
+		margin-right:3em;
+		margin-top:1em;
+
+		& > ul {
+			list-style-type:none;
+			
+			 & > li {
+				border: $border;
+				border-radius:0.2em;
+				margin-bottom:1em;
+				padding:0 1em 1em 1em;
+
+				&:nth-of-type(2) {
+					
+
+					ul {
+						padding-left:3em;
+						list-style-image:url('images/li-dot.png')
+					}	
+				}
+
+				a {
+					text-decoration:none;
+					color: $special-a-color;
+				}
+			 }
+		}
+	}
+
+	& > footer {
+		@include clearfixBefore;
+		text-align:center;
+		margin-bottom:2em;
+	}
+
+}

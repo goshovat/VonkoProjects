@@ -1,0 +1,713 @@
+html,
+body,
+div,
+header,
+a,
+img,
+ul,
+li,
+section,
+article,
+aside,
+footer,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+form,
+label,
+input {
+  margin: 0;
+  padding: 0;
+}
+a {
+  display: inline-block;
+  color: #555555;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 8.5pt;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: #555555;
+}
+span {
+  display: inline-block;
+}
+span.arrow-right {
+  position: relative;
+  float: right;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #267bb1;
+}
+ul {
+  list-style-type: none;
+}
+button:focus,
+input:focus {
+  outline: none;
+}
+html body {
+  width: 1262px;
+  overflow-x: hidden;
+  color: #555555;
+  font-family: Arial;
+  background: url(https://www.icard.bg/images/background-tile.gif) repeat-y scroll 0 0;
+}
+html body div#wrapper {
+  background: white;
+  width: 945px;
+  min-height: 820px;
+  margin: 0 0 0 138px;
+  padding: 0 10px 0 10px;
+}
+html body div#wrapper > header {
+  position: relative;
+  background: url(https://www.icard.bg/images/header_footer/new_header.jpg) no-repeat 0 0;
+  /*width:945px;*/
+  height: 65px;
+  margin-bottom: 5px;
+  padding: 13px 10px 0 10px;
+  zoom: 1;
+}
+html body div#wrapper > header:after {
+  content: "";
+  height: 0;
+  clear: both;
+  display: block;
+}
+html body div#wrapper > header ul#language_bar {
+  position: relative;
+  bottom: 7px;
+  float: right;
+}
+html body div#wrapper > header ul#language_bar li {
+  float: left;
+}
+html body div#wrapper > header ul#language_bar li:last-of-type {
+  margin-left: 10px;
+}
+html body div#wrapper > header nav {
+  position: relative;
+  top: 26px;
+  left: 51px;
+  float: right;
+}
+html body div#wrapper > header nav ul {
+  zoom: 1;
+  text-align: right;
+}
+html body div#wrapper > header nav ul:after {
+  content: "";
+  height: 0;
+  clear: both;
+  display: block;
+}
+html body div#wrapper > header nav ul li {
+  float: left;
+  border-right: 1px solid #cccccc;
+  padding: 0 5px 0 5px;
+}
+html body div#wrapper > header nav ul li a {
+  display: block;
+}
+html body div#wrapper > header nav ul#top_nav {
+  margin-bottom: 2px;
+}
+html body div#wrapper > header nav ul#top_nav li {
+  float: right;
+}
+html body div#wrapper > header nav ul#top_nav li:first-of-type {
+  border-right: none;
+}
+html body div#wrapper > header nav ul#bottom_nav li:nth-of-type(4) {
+  padding: 0 10px;
+}
+html body div#wrapper > header nav ul#bottom_nav li:last-of-type {
+  border-right: none;
+}
+html body div#wrapper div#inner_wrapper_top {
+  background: url(http://i.imgur.com/AmnRQw6.png) no-repeat 0 0;
+  height: 4px;
+}
+html body div#wrapper div#inner_wrapper {
+  background: url(https://www.icard.bg/images/bg-home.jpg) repeat-y 0 0;
+  zoom: 1;
+}
+html body div#wrapper div#inner_wrapper:after {
+  content: "";
+  height: 0;
+  clear: both;
+  display: block;
+}
+html body div#wrapper div#inner_wrapper aside {
+  background: transparent;
+  float: left;
+  width: 188px;
+}
+html body div#wrapper div#inner_wrapper aside form {
+  padding: 8px 0 27px 20px;
+  border-bottom: 1px solid #cccccc;
+  width: 209px;
+}
+html body div#wrapper div#inner_wrapper aside form h2 {
+  display: inline-block;
+  font-size: 8pt;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+html body div#wrapper div#inner_wrapper aside form img#lock {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px 0 1px;
+}
+html body div#wrapper div#inner_wrapper aside form > label {
+  display: block;
+  font-size: 7pt;
+  letter-spacing: 0.8px;
+}
+html body div#wrapper div#inner_wrapper aside form > label:nth-of-type(2) {
+  position: relative;
+  top: -1px;
+}
+html body div#wrapper div#inner_wrapper aside form input[type="text"],
+html body div#wrapper div#inner_wrapper aside form input[type="password"] {
+  position: relative;
+  top: -1px;
+  background: url(https://www.icard.bg/images/input.gif) no-repeat 0 0;
+  width: 180px;
+  height: 19px;
+  font-size: 8pt;
+  border: 0 inset #eee;
+  padding: 0 0 3px 3px;
+}
+html body div#wrapper div#inner_wrapper aside form input[type="text"]:nth-of-type(2),
+html body div#wrapper div#inner_wrapper aside form input[type="password"]:nth-of-type(2) {
+  position: relative;
+  top: -2px;
+}
+html body div#wrapper div#inner_wrapper aside form div:first-of-type {
+  font-size: 7pt;
+  letter-spacing: 0.8px;
+  margin: 11px 0 22px 0;
+}
+html body div#wrapper div#inner_wrapper aside form div:first-of-type button {
+  background: url(https://www.icard.bg/images/2/login-off.gif) 0 0 no-repeat;
+  width: 64px;
+  height: 20px;
+  border: none;
+  outline: none;
+  margin-right: 6px;
+  cursor: pointer;
+}
+html body div#wrapper div#inner_wrapper aside form div:first-of-type label {
+  position: relative;
+  left: 1px;
+  bottom: 0;
+  margin-right: 9px;
+  letter-spacing: 0.9px;
+}
+html body div#wrapper div#inner_wrapper aside form div:first-of-type input[type="checkbox"] {
+  position: relative;
+  bottom: 1px;
+}
+html body div#wrapper div#inner_wrapper aside form div:nth-of-type(2) {
+  margin: 0 5px 2px 0;
+}
+html body div#wrapper div#inner_wrapper aside form div:nth-of-type(2) a {
+  float: left;
+  color: #267bb1;
+}
+html body div#wrapper div#inner_wrapper aside form span.link-holder:nth-of-type(2) {
+  border-left: 1px solid #9377AF;
+  padding-left: 12px;
+  margin-left: 4px;
+}
+html body div#wrapper div#inner_wrapper aside form span.link-holder a#help_link {
+  position: relative;
+  float: left;
+  bottom: 1px;
+  color: #267bb1;
+}
+html body div#wrapper div#inner_wrapper aside form span.link-holder > span.arrow-right {
+  top: 3px;
+  left: 4px;
+}
+html body div#wrapper div#inner_wrapper aside ul#aside_list {
+  width: 229px;
+}
+html body div#wrapper div#inner_wrapper aside ul#aside_list li {
+  border-bottom: 1px solid #cccccc;
+  padding: 14px 10px 14px 15px;
+}
+html body div#wrapper div#inner_wrapper aside ul#aside_list li a {
+  width: 130px;
+  margin-left: 6px;
+  line-height: 120%;
+}
+html body div#wrapper div#inner_wrapper aside ul#aside_list li:first-of-type img {
+  position: relative;
+  top: -12px;
+}
+html body div#wrapper div#inner_wrapper aside ul#aside_list li:nth-of-type(2),
+html body div#wrapper div#inner_wrapper aside ul#aside_list li:nth-of-type(3),
+html body div#wrapper div#inner_wrapper aside ul#aside_list li:nth-of-type(4) {
+  padding-bottom: 26px;
+}
+html body div#wrapper div#inner_wrapper aside ul#aside_list li:nth-of-type(2) a,
+html body div#wrapper div#inner_wrapper aside ul#aside_list li:nth-of-type(3) a,
+html body div#wrapper div#inner_wrapper aside ul#aside_list li:nth-of-type(4) a {
+  position: relative;
+  top: -14px;
+}
+html body div#wrapper div#inner_wrapper aside ul#aside_list li:nth-of-type(3) {
+  padding-left: 13px;
+  padding-bottom: 40px;
+}
+html body div#wrapper div#inner_wrapper aside ul#aside_list li:nth-of-type(3) a {
+  top: -13px;
+  margin-left: 4px;
+}
+html body div#wrapper div#inner_wrapper aside ul#aside_list li:nth-of-type(4) {
+  position: relative;
+}
+html body div#wrapper div#inner_wrapper aside ul#aside_list li:nth-of-type(4) a {
+  width: 112px;
+  top: -2px;
+}
+html body div#wrapper div#inner_wrapper aside ul#aside_list li:nth-of-type(4) a:nth-of-type(2) {
+  position: absolute;
+  top: 53px;
+  left: 120px;
+  width: 30px;
+  color: #267BB1;
+  font-weight: bold;
+}
+html body div#wrapper div#inner_wrapper aside ul#aside_list li:last-of-type {
+  border-bottom: none;
+  padding-bottom: 28px;
+}
+html body div#wrapper div#inner_wrapper section {
+  /*background:transparent;*/
+  float: right;
+  width: 708px;
+}
+html body div#wrapper div#inner_wrapper section header {
+  position: relative;
+  height: 233px;
+}
+html body div#wrapper div#inner_wrapper section header div#header_div {
+  width: 707px;
+  display: block;
+  position: absolute;
+  bottom: 60px;
+  text-align: right;
+}
+html body div#wrapper div#inner_wrapper section header div#header_div h1 {
+  font-family: 'Times New Roman';
+  font-size: 20px;
+  font-weight: normal;
+  color: #465b7a;
+  -webkit-text-shadow: 2px 2px 2px white;
+  text-shadow: 2px 2px 2px white;
+  padding-right: 15px;
+}
+html body div#wrapper div#inner_wrapper section header div#header_div h1 span {
+  color: #267bb1;
+}
+html body div#wrapper div#inner_wrapper section header div#register_div {
+  position: absolute;
+  bottom: 20px;
+  width: 707px;
+  padding-left: 30px;
+}
+html body div#wrapper div#inner_wrapper section header div#register_div input {
+  position: relative;
+  top: 16px;
+  margin-left: 220px;
+  margin-right: 10px;
+}
+html body div#wrapper div#inner_wrapper section header div#register_div span.link-holder a {
+  position: relative;
+  float: left;
+  top: 13px;
+  color: #267bb1;
+}
+html body div#wrapper div#inner_wrapper section header div#register_div span.link-holder span.arrow-right {
+  top: 17px;
+  left: 3px;
+}
+html body div#wrapper div#inner_wrapper section header div#register_div p {
+  position: relative;
+  top: 17px;
+  float: right;
+  font-size: 0.72em;
+  color: #4A6F7F;
+  padding-right: 40px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section_top {
+  position: relative;
+  left: -2px;
+  background: url(http://i.imgur.com/zc4NPgo.png) no-repeat 0 0;
+  width: 709px;
+  height: 30px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section {
+  position: relative;
+}
+html body div#wrapper div#inner_wrapper section div#main_section div.tab {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px 3px 0 0;
+  position: relative;
+  top: -30px;
+  left: -1px;
+  padding: 3px 28px;
+  float: left;
+  cursor: pointer;
+}
+html body div#wrapper div#inner_wrapper section div#main_section div.tab:first-of-type {
+  padding: 3px 18px 6px 22px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section div.tab:nth-of-type(2) {
+  padding: 3px 36px 6px 30px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section div.tab:nth-of-type(3) {
+  padding: 3px 38px 5px 43px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section div.tab:nth-of-type(4) {
+  padding: 3px 22px 6px 22px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section div.tab:nth-of-type(5) {
+  padding: 3px 33px 6px 33px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section div.tab a {
+  text-decoration: none;
+}
+html body div#wrapper div#inner_wrapper section div#main_section div.tab a h2 {
+  font-size: 11px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section div.tab.selected {
+  background: #E2E3E4;
+}
+html body div#wrapper div#inner_wrapper section div#main_section div.tab.selected + article {
+  display: block;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article {
+  position: absolute;
+  display: none;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article h3 {
+  display: inline-block;
+  color: #526066;
+  font-size: 14px;
+  margin-top: 14px;
+  margin-left: 4px;
+  letter-spacing: 0.5px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article span.link-holder {
+  position: relative;
+  float: right;
+  right: -56px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article span.link-holder a {
+  position: relative;
+  float: right;
+  color: #267bb1;
+  margin-top: 19px;
+  left: -24px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article span.link-holder span.arrow-right {
+  position: relative;
+  right: -157px;
+  top: 23px;
+  float: right;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul {
+  padding: 31px 0 0 40px;
+  zoom: 1;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul:after {
+  content: "";
+  height: 0;
+  clear: both;
+  display: block;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li {
+  float: left;
+  width: 166px;
+  margin-right: 57px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li div.buttons-holder {
+  position: relative;
+  zoom: 1;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li div.buttons-holder:after {
+  content: "";
+  height: 0;
+  clear: both;
+  display: block;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li div.buttons-holder:first-of-type span.link-holder {
+  top: -4px;
+  left: 2px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li div.buttons-holder button {
+  position: relative;
+  left: 5px;
+  float: left;
+  background: url(https://www.icard.bg/images/2/apply-now-off.png) 0 0 no-repeat;
+  width: 64px;
+  border: none;
+  height: 20px;
+  cursor: pointer;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li div.buttons-holder span.link-holder {
+  position: relative;
+  top: -15px;
+  right: 4px;
+  float: right;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li div.buttons-holder span.link-holder a.see-more {
+  float: left;
+  left: 0;
+  top: 0;
+  color: #267bb1;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li div.buttons-holder span.link-holder span.arrow-right {
+  top: 23px;
+  left: 4px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li:first-of-type h4 span:nth-of-type(2) {
+  top: 1px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li:first-of-type p {
+  margin-top: 8px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li:first-of-type button {
+  top: 10px;
+  right: 2px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li:first-of-type a.see-more {
+  top: 6px;
+  left: 35px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li:first-of-type span.arrow-right {
+  top: 19px;
+  left: 6px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li:nth-of-type(2) h4 span:nth-of-type(2) {
+  position: relative;
+  top: -2px;
+  color: #978353;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li:last-of-type {
+  margin-right: 0;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li:last-of-type h4 span:nth-of-type(2) {
+  position: relative;
+  top: -2px;
+  color: #939BB4;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li:last-of-type p {
+  margin-bottom: 23px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li:last-of-type input {
+  margin-left: 1px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li:last-of-type a.see-more {
+  bottom: 4px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li:last-of-type span.arrow-right {
+  top: 9px;
+  left: 8px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li input#second,
+html body div#wrapper div#inner_wrapper section div#main_section article ul li input#third {
+  left: 5px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li span.link-holder#second,
+html body div#wrapper div#inner_wrapper section div#main_section article ul li span.link-holder#third {
+  top: -14px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li h4 {
+  width: 150px;
+  margin: 7px 0 0 5px;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li h4 span.dot {
+  position: relative;
+  left: 2px;
+  margin: 0 3px 2px 1px;
+  background: #555555;
+  border-radius: 70%;
+  width: 4px;
+  height: 4px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li h4 span:nth-of-type(2) {
+  position: relative;
+  top: -2px;
+  display: block;
+  font-size: 13px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article ul li p {
+  width: 134px;
+  font-size: 11px;
+  margin: 3px 0 20px 5px;
+  line-height: 15px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article p span.link-holder {
+  float: left;
+  left: 28px;
+  top: -12px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article p span.link-holder a {
+  float: left;
+  color: #267bb1;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article p span.link-holder span.arrow-right {
+  right: 20px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article:nth-of-type(2) {
+  padding: 0 15px 0 10px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article:nth-of-type(2) h3 {
+  display: block;
+  margin-left: 8px;
+  margin-bottom: 18px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article:nth-of-type(2) > div {
+  width: 49%;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article:nth-of-type(2) > div:first-of-type {
+  float: left;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article:nth-of-type(2) > div:nth-of-type(2) {
+  float: right;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article:nth-of-type(2) > div:nth-of-type(2) h4#second {
+  left: 20px;
+  color: #978353;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article:nth-of-type(2) > div:nth-of-type(2) span.link-holder {
+  top: 38px;
+  left: -3px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article:nth-of-type(2) > div:nth-of-type(2) span.link-holder a {
+  float: left;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article:nth-of-type(2) > div:nth-of-type(2) span.link-holder span.arrow-right {
+  float: right;
+  right: 20px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article:nth-of-type(2) > div:nth-of-type(2) p#second {
+  position: relative;
+  top: -10px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article:nth-of-type(2) > div div.image-div {
+  float: left;
+  background: white;
+  padding: 10px 15px 20px 10px;
+  box-shadow: 3px 3px 3px #c6c5c5;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article:nth-of-type(2) > div div.caption {
+  box-shadow: 2px 2px 4px #c6c5c5;
+  background: #F5F5F5;
+  height: 300px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article:nth-of-type(2) > div div.caption h4 {
+  position: relative;
+  top: 14px;
+  left: 60px;
+  color: #34664D;
+  font-size: 30px;
+  font-family: 'Segoe UI';
+  font-weight: normal;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article:nth-of-type(2) > div div.caption p {
+  clear: left;
+  font-size: 11px;
+  padding: 20px 5px 5px 5px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article:nth-of-type(2) > div div.caption ul {
+  position: relative;
+  left: 30px;
+  list-style-type: disc;
+  padding: 0;
+  width: 90%;
+  font-size: 11px;
+}
+html body div#wrapper div#inner_wrapper section div#main_section article:nth-of-type(2) > div div.caption ul li {
+  width: 100%;
+  line-height: 18px;
+  margin-top: 10px;
+}
+html body div#wrapper div#inner_wrapper_bottom {
+  background: url(https://www.icard.bg/images/bg-homepage-exp-btm.gif) no-repeat 0 0;
+  height: 10px;
+}
+html body div#wrapper footer {
+  clear: both;
+}
+html body div#wrapper footer div#footer_wrapper {
+  background: url(https://www.icard.bg/images/header_footer/new_footer.jpg) 0 0 no-repeat;
+  height: 123px;
+}
+html body div#wrapper footer div#footer_wrapper div.footer_list {
+  float: left;
+  padding: 8px 0 0 10px;
+}
+html body div#wrapper footer div#footer_wrapper div.footer_list h4 {
+  position: relative;
+  top: 5px;
+  color: #555555;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-bottom: 1px;
+}
+html body div#wrapper footer div#footer_wrapper div.footer_list ul {
+  position: relative;
+  top: 5px;
+}
+html body div#wrapper footer div#footer_wrapper div.footer_list ul li {
+  line-height: 16px;
+}
+html body div#wrapper footer div#footer_wrapper div.footer_list:first-of-type ul {
+  margin-right: 82px;
+}
+html body div#wrapper footer div#footer_wrapper div.footer_list:nth-of-type(2) ul {
+  margin-right: 11px;
+}
+html body div#wrapper footer div#footer_wrapper div.footer_list:nth-of-type(3) ul {
+  margin-right: 70px;
+}
+html body div#wrapper footer div#footer_wrapper div.footer_list:nth-of-type(4) ul {
+  margin-right: 75px;
+}
+html body div#wrapper footer div#footer_wrapper div.footer_list:last-of-type ul {
+  width: 174px;
+}
+html body div#wrapper footer div#footer_wrapper div.footer_list:last-of-type ul li {
+  line-height: 16px;
+}
+html body div#wrapper footer div#footer_wrapper div.footer_list:last-of-type ul li a:nth-of-type(2) {
+  float: right;
+}
+html body div#wrapper footer div#footer_bottom {
+  clear: left;
+  background: #c4c8cb;
+  padding: 28px 10px;
+  font-size: 11px;
+}
+/*# sourceMappingURL=index.css.map */

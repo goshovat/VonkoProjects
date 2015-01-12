@@ -1,0 +1,22 @@
+package oneLevShop.products;
+
+import oneLevShop.AgeRestriction;
+
+public abstract class ElectronicsProduct extends Product {
+
+	protected int guaranteePeriod; 
+	
+	public ElectronicsProduct(String name, double price, int quantity,
+			AgeRestriction ageRestriction, int guaranteePeriod) {
+		super(name, price, quantity, ageRestriction);
+		this.guaranteePeriod = guaranteePeriod;
+	}
+	
+	public int getGuaranteePeriod() {
+		return this.guaranteePeriod();
+	}
+	
+	public void setGuaranteePeriod() {
+		
+	}
+}

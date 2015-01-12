@@ -1,0 +1,43 @@
+package geometry;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import geometry.planeShapes.Circle;
+import geometry.planeShapes.PlaneShape;
+import geometry.planeShapes.Rectangle;
+import geometry.planeShapes.Triangle;
+import geometry.spaceShapes.Cuboid;
+import geometry.spaceShapes.SpaceShape;
+import geometry.spaceShapes.Sphere;
+import geometry.spaceShapes.SquarePyramid;
+
+public class GeometryTester {
+	public static void main(String[] args) {
+		
+		//create some two-dimensional shapes
+		PlaneShape circle = new Circle(3, 5, 20);
+		PlaneShape rectangle = new Rectangle(5, 6, 3, 30);
+		PlaneShape triangle = new Triangle(2, -1, 3, 5, 7, -10);
+		
+		//create some three-dimensional shapes
+		SpaceShape cuboid = new Cuboid(1, 0, 3, 2, 4, 2);
+		SpaceShape sphere = new Sphere(0, 0, 2, 5);
+		SpaceShape squarePyramid = new SquarePyramid(3, 8, 2, 4, 7);
+		
+		//create the arrays
+		SpaceShape[] spaceShapes = new SpaceShape[] {cuboid, sphere, squarePyramid}; 
+		List<SpaceShape> shapeList = Arrays.asList(spaceShapes).stream()
+				.filter(s -> s instanceof SpaceShape).map(s -> (SpaceShape) s)
+				.filter(v -> v.getVolume() > 40).collect(Collectors.toList());
+
+		System.out.println();		
+		for (Shape shape : shapeList) {
+			System.out.println(shape);
+		}
+		
+		
+		PlaneShape[] planeShapes = new PlaneShape[] {circle, rectangle, triangle};
+	}
+}

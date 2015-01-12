@@ -1,0 +1,47 @@
+package oneLevShop.products;
+
+import oneLevShop.AgeRestriction;
+import oneLevShop.interfaces.Buyable;
+
+public abstract class Product implements Buyable {
+	private String name; 
+	private double price;
+	private int quantity;
+	private AgeRestriction ageRestriction;
+	
+	public Product
+		(String name, double price, int quantity, AgeRestriction ageRestriction) {
+		this.name = name;
+		this.price = price;
+		this.quantity = quantity;
+		this.ageRestriction = ageRestriction;
+	}
+
+	protected String getName() {
+		return name;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+	
+	protected double getQuantity() {
+		return this.quantity;
+	}
+	
+	protected void setName() {
+		this.name = name;
+	}
+
+	public void setPrice() {
+		this.price = price;
+	}
+	
+	protected void setQuantity() {
+		this.quantity = quantity;
+	}
+
+	protected AgeRestriction getAgeRestriction() {
+		return ageRestriction;
+	}
+}

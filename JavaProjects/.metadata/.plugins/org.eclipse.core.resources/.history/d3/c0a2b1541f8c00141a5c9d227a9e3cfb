@@ -1,0 +1,55 @@
+package oneLevShop;
+
+import java.util.Calendar;
+
+import oneLevShop.products.FoodProduct;
+import oneLevShop.products.Product;
+
+public class OneLevShopTester {
+	
+	public static void main(String[] args) {
+		try {
+			Calendar ciggarsExpiry = getCalendar(2014, 12, 26);
+			FoodProduct cigars = new FoodProduct("420 Blaze it fgt", 6.90, 1400, 
+					AgeRestriction.Adult, ciggarsExpiry);
+			Customer pecata = new Customer("Pecata", 17, 30.00);
+			Customer gopeto = new Customer("Gopeto", 18, 0.44);
+						
+			try {
+				PurchaseManager.processPurchase(pecata, cigars);
+			}
+			catch(RuntimeException runExc) {
+				System.out.println(runExc.getMessage());
+			}
+						
+			try {
+				PurchaseManager.processPurchase(gopeto, cigars);
+			}
+			catch(RuntimeException runExc) {
+				System.out.println(runExc.getMessage());
+			}
+			
+			Calendar cheeseExpiry = getCalendar(2014, 12, 29);
+			//use some lambda expressions to sort and filter
+			Product cheese = new FoodProduct("Elena", 6.90, 1400, 
+					AgeRestriction.None, cheeseExpiry);
+			
+			Calendar salamExpiry = getCalendar(2014, 12, 29);
+			Product salam = new FoodProduct("Smqrovo", 5.30, 350,)
+		}
+		catch (IllegalArgumentException argExc) {
+			System.out.println(argExc.getMessage());
+		}
+		catch (Exception exc) {
+			System.out.println(exc.getMessage());
+			System.out.println(exc.getStackTrace());
+		}
+	}
+	private static Calendar getCalendar(int year, int month, int day) {
+	    Calendar c = Calendar.getInstance();
+	    c.set(Calendar.YEAR, year);
+	    c.set(Calendar.MONTH, month);
+	    c.set(Calendar.DAY_OF_MONTH, day);
+	    return c;
+	}
+}

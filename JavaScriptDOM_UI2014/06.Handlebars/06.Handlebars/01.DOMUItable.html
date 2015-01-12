@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>DOM and UI Course Program</title>
+    <link rel="stylesheet" type="text/css" href="styles/task1.css" />
+    <script src="handlebarsjs/handlebars-v1.3.0.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <script id="post-template" type="text/x-handlebars-template">
+        <table>
+            <thead>
+                {{#$lecturesThead}}
+                <tr>
+                    <th>{{thNumber}}</th>
+                    <th>{{thTitle}}</th>
+                    <th>{{thDate1}}</th>
+                    <th>{{thDate2}}</th>
+                </tr>
+                {{/$lecturesThead}}
+            </thead>
+            <tbody>
+                {{#$lecturesTbody}}
+                <tr>
+                    <td>{{number}}</td>
+                    <td>{{title}}</td>
+                    <td>{{date1}}</td>
+                    <td>{{date2}}</td>
+                </tr>
+                {{/$lecturesTbody}}
+            </tbody>
+        </table>
+    </script>
+    <script src="scripts/task1.js"></script>
+</body>
+</html>

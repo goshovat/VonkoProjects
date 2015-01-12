@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Task2</title>
+		<link type="text/css" rel="stylesheet" href="task2.css"/>
+	</head>
+	<body>
+			<form name="per_data" method="post" action="#">
+				<div>
+					<label for="name">Member name :</label>
+					<input type="text" name="name" id="name" value="" required="required" pattern="[a-zA-Z\s]*"/><span>*req</span>
+				</div>
+				<div>
+					<label for="email">Email :</label>
+					<input type="text" name="email" id="email" value="" required="required" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"/><span>*req</span>
+				</div>
+				<div>
+					<label for="school">School :</label>
+					<input type="text" name="school" id="school" value="" required="required" pattern="[a-zA-Z\s]*"/><span>*req</span>
+				</div>
+					<input type="image" src="submit.png" alt="submit"/>
+			</form>	
+	</body>
+</html>

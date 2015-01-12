@@ -1,0 +1,13 @@
+package geometry;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public abstract class Shape {
+	
+	protected ArrayList<Vertex> vertices;
+	
+	public Shape(ArrayList<Vertex> vertecies) {
+		this.vertices = vertecies;
+	}
+}

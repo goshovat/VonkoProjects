@@ -1,0 +1,48 @@
+div {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 10px 15px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+div.button-background {
+	margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+div.textfield {
+	margin-right:10px;
+    margin-bottom: 10px;
+}
+
+a {
+    display: inline-block;
+}
+
+button {
+    outline:none;
+    font-size:20px;
+}
+
+a, button {
+    border : 1px inset black;
+    border-radius: 5px;
+    padding : 5px 10px;
+    background : url(../images/linkBG.jpg);
+    font-family:"Segoe UI", Arial;
+    font-weight:  : bold;
+}
+
+a:hover, button:hover {
+    cursor:pointer;
+}
+
+div#colorPickerDiv { 
+    position :absolute;
+    top :20px;
+    left :800px;
+}
+
+input {
+    outline:none;
+}

@@ -1,0 +1,48 @@
+package geometry.spaceShapes;
+
+import geometry.Shape;
+import geometry.Vertex;
+import geometry.Interfaces.AreaMeasurable;
+import geometry.Interfaces.VolumeMeasurable;
+
+public class SquarePyramid extends Shape
+implements AreaMeasurable, VolumeMeasurable {
+	
+	private double width;
+	private double height;
+	
+	public SquarePyramid
+	(double col, double row, double layer, double width, double height) {
+		Vertex vertex = new SpaceVertex(col, row, layer);
+		super.vertices.add(vertex);
+		this.width = width;
+		this.height = height;
+	}
+	
+	public double getWidth() {
+		return width;
+	}
+
+	public double getHeight() {
+		return height;
+	}
+
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+	@Override
+	public double getVolume() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+}

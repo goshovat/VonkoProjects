@@ -1,0 +1,59 @@
+body {
+	background:url(https://raw.githubusercontent.com/bobbykolev/Advanced-javaScript/master/02.jQuery/01.Slider/images/gray_jean.png);
+	font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+div#wrapper {
+  	margin:50px auto;
+  	width:800px;
+}
+
+a {
+	position: relative;
+	top:100px;
+	display:inline-block;
+	color:black;
+	text-decoration:none;
+	border:1px solid black;
+	border-radius:60%;
+	padding:5px 8px;
+}
+
+a:hover {
+	cursor:pointer;
+	background: gray;
+	box-shadow: 5px 5px 5px gray;
+}
+
+a#next {
+	float:right;
+}
+
+a#prev {
+	float:left;
+}
+
+div#container {
+	display: inline-block;
+	width:680px;
+	margin-left:15px;
+	margin-bottom: 30px;
+	border:1px solid black;
+	border-radius:5px;
+	padding:5px 10px;
+	box-shadow: 5px 5px 3px black;
+	text-align: center;
+}
+
+h1 {
+	padding:5px 3px;
+	margin:0;
+}
+
+ul {
+	display:inline-block;
+}
+
+form {
+	margin: 30px 0 60px 0;
+}

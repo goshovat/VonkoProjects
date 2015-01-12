@@ -1,0 +1,27 @@
+package geometry.planeShapes;
+
+import geometry.Vertex;
+
+public class PlaneVertex extends Vertex {
+	public PlaneVertex(int col, int row) {
+		super(2);
+		super.coordinates[0] = col;
+		super.coordinates[1] = row;
+	}
+	
+	public double getCol() {
+		return super.coordinates[0];
+	}
+	
+	public void setCol(double value) {
+		super.coordinates[0] = value;
+	}
+	
+	public double getRow() {
+		return super.coordinates[1];
+	}
+	
+	public void setRow(double value) {
+		super.coordinates[1] = value;
+	}
+}

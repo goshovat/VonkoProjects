@@ -1,0 +1,54 @@
+package geometry.spaceShapes;
+
+import geometry.Shape;
+import geometry.Vertex;
+import geometry.Interfaces.AreaMeasurable;
+import geometry.Interfaces.VolumeMeasurable;
+
+public class SquarePyramid extends Shape
+implements AreaMeasurable, VolumeMeasurable {
+	
+	private double baseWidth;
+	private double height;
+	
+	public SquarePyramid
+	(double col, double row, double layer, double baseWidth, double height) {
+		Vertex vertex = new SpaceVertex(col, row, layer);
+		super.vertices.add(vertex);
+		this.baseWidth = baseWidth;
+		this.height = height;
+	}
+	
+	public double getBaseWidth() {
+		return this.baseWidth;
+	}
+
+	public double getHeight() {
+		return this.height;
+	}
+	
+	public double getCenterCol() {
+		return super.vertices.get(0).getCol();
+	}
+	
+	public double getCenterRow() {
+		return super.vertices.get(0).getRow();
+	}
+
+	@Override
+	public double getArea() {
+		return this.baseWidth * this.baseWidth + 2 * this.baseWidth *
+				Math.sqrt((this.baseWidth * this.baseWidth)/ 4 + this.height * this.height);
+	}
+	
+	@Override
+	public double getVolume() {
+		return this.baseWidth * this.baseWidth * this.height / 3;
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("Pyramid - center: %0, %0; base width: %0, height: %0",
+				this.getCenterCol(), this.getCenterRow(), this.getBaseWidth(), this.getHeight());
+	}
+}

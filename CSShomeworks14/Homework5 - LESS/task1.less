@@ -1,0 +1,252 @@
+/*The usual resets*/ 
+body, header, nav, div, h1, h2, a, section, article, footer, p, span, ul, li, img, form, button, aside {
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, section, article, footer, aside {
+    display: block;
+}
+
+/*some variables*/
+
+@default-text-color: white;
+@special-a-color:#d4a3f8;
+@border-reg-input: #603382;
+@radius-reg-input: 3em;
+@border-standart:1px solid black;
+@background-color-1:#D392FD;
+@background-color-2:#9215F2;
+@background-pos-1:20%;
+@background-pos-2:100%;
+
+/*some mixins*/
+ .gradient(@from-color,@to-color,@from-pos,@to-pos) {
+	background:@from-color; 
+	background: -moz-linear-gradient(top,  @from-color 0%, @from-color 0%, @to-color @from-pos, @to-color @to-pos); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@from-color), color-stop(0%,@from-color), color-stop(@from-pos,@to-color), color-stop(@to-pos,@to-color)); 
+	background: -webkit-linear-gradient(top,  @from-color 0%,@from-color 0%,@to-color @from-pos,@to-color @to-pos); 
+	background: -o-linear-gradient(top,  @from-color 0%,@from-color 0%,@to-color @from-pos,@to-color @to-pos); 
+	background: -ms-linear-gradient(top,  @from-color 0%,@from-color 0%,@to-color @from-pos,@to-color @to-pos); 
+	background: linear-gradient(to bottom,  @from-color 0%,@from-color 0%,@to-color @from-pos,@to-color @to-pos); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from-color', endColorstr='@to-color',GradientType=0 ); 
+}
+
+
+
+.right() {
+    float: right;
+}
+
+.left() {
+    float: left;
+}
+
+.clearfixAfter() {
+    zoom: 1;
+    &:after {
+        display: block;
+        content: "";
+        height: 0;
+        clear: both;
+    }
+}
+
+.clearfixBefore() {
+    zoom:1;
+    &:before {
+        content:"";
+        height:0;
+        clear:both;
+        display:block;
+    }
+}
+
+/*The styling of the page using selector nesting*/
+
+body {
+    color: @default-text-color;
+    .gradient(@background-color-1,@background-color-2,@background-pos-1,@background-pos-2);
+
+    & > header {
+        padding: 2em 2em 0 1em;
+
+        div#header-container {
+            .clearfixAfter();
+
+            div#logo-container {
+                .left();
+            }
+
+            div#reg-form-container {
+                .right();
+                margin-right: 3em;
+
+                input {
+                    background:#b35ef3;
+                    border-radius: @radius-reg-input;
+                    border: 1px solid @border-reg-input;
+                    margin-left: 0.5em;
+
+                    &:first-of-type {
+                        margin-bottom: 0.5em;
+                    }
+
+                    &:nth-of-type(2) {
+                        margin-left: 0.6em;
+                    }
+                }
+
+
+                button {
+                    background: #c381f4;
+                    color: @default-text-color;
+                    margin-top: 0.5em;
+                    border-radius: 0.6em;
+                    padding: 0.3em 0.8em 0.3em 0.8em;
+                    border: 1px outset @border-reg-input;
+                }
+            }
+        }
+
+        nav {
+            margin-top: 1.5em;
+
+            & > ul {
+                list-style-type: none;
+                border: @border-standart;
+                border-radius: 0.8em;
+                width: 75%;
+                margin-left:1em;
+
+                li {
+                    display: inline-block;
+                    padding: 0.6em;
+                    margin-right:0.2em;
+
+                    &:first-of-type {
+                        padding-left: 1.5em;
+                    }
+
+                    a {
+                        color: @default-text-color;
+                        text-decoration: none;
+                    }
+
+                    &:hover a{
+                            text-decoration: underline;
+                        }
+
+                    ul {
+                        display: none;
+                        position: absolute;
+                    }
+
+                    &:hover {
+                        & > ul {
+                            padding: 0 0.2em 0 0.2em;
+                            background: @background-color-2;
+                            z-index: 3;
+                            display: block;
+                            border-radius: 0.6em;
+                            border: 1px solid @border-reg-input;
+
+
+                            li {
+                                display: block;
+                                border-top: 1px solid @border-reg-input;
+
+                                &:first-of-type {
+                                    padding-left: 0.6em;
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+        .left();
+        width: 68%;
+        margin-left: 1em;
+
+        article {
+            border: @border-standart;
+            margin-bottom: 1em;
+            border-radius: 0.8em;
+            padding: 1.5em 1.1em 1.5em 1.2em;
+
+            &:first-of-type {
+                margin-top: 2em;
+            }
+
+            h1 {
+                margin:0 0 0.4em 0.5em;
+            }
+
+            p {
+            }
+
+            footer {
+                text-align: right;
+                margin-top:0.5em;
+
+                a {
+                    text-decoration: none;
+                    color: @special-a-color;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    aside {
+        .right();
+        width: 25%;
+        margin: 3em 2em 0 0;
+
+        & > ul > li {
+            list-style-type: none;
+            border: @border-standart;
+            border-radius: 0.2em;
+            margin-bottom: 0.8em;
+            padding: 1em 1.2em 1em 1em;
+
+            h2 {
+                margin-bottom:0.5em;
+            }
+
+            p {
+                margin-left:0.5em;
+            }
+
+            ul {
+                list-style-type:none;
+
+                li {
+                    padding-left:2em;
+                    background-image:url(images/li-dot.png);
+                    background-repeat:no-repeat;
+                    background-position:8px 5px;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: @special-a-color;
+            }
+        }
+    }
+
+    & > footer {
+        .clearfixBefore();
+        text-align: center;
+        padding-bottom:1em;
+    }
+}

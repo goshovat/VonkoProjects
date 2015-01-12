@@ -1,0 +1,162 @@
+/*The usual resets*/
+body, header, div, h1, a, form, label, input, nav, ul, li, section, article, aside, footer, p {
+  margin: 0;
+  padding: 0;
+}
+
+/*Here some variables wii be defined*/
+/*Here some mixins will be defined*/
+body {
+  padding: 0 0.3em 0 1em;
+  color: white;
+  background: #d392fd;
+  background: -moz-linear-gradient(top, #d392fd 0%, #d392fd 0%, #9215f2 20%, #9215f2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d392fd), color-stop(0%, #d392fd), color-stop(20%, #9215f2), color-stop(100%, #9215f2));
+  background: -webkit-linear-gradient(top, #d392fd 0%, #d392fd 0%, #9215f2 20%, #9215f2 100%);
+  background: -o-linear-gradient(top, #d392fd 0%, #d392fd 0%, #9215f2 20%, #9215f2 100%);
+  background: -ms-linear-gradient(top, #d392fd 0%, #d392fd 0%, #9215f2 20%, #9215f2 100%);
+  background: linear-gradient(to bottom, #d392fd 0%, #d392fd 0%, #9215f2 20%, #9215f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$from-color', endColorstr='$to-color',GradientType=0 );
+  /*Here we style the logo and reg-form*/
+  /*Here we style the navigation*/
+  /*The styling of the section on the left*/
+  /*Styling of the sidebar on the right*/
+}
+body div#header-container {
+  zoom: 1;
+  padding: 1.5em 5em 0 0.8em;
+}
+body div#header-container:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+body div#header-container div#logo-container {
+  float: left;
+}
+body div#header-container div#reg-form-container {
+  float: right;
+}
+body div#header-container div#reg-form-container label {
+  color: white;
+}
+body div#header-container div#reg-form-container input {
+  background: #b35ef3;
+  margin-bottom: 0.5em;
+  border: 1px solid #603382;
+  border-radius: 1em;
+}
+body div#header-container div#reg-form-container input:nth-of-type(2) {
+  margin-left: 1px;
+}
+body div#header-container div#reg-form-container button {
+  background: #c588f3;
+  color: white;
+  border: 1px outset #603382;
+  border-radius: 0.7em;
+  padding: 0.3em 0.8em 0.3em 0.8em;
+}
+body nav > ul {
+  border: 1px solid black;
+  border-radius: 0.8em;
+  list-style-type: none;
+  margin: 1em 0 2em 1.5em;
+  width: 67%;
+}
+body nav > ul > li {
+  display: inline-block;
+  padding: 0.8em 0.4em 0.5em 1.3em;
+  cursor: pointer;
+}
+body nav > ul > li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+}
+body nav > ul > li ul {
+  display: none;
+  position: absolute;
+}
+body nav > ul > li:hover a:hover {
+  text-decoration: underline;
+}
+body nav > ul > li:hover > ul {
+  background: #d392fd;
+  background: -moz-linear-gradient(top, #d392fd 0%, #d392fd 0%, #9215f2 100%, #9215f2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d392fd), color-stop(0%, #d392fd), color-stop(100%, #9215f2), color-stop(100%, #9215f2));
+  background: -webkit-linear-gradient(top, #d392fd 0%, #d392fd 0%, #9215f2 100%, #9215f2 100%);
+  background: -o-linear-gradient(top, #d392fd 0%, #d392fd 0%, #9215f2 100%, #9215f2 100%);
+  background: -ms-linear-gradient(top, #d392fd 0%, #d392fd 0%, #9215f2 100%, #9215f2 100%);
+  background: linear-gradient(to bottom, #d392fd 0%, #d392fd 0%, #9215f2 100%, #9215f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$from-color', endColorstr='$to-color',GradientType=0 );
+  display: block;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  padding: 0 0.2em;
+  z-index: 5;
+}
+body nav > ul > li:hover > ul li {
+  display: block;
+  padding: 0.8em 0.3em;
+  border-bottom: 1px solid black;
+}
+body nav > ul > li:hover > ul li:last-of-type {
+  border-bottom: none;
+}
+body section {
+  width: 64%;
+  float: left;
+}
+body section article {
+  border: 1px solid black;
+  border-radius: 0.8em;
+  padding: 1.3em 0.8em 1.5em 1.1em;
+  margin-bottom: 2em;
+}
+body section article h1 {
+  margin-bottom: 0.3em;
+  padding-left: 0.3em;
+}
+body section article footer {
+  text-align: right;
+  margin-top: 0.4em;
+}
+body section article footer a {
+  color: #bc78f7;
+  text-decoration: none;
+}
+body aside {
+  width: 30%;
+  float: right;
+  margin-right: 3em;
+  margin-top: 1em;
+}
+body aside > ul {
+  list-style-type: none;
+}
+body aside > ul > li {
+  border: 1px solid black;
+  border-radius: 0.2em;
+  margin-bottom: 1em;
+  padding: 0 1em 1em 1em;
+}
+body aside > ul > li:nth-of-type(2) ul {
+  padding-left: 3em;
+  list-style-image: url("images/li-dot.png");
+}
+body aside > ul > li a {
+  text-decoration: none;
+  color: #bc78f7;
+}
+body > footer {
+  zoom: 1;
+  text-align: center;
+  margin-bottom: 2em;
+}
+body > footer:before {
+  clear: both;
+  content: "";
+  height: 0;
+  display: block;
+}

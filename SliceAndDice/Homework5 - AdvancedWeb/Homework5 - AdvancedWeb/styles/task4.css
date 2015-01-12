@@ -1,0 +1,177 @@
+﻿/*Resets*/
+html,body,section,ul,li,a {
+    margin:0;
+    padding:0;
+}
+
+/*General styling of the elements*/
+body {
+    background:#fcffc9;
+}
+
+ul {
+    list-style-type:none;
+    display:inline-block;
+    margin-top:20px;
+}
+
+li {
+    float:left;
+    text-align:center;
+    width:180px;
+    margin-right:5px;
+    margin-bottom:25px;
+}
+
+a {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background-image:url(../imgs/sprite_image.png);
+    background-repeat:no-repeat;
+}
+
+
+span {
+    display: block;
+    text-align: center;
+    color: blue;
+    font-family:'Segoe UI', Arial;
+}
+
+/*Positioning of the sprite for every hyperlink*/
+a.comment {
+    background-position:2px 2px;
+}
+
+a.comment_add {
+    background-position:-21px 2px;
+}
+
+a.comment_delete {
+    background-position:-40px 2px;
+}
+
+a.comment_edit {
+    background-position: -59px 2px;
+}
+
+a.comments {
+    background-position: -82px 2px;
+}
+
+a.comments_add {
+    background-position: -103px 2px;
+}
+
+a.comments_delete {
+    background-position: -124px 2px;
+}
+
+a.folder {
+    background-position: -145px 2px;
+}
+
+a.folder_add {
+    background-position: -166px 2px;
+}
+
+a.folder_delete {
+    background-position: -187px 2px;
+}
+
+a.folder_edit {
+    background-position: -208px 2px;
+}
+
+a.group {
+    background-position: -229px 2px;
+}
+
+a.group_add {
+    background-position: -250px 2px;
+}
+
+a.group_delete {
+    background-position: -271px 2px;
+}
+
+a.group_edit {
+    background-position: -292px 2px;
+}
+
+a.page_white {
+    background-position: -313px 2px;
+}
+
+a.page_white_acrobat {
+    background-position: -334px 2px;
+}
+
+a.page_white_actionscript {
+    background-position: -355px 2px;
+}
+
+a.page_white_add {
+    background-position: -376px 2px;
+}
+
+a.page_white_c {
+    background-position: -398px 2px;
+}
+
+a.page_white_camera {
+    background-position: -419px 2px;
+}
+
+a.page_white_cplusplus {
+    background-position: -440px 2px;
+}
+
+a.page_white_csharp {
+    background-position: -461px 2px;
+}
+
+a.page_white_cup {
+    background-position: -482px 2px;
+}
+
+a.page_white_edit {
+    background-position: -503px 2px;
+}
+
+a.page_white_delete {
+    background-position: -524px 2px;
+}
+
+a.page_white_excel {
+    background-position: -545px 2px;
+}
+
+a.page_white_php {
+    background-position: -566px 2px;
+}
+
+a.page_white_powerpoint {
+    background-position: -587px 2px;
+}
+
+a.page_white_ruby {
+    background-position: -608px 2px;
+}
+
+a.user {
+    background-position: -629px 2px;
+}
+
+a.user_add {
+    background-position: -650px 2px;
+}
+
+a.user_delete {
+    background-position: -671px 2px;
+}
+
+a.user_edit {
+    background-position: -692px 2px;
+}

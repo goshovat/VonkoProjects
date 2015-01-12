@@ -1,0 +1,161 @@
+body {
+
+	form {
+
+		table {
+				border: 1px solid gray;
+				border-spacing:0;
+
+			tbody {
+
+				tr {
+
+					td {
+						border: 1px solid gray;
+						padding:0.3em;
+						border-right:none;
+						border-bottom:none;
+
+						&:first-of-type {
+							font-weight:bold;
+							width:10.5em;
+							text-align:right;
+							border-left:none;
+						}
+
+						input {
+
+
+						}
+					}
+
+					&:first-of-type {
+						td {
+							border-top:none;
+
+							input {
+								width:24em;
+							}
+						}
+					}
+
+					&:nth-of-type(2) {
+
+						input {
+							width:24em;
+						}
+					}
+
+					&:nth-of-type(3) {
+
+						textarea {
+							height:7em;
+							overflow: hidden;
+							width:22em;
+						}
+					}
+
+					&:nth-of-type(4) {
+						
+						td:nth-of-type(2) {
+								padding:0 0.3em 0 0.3em;
+
+								span {
+										padding:0.3em 0.6em 0.3em 0.6em;
+										border-right: 1px solid gray;
+										border-left: 1px solid gray;
+										font-weight:bold;
+									}
+
+									input {
+
+										&:first-of-type {
+											width:15em;
+										}
+
+										&:nth-of-type(2) {
+											width:5em;
+										}
+
+									}				
+
+						} 
+					} 
+
+					&:nth-of-type(6) {
+
+						select {
+							width:18em;
+						}
+					}
+
+					&:nth-of-type(7) {
+						
+						input {
+
+							&:first-of-type {
+								width:5em;
+							}
+
+							&:nth-of-type(2) {
+								width:5em;
+							}
+
+						}
+					}
+
+					&:nth-of-type(8) {
+						input {
+							width:24em;
+						}
+					}
+
+
+					&:nth-of-type(9) {
+
+						input {
+
+							 &:first-of-type{
+								width:2em;
+							 }
+
+							 &:nth-of-type(2){
+								width:2em;
+							 }
+
+							 &:nth-of-type(3){
+								width:4em;
+							 }
+						}
+					}
+
+					&:nth-of-type(12) {
+						td {
+							border-bottom:1px solid gray;
+
+							textarea {
+								width:22em;
+								height:7em;
+							}
+						}
+					}
+				}
+
+			}
+
+				tfoot {
+
+					td {
+					padding:0.2em 0 0.2em 0;
+					background:skyblue;
+					text-align:center;
+
+					input {
+						padding:0.2em 0.4em 0.2em 0.4em;
+						border-radius:0;
+					}
+				}
+			}
+		}
+	}
+}

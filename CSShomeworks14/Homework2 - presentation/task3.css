@@ -1,0 +1,15 @@
+﻿div {   
+    border-radius:50px;
+    background:black;
+    border:2px solid red;
+    padding-right:10%;
+}
+
+div#n1 {
+    margin-top:2em;   
+}
+
+/*Here I'm hiding the divs after No19*/
+div.hidden {
+    display:none;
+}

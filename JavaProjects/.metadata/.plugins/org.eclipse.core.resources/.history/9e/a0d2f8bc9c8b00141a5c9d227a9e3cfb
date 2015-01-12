@@ -1,0 +1,15 @@
+package geometry;
+
+import geometry.planeShapes.Circle;
+import geometry.planeShapes.PlaneVertex;
+
+public class GeometryTester {
+	public static void main(String[] args) {
+		
+		Shape[] shapes = new Shape[6];
+		
+		//create some two-dimensional shapes
+		Shape circle = new Circle(3, 5, 7);
+		Shape rectangle = new Rectangle()
+	}
+}

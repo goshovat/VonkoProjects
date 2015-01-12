@@ -1,0 +1,13 @@
+package oneLevShop.products;
+
+import oneLevShop.AgeRestriction;
+import oneLevShop.interfaces.Expirable;
+
+public class FoodProduct extends Product 
+implements Buyable {
+
+	public FoodProduct
+	(String name, double price, int quantity, AgeRestriction ageRestriction) {
+		super(name, price, quantity, ageRestriction);
+	}
+}

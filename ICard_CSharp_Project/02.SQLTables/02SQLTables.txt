@@ -1,0 +1,81 @@
+CREATE DATABASE iCard_task2;
+USE iCard_task2;
+
+--create tables and indexes
+CREATE TABLE [Deliverers]
+(
+[Name] varchar(255) NOT NULL,
+[Company] varchar(255) NOT NULL
+);
+CREATE UNIQUE INDEX DeliverersIndex
+ON [Deliverers] ([Name], [Company]);
+
+CREATE TABLE [Commodities]
+(
+[Name] varchar(255) NOT NULL,
+[DeliveryNo] int NOT NULL,
+[DeliveryDate] date NOT NULL
+)
+CREATE UNIQUE INDEX CommoditiesIndex
+ON [Commodities] ([Name], [DeliveryNo], [DeliveryDate]);
+
+CREATE TABLE [Deliveries]
+(
+[Deliverer] varchar(255) NOT NULL,
+[DeliveryNo] int NOT NULL UNIQUE,
+[DeliveryDate] date NOT NULL
+);
+CREATE UNIQUE INDEX DeliveriesIndex
+ON [Deliveries] ([DeliveryNo], [DeliveryDate], [Deliverer]);
+
+--make some deliveries
+DECLARE @deliverer1 varchar(255) SET @deliverer1 = 'Georgi Petrov';
+DECLARE @deliveryNo1 int SET @deliveryNo1 = 23;
+DECLARE @deliveryDate1 date SET @deliveryDate1 = '2014-11-12';
+DECLARE @company1 varchar(255) SET @company1 = 'Econt';
+DECLARE @commodity1 varchar(255) SET @commodity1 = 'Tablet Samsung';
+INSERT INTO [Deliverers] ([Name], [Company])
+VALUES (@deliverer1, @company1);
+INSERT INTO [Commodities] ([Name], [DeliveryNo], [DeliveryDate])
+VALUES (@commodity1, @deliveryNo1, @deliveryDate1);
+INSERT INTO [Deliveries] ([Deliverer], [DeliveryNo], [DeliveryDate])
+VALUES( @deliverer1, @deliveryNo1, @deliveryDate1);
+
+DECLARE @deliverer2 varchar(255) SET @deliverer2 = 'Ivan Petrov';
+DECLARE @deliveryNo2 int SET @deliveryNo2 = 14;
+DECLARE @deliveryDate2 date SET @deliveryDate2 = '2014-11-12';
+DECLARE @commodity2 varchar(255) SET @commodity2 = 'PC Lenovo';
+INSERT INTO [Deliverers] ([Name], [Company])
+VALUES (@deliverer2, @company1);
+INSERT INTO [Commodities] ([Name], [DeliveryNo], [DeliveryDate])
+VALUES (@commodity2, @deliveryNo2, @deliveryDate2);
+INSERT INTO [Deliveries] ( [Deliverer], [DeliveryNo], [DeliveryDate])
+VALUES (@deliverer2, @deliveryNo2, @deliveryDate2);
+
+DECLARE @deliverer3 varchar(255) SET @deliverer3 = 'Stamat Stamatkov';
+DECLARE @deliveryNo3 int SET @deliveryNo3 = 10;
+DECLARE @deliveryDate3 date SET @deliveryDate3 = '2014-10-30';
+DECLARE @company3 varchar(255) SET @company3 = 'Interlogistika';
+DECLARE @commodity3 varchar(255) SET @commodity3 = 'Camera Nikon';
+INSERT INTO [Deliverers] ([Name], [Company])
+VALUES (@deliverer3, @company3);
+INSERT INTO [Commodities] ([Name], [DeliveryNo], [DeliveryDate])
+VALUES (@commodity3, @deliveryNo3, @deliveryDate3);
+INSERT INTO [Deliveries] ([Deliverer], [DeliveryNo], [DeliveryDate])
+VALUES (@deliverer3, @deliveryNo3, @deliveryDate3);
+
+DECLARE @deliverer4 varchar(255) SET @deliverer4 = 'Pesho Petkov';
+DECLARE @deliveryNo4 int SET @deliveryNo4 = 3;
+DECLARE @deliveryDate4 date SET @deliveryDate4 = '2014-11-01';
+DECLARE @company4 varchar(255) SET @company4 = 'Speedy';
+DECLARE @commodity4 varchar(255) SET @commodity4 = 'External HDD LG';
+INSERT INTO [Deliverers] ([Name], [Company])
+VALUES (@deliverer4, @company4);
+INSERT INTO [Commodities] ([Name], [DeliveryNo], [DeliveryDate])
+VALUES (@commodity4, @deliveryNo4, @deliveryDate4);
+INSERT INTO [Deliveries] ( [Deliverer], [DeliveryNo], [DeliveryDate])
+VALUES (@deliverer4, @deliveryNo4, @deliveryDate4);
+
+--show the names of commodities delivered on this date
+DECLARE @dateParameter date SET @dateParameter = '2014-11-12';
+SELECT Name FROM [Commodities] WHERE [DeliveryDate]=@dateParameter;

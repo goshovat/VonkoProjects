@@ -1,0 +1,111 @@
+﻿ul,li,div,span,nav {
+    margin:0;
+    padding:0;
+}
+
+nav {
+    margin:117px 181px;
+}
+
+ul {
+    list-style-type:none;
+}
+
+div#wrapper {
+    height:600px;
+    width:1280px;
+}
+
+div, span, li, ul,a {
+    display:inline-block;
+}
+
+div,a {
+    height:48px;
+    position:relative;
+}
+
+span {
+     height:48px;
+    line-height:48px;
+    float:left;
+}
+
+span.left,span.right,span.border {
+    height:50px;
+}
+
+a {
+    display:inline-block;
+    color:#a7162e;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:17px;
+    font-weight:bold;
+    font-family:Arial;
+    padding:0;
+}
+
+span.text {
+    background:url(../imgs/task3_middle_noborder.png);
+    padding-left:18px;
+    padding-right:18px;
+    padding-top:2px;
+}
+
+li:first-of-type span.text {
+    padding-left:11px;
+    padding-right:18px;
+}
+
+li:nth-of-type(2) span.text {
+    padding-left:20px;
+    padding-right:20px;
+}
+
+li:nth-of-type(3) span.text {
+    padding-left:19px;
+    padding-right:20px;
+}
+
+li:last-of-type span.text {
+    padding-right:12px;
+}
+
+span.border {
+    display:inline-block;
+    background:url(../imgs/task3_border.png);
+    background-repeat:no-repeat;
+    float:right;
+    width:1px;
+}
+
+.left{
+    background:url(../imgs/task3_left.png);
+    width:8px;
+}
+
+.right {
+    background:url(../imgs/task3_right.png);
+    width:8px;
+}
+
+@media only screen and (max-width: 1024px) {    
+    div#wrapper {
+         width:100%;
+        overflow:hidden;
+    }
+
+    nav {
+        margin:0;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+
+    ul {
+        max-width:100%;
+        /*max-height:50px;*/
+        overflow:hidden;
+    }
+}

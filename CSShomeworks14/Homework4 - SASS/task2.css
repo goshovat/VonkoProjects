@@ -1,0 +1,30 @@
+body {
+  background: black;
+}
+body section {
+  max-width: 100%;
+  overflow: hidden;
+  /*Making the pictures to be raranged horizontally*/
+  /*This .hidden is the class of the images that will be shown zoomed*/
+  /*We want the radio buttons to be hidden*/
+}
+body section label {
+  display: inline-block;
+}
+body section img {
+  width: 12em;
+}
+body section img.hidden {
+  position: relative;
+  float: left;
+  width: 40em;
+  display: none;
+  left: 0;
+}
+body section input {
+  display: none;
+  /*When we check the input the zoomed images will show up*/
+}
+body section input:checked + img {
+  display: block;
+}

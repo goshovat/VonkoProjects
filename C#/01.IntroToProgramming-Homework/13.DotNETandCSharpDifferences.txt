@@ -1,0 +1,5 @@
+C# is a programming language. .NET is a framework using a virtual machine (CLR) and set of 
+system classes shared by all .NET languages. On .NET run all Windows applications. 
+On the other .NET languages like VB.NET you can use the same system 
+classes like in C#, it is even easy to translate a programming code from C# to VB.NET. Other .NET 
+languages include F#, JSharp, there is even a version of C++ for .NET.

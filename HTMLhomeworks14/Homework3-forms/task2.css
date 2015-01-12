@@ -1,0 +1,23 @@
+body table {
+  border: 1px solid gray;
+  border-spacing: 0;
+  white-space: nowrap;
+}
+body table thead tr th {
+  border: 1px solid gray;
+  padding: 0.3em 0.2em 0.3em 0.2em;
+}
+body table tfoot td {
+  border: 1px solid gray;
+  padding: 0.2em;
+}
+body table tfoot td input {
+  border-radius: 0.3em;
+  border: 1px solid gray;
+}
+body table tbody tr td {
+  border: 1px solid gray;
+}
+body table tbody tr td:last-of-type {
+  font-weight: bold;
+}

@@ -1,0 +1,36 @@
+Java - This is the closest programming language to C#. The syntax is very similar to C#, 
+it is also a strongly typed object-oriented language. Just like C# it runs on a virtual
+runtime environment. That's why just like C# it is not appropriate for heavy 3D computer games.
+Java is used mostly for huge web projects that run on very powerful machines.
+Some of the differences with C# include that there are no properties in Java, but instead
+you need to define get and set methods. Also the generic types in Java are *u**ed up, where in 
+comparison in C# they work perfectly. Unlike C#, Java is open-source and there are different
+Frameworks based on Java. For example Java for web is different from Java for Android.
+
+PHP - Maybe the most popular programming language nowadays. Also open-source, with different frameworks based on it.
+Easy to learn, and easy to write bad code with it.
+It is dynamic, which means there are no explicit data types like in C#. This can cause many
+hard to find bugs. Also it is more difficult to encapsulate your classes, in PHP the developers
+using your class can add new public properties at runtime. The syntax is different from the C based languages
+like C# and Java. PHP is great for small projects, because it is much easier to build a small website on it, compared to C#.
+Also the PHP servers are free. 
+
+C++ - It is the predecessor of C# and Java. It is one of the first object-oriented languages, but unlike
+C# and Java with C++ the programmer directly controls the computer memory. This gives a lot of power and
+control, but also makes in much more difficult to produce safe and high-quality software. In C++ the
+developer needs to manually dispose any variable and object no-longer in use by using destructors.
+But because C++ doesn't have virtual machine, the programs written in C++ work faster on the user PC.
+That's why C++ is the most common language for developing PC games.
+
+JavaScript - This the only modern language in the world that can run on every electronic device, no matter MAC, PC
+or Linux based. All you need to run JavaScript is a web browser. A very powerful language, but hard to learn and master.
+There are a lot of mistakes in the language, but cannot be fixed easily because nowadays almost everybody has some JavaScript
+in his application. It is a dynamic language like PHP. It is mostly used for creating UI in the web pages, but recently a server 
+JavaScipt based technology was created - NodeJS. It allows the developer the write object-oriented JavaScript and create an 
+end-to-end fully functional application only with HTML, CSS and JavaScript.
+
+Objective-C - The first object-oriented descendant of C. Very hard to learn and use, much harder even by C++. It is used
+for iOS development. This is the reason why the iOS developers are one of the best-paid in the job market. Recently a new
+programming language was created - Swift, with the intention to replace Objective-C.
+
+There are other languages like Ruby, Python, TypeScript that are less common, but also used by a lot of developers.

@@ -1,0 +1,13 @@
+package geometry.planeShapes;
+
+import geometry.Shape;
+
+public class Rectangle extends Shape {
+	
+	private double width;
+	private double height;
+	
+	public Rectangle(int col, int row, double width, double height) {
+		
+	}
+}

@@ -1,0 +1,9 @@
+package oneLevShop;
+
+import oneLevShop.products.Product;
+
+public class PurchaseManager {
+	public static void processPurchase(Product product, Customer customer) {
+		
+	}
+}

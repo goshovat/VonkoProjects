@@ -1,0 +1,34 @@
+div#condition {
+	display:block;
+	width:800px;
+	font-size:25px;
+	margin-bottom:20px;
+}
+
+div#initial-div {
+    border:1px solid blue;
+    border-radius: 5px;
+    padding:10px 20px;
+    margin:10px;
+}
+
+p {
+	display:block;
+	border:1px solid black;
+	border-radius:5px;
+	padding:10px 20px;
+}
+
+input {
+    outline: none;
+}
+input[type="button"] {
+    border-radius:5px;
+    border:1px solid blue;
+    box-shadow:3px 5px 2px blue;
+    background: yellow;
+    color:blue;
+}
+input[type="button"]:hover {
+    cursor: pointer;
+}

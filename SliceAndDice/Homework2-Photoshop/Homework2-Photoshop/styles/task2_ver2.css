@@ -1,0 +1,49 @@
+﻿body, div, section, ul, li, img {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin:10px 10px;
+}
+
+div.image_holder {
+    position:relative;
+    background: url(../imgs/task2_whole_shadow.png) no-repeat bottom right;
+    padding: 0 8px 8px 0;
+}
+
+li.first div {
+    width:272px;
+}
+
+li.second div {
+    width:425px;
+}
+
+li.third div {
+    width:640px;
+}
+
+span.top_right {
+    position:absolute;
+    right:-0.3px;
+    background:url(../imgs/task2_top_right_shadow.png) no-repeat;
+    width:8px;
+    height:8px;
+}
+
+span.bottom_left {
+    position:absolute;
+    background:url(../imgs/task2_bottom_left_shadow.png);
+    left:0.1px;
+    bottom:-0.3px;
+    width:8px;
+    height:8px;
+}
+
+img {
+    display: block;
+    outline:none;
+}

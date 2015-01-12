@@ -1,0 +1,24 @@
+Eclipse - The most popular IDE for Java. In my opinion it is far from the best. It can run on Windows, 
+Mac and Linux. Much lighter than Visual Studio, but with much less capabilities. Although it has some advantages-
+it can automatically create constructor for a class from it's defined fields. It can also create automatically getter
+and setter methods. 
+
+IntelliJ IDEA - In my mind the best Java IDE ccreated. It is created by JetBrains, the developers of the most popular
+PHP IDE. IntelliJ IDEA is much better than Eclipse and much similar to Visual Studio, especially the ultimate version.
+It provides great intelliscence, easy to learn shortcuts anf good integration for all kinds of Java projects.
+
+PHP Storm - The best PHP IDE ever created. Developed by the creators of IntelliJ IDEA, PHP Storm is almost a complete
+equivalent to Visual Studio for the PHP programming world.
+
+Web Storm - One of the best IDE for JavaScript development(for example NodeJS). It is debatable whether it is better
+than Visual Studio for JavaScript development. Just like Visual Studio it provides great dynamic intelliscence, almost
+by itself writes all your code.
+
+SublimeText - It is not exactly IDE, but a very good code redactor. With the proper settings it can become quite powerful, 
+of course nowhere near Visual Studio or PHP Storm. Its best quality is are that it is light. SublimeText is 
+excellent for quickly opening and ammending files in different programming languges. 
+
+Mastering one of the powerful IDEs is essential for a good programmer. The proper control of the intelliscence and 
+IDE shortcuts can save the programmer a lot of time, unnecessary efforts and trouble in writing the code. Fortunately
+the IDEs become more and more intelligent and begin to wrtie most of the code instead of the developers. The focus 
+of the developer should be on the thinking, not on the writing.

@@ -1,0 +1,509 @@
+﻿/*The usual resets*/
+body,div, header, img, nav, ul, li, strong, a, section, article, figure, figcaption,
+h1, p, h2,time, aside, footer {
+    margin:0;
+    padding:0;
+}
+
+header,nav,section,footer,article,aside {
+    display:block;
+}
+
+html,body {
+    height:100%;
+}
+
+ul {
+    list-style-type:none;
+}
+
+/*Fixing the default styles of hyperlinks*/
+a {
+    display:inline-block;
+    text-decoration:none;
+    color:#0000cc;
+}
+
+div,section,aside,nav {
+     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Setting a clearfix class that will be used for all elements that need it*/
+.clearfix {
+    zoom:1;
+}
+
+.clearfix:after {
+    display:block;
+    clear:both;
+    height:0;
+    content:"";
+}
+
+
+a:hover {
+    text-decoration:underline;
+}
+
+/*This wrapper is holding the integrity of the design. Thanks to making it 100% wide
+   and overflow:hidden it will resize according to the width of the browser window*/
+div#wrapper {
+    position:relative;
+    width: 100%;
+    height:100%;
+    overflow-x: hidden;
+    background:#e6def5;
+    border: 1px solid #e1ebf7;
+}
+
+header {
+    background:white;
+}
+
+/*The logo at the top-left section of the page*/
+img#left_logo {
+    width:15%;
+    height:6%;
+    float:left;
+}
+
+/*The logo at the top-right section of the page*/
+img#right_logo {
+    width:50%;
+    height:6%;
+    float:right;
+}
+
+aside {
+    height:88%;
+    margin-bottom:-4%;
+}
+
+/*The left sidebar*/
+aside.left {
+    width:15%;
+    float:left;
+    background:#f2f3f7;
+}
+
+/*Styling of the list headings in the left sidebar*/
+aside.left h2 {
+    font-size:1.3em;
+    color:#424284;
+    margin:8% 0 0 8%;
+}
+
+/*Styling of the lists in the left sidebar*/
+aside.left ul {   
+    list-style-position:inside;
+    padding-left:8%;    
+}
+
+/*Placing the black dots instead of bullets. I did not 
+  used list-style-image because this method has better 
+  support on older browsers*/
+    aside.left ul li {
+        padding-left: 5%;
+        background: url(http://i.imgur.com/l85zUd8.png) 0 center no-repeat;
+        -moz-background-size: 3px;
+        -o-background-size: 3px;
+        -webkit-background-size: 3px;
+        background-size: 3px;
+    }
+
+aside.left ul li a {
+    color:#006699;
+    font-size:1em;
+    letter-spacing:0.5px;
+}
+
+/*Styles of the right sidebar*/
+aside.right {
+    width:25%;
+    float:right;
+    padding:1.3%;
+    background:#f9f4fd;
+}
+
+aside.right img {
+    width:29%;
+    height:29%;
+    border:2px solid black;
+}
+
+aside.right figcaption {
+    position:relative;
+    width:60%;
+    top:-33px;
+    margin-left:2%;
+}
+
+aside.right figcaption,aside.right img {
+    display:inline-block;
+    
+}
+
+/*The first list containing the images*/
+aside.right ul:first-of-type {
+    margin-bottom:5%;
+}
+
+aside.right ul:first-of-type a {
+    color:#424284;
+    font-size:1em;
+}
+
+/*The third and second lists positioned below
+  the first one*/
+aside.right ul:nth-of-type(2) {
+    width:40%;
+    float:left;
+}
+
+aside.right ul:nth-of-type(3) {
+    width:40%;
+    float:right;
+}
+
+/*Arranging the orange dots in the right sidebar*/
+    aside.right ul:nth-of-type(2) a, aside.right ul:nth-of-type(3) a {
+        padding-left: 8%;
+        background: url(http://i.imgur.com/6pN6hd4.png) 0 center no-repeat;
+        -moz-background-size: 4px;
+        -o-background-size: 4px;
+        -webkit-background-size: 4px;
+        background-size: 4px;
+    }
+
+/*The navigation at the top of the page*/
+nav {
+    width: 58.7%;
+    margin-left: 15.5%;
+    padding: 0.6% 0 0.4% 3%;
+    background: url(http://i.imgur.com/56km3q2.png) 1% 50% no-repeat;
+    -moz-background-size: 2.1%;
+    -o-background-size: 2.1%;
+    -webkit-background-size: 2.1%;
+    background-size: 2.1%;
+}
+
+/*The "label" at the beginnig of the navigation*/
+strong {
+    font-size:1.2em;
+    color:#6d64a3;
+}
+
+ul.nav {
+    display:inline-block;
+}
+
+/*Arranging the navigation items horizontally*/
+ul.nav  > li {
+    display:inline-block;
+}
+
+ul.nav  > li a {
+    font-size:1.1em;
+    padding:0 7px 0 7px;
+    border-right:1px solid #0000cc;
+}
+
+ul.nav  > li:last-of-type a {
+    border-right:none;
+}
+
+/*All containers will have sizes in % so we can easily create respnsive design*/
+section {
+    width:58.7%;
+    background:#f9f4fd;
+    padding:0.8% 1.2%;
+    margin-left:15.5%;
+    height:74.8%;
+}
+
+section:after {
+    display:block;
+    content:"";
+    height:4%;
+}
+
+/*All images must have sizes set initially*/
+section figure img {
+    width:29%;
+    height:29%;
+    border:2px solid black;
+}
+
+/*The text right of the main picture must be positioned vertically*/
+section figcaption {
+    position:relative;
+    top:-30px;
+    margin-left:2%;
+    display:inline-block;
+    width:60%;
+}
+
+section figcaption h1 {
+    color:#c41e89;
+    font-size:1.5em;
+    letter-spacing:1px;
+}
+
+/*Using the HTML5 semantic tag*/
+time {
+    color:#453879;
+    font-size:1.2em;
+}
+
+section figcaption p {
+    width:90%;
+    color:#453879;
+    font-size:1.1em;
+    font-weight:bold;
+}
+
+/*Styles of the text below the main picture*/
+section article > p {
+    color:#4b3e82;
+    font-size:1.1em;
+    margin: 1.3% 0 1.9% 0;
+}
+
+/*Styling the hyperlink with the orange square*/
+section article > a {
+    font-size: 1.1em;
+    padding-left: 2%;
+    background: url(http://i.imgur.com/6pN6hd4.png) 0 center no-repeat;
+    -moz-background-size: 4px;
+    -o-background-size: 4px;
+    -webkit-background-size: 4px;
+    background-size: 4px;
+}
+
+/*Styling of the footer*/
+footer {
+    position:relative;
+    clear:both;
+    text-align:center;
+    color:white;
+    font-size:1em;
+    letter-spacing:2px;
+    background:#59518c;
+    padding:1% 0;
+    height:4%;
+}
+
+/*Using media queries for responsive desing*/
+
+@media only screen and (max-width:1250px) {
+
+    aside.right figcaption {
+        top:-20px;
+    }
+}
+
+@media only screen and (max-width: 1235px) {
+    
+     aside.right figcaption {
+        top:-10px;
+    }
+}
+
+@media only screen and (max-width: 1173px) {
+    aside {
+        margin-bottom:-3.5%;
+    }
+    
+     aside.right figcaption {
+        top:auto;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+     aside {
+        margin-bottom:-3%;
+    }
+    
+    section figure {
+        position:relative;
+    }
+
+    section img {
+        position:relative;
+        top:0;
+        float:left;
+    }
+
+    section figcaption {
+        top:auto;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    aside {
+        margin-bottom:-2.5%;
+    }
+
+    section figcaption {
+        display:block;
+        width:auto;
+    }
+}
+
+@media only screen and (max-width: 925px) {
+   
+
+    aside.right img {
+       display:none;
+   }
+
+   aside.right figcaption, aside.right figcaption a {
+       width:100%;
+   }
+    
+    nav {
+        padding-left:0;
+        background:none;
+    }
+
+    
+    ul.nav  > li a {
+        padding:0 3px 0 3px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    aside {
+        margin-bottom:-2%;
+    }
+}
+
+@media only screen and (max-width: 805px) {
+     aside {
+        margin-bottom:-1.5%;
+    }
+
+    aside.left {
+        width:auto;
+    }
+
+    aside.right {
+        padding:0;
+    }
+
+    aside.left ul li a {
+        font-size:0.8em;
+    }
+
+    strong {
+        display:none;
+    }
+
+    section figcaption h1 {
+        font-size:1.2em;
+    }
+
+    section figcaption p {
+        font-size:1em;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+     aside {
+        margin-bottom:-0.3%;
+    }
+
+    ul.nav  > li a {
+        font-size:1em;
+    }
+}
+
+@media only screen and (max-width:670px) {
+
+    aside {
+        display:none;
+    }
+
+    nav,section {
+        width:99%;
+        margin-left:0;
+    }
+
+    ul.nav  > li a {
+        font-size:1.3em;
+        padding:0 0.2em 0 0.2em;
+    }
+
+    strong {
+        display:inline-block;
+    }
+
+    footer {
+        position:absolute;
+        width:100%;
+        bottom:0;
+    }
+}
+
+@media only screen and (max-width:590px) {
+
+     ul.nav  > li a {
+        font-size:1.2em;
+    }
+
+    strong {
+        display:none;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    
+    header {
+        display:none;
+    }
+
+     ul.nav  > li a {
+        font-size:1.1em;
+    }
+}
+
+@media only screen and (max-width:440px) {
+
+     ul.nav  > li a {
+        font-size:1em;
+    }
+
+     footer {
+        height:40px;
+        bottom:0.3%;
+    }
+}
+
+@media only screen and (max-width:390px) {
+    ul.nav {
+        width:100%;
+    }
+
+    ul.nav  > li {
+        display:block;
+        width:100%;
+    }
+
+    ul.nav  > li a {
+        width:100%;
+        border-right:none;
+        border-bottom:1px solid #0000cc;
+        text-align:center;
+        font-size:1.3em;
+    }
+
+    ul.nav  > li:last-of-type a {
+        border-bottom:none;
+    }
+
+    footer {
+        display:none;
+    }
+}

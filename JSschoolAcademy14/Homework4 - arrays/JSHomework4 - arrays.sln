@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "JSHomework4 - arrays", "..\..\..\documents\visual studio 2012\Projects\WebApplication6\WebApplication6\JSHomework4 - arrays.vbproj", "{F85BFB18-8FD8-48DF-A9AF-764CEFD20949}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A660DE44-1F3D-4941-AFF0-68A6C049CCBA}"
+	ProjectSection(SolutionItems) = preProject
+		js-console.js = js-console.js
+		task1.css = task1.css
+		task1.html = task1.html
+		task1.js = task1.js
+		task2.html = task2.html
+		task2.js = task2.js
+		task3.html = task3.html
+		task3.js = task3.js
+		task4.html = task4.html
+		task4.js = task4.js
+		task5.1.html = task5.1.html
+		task5.1.js = task5.1.js
+		task5.js = task5.js
+		task6.html = task6.html
+		task6.js = task6.js
+		task7.html = task7.html
+		task7.js = task7.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F85BFB18-8FD8-48DF-A9AF-764CEFD20949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F85BFB18-8FD8-48DF-A9AF-764CEFD20949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F85BFB18-8FD8-48DF-A9AF-764CEFD20949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F85BFB18-8FD8-48DF-A9AF-764CEFD20949}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

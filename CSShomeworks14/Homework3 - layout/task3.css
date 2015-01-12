@@ -1,0 +1,96 @@
+﻿/*Resets*/
+
+div,header,input,form,h1,section,article,p {
+    margin:0;
+    padding:0;
+}
+
+
+body {
+    color:#9d9d9d;
+    background:black;
+}
+
+/*Here we style the outter window*/
+
+div#window {
+    background:#424242;
+    width:45em;
+    border:1px solid #676565;
+    border-radius:0.5em;
+    margin:0.8em 1em;
+}
+
+/*There is a hard-to notice gradient in the bottom of the header*/
+
+header {
+    background: #383439; /* Old browsers */
+background: -moz-linear-gradient(top,  #383439 0%, #383439 73%, #2b2b2b 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#383439), color-stop(73%,#383439), color-stop(100%,#2b2b2b)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #383439 0%,#383439 73%,#2b2b2b 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #383439 0%,#383439 73%,#2b2b2b 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #383439 0%,#383439 73%,#2b2b2b 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #383439 0%,#383439 73%,#2b2b2b 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383439', endColorstr='#2b2b2b',GradientType=0 ); /* IE6-9 */
+    padding:0.5em;
+    border-radius:0.5em 0.5em 0 0;
+}
+
+/*I decided to put the projector marker like a background-image to exercise it*/
+
+form {
+    padding:0.3em 0.4em;
+    background-image:url("dot.png");
+    background-repeat:no-repeat;
+    background-position:43.6em 2.8em;
+}
+
+/*The labels and inputs are precisely adjusted with relative positioning*/
+
+label {
+    color:#ffffff;
+    font-size:1.5em;
+    margin-left:0.9em;
+    margin-right:0.5em;
+    position:relative;
+    bottom:0.6em;
+}
+
+input {
+    position:relative;
+    bottom:1.4em;
+    margin-left:1.2em;
+    padding:0 0.3em 0.3em 0.5em;
+}
+
+input[type="submit"] {
+    color:#ffbcb7;
+    border:1px solid white;
+    border-radius:0.8em;
+    background:#f26e70;
+    margin-left:3.6em;
+    padding:0.5em 1.3em 0.5em 1.3em; 
+    box-shadow: inset 0px -10px 2px #ef080b; /*This creates the 3D effect of the button*/
+}
+/*Styling if the section-nothing special*/
+
+section {
+    padding:0 3em 0.5em 0.5em;
+}
+
+h1 {
+    color:#f0da38;
+    font-size:2em;
+    font-weight:lighter;
+    margin:0.5em 0 0.4em 0.2em;
+}
+
+
+article {
+    padding:0.3em;
+}
+
+a {
+    text-decoration:none;
+    color:#d9d9d9;
+}

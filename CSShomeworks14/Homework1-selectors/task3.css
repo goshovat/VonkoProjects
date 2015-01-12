@@ -1,0 +1,39 @@
+body {
+	background:#a9a9a9;
+}
+
+body > header {
+	text-align:center;
+}
+
+ul {
+	list-style-type:none;
+}
+
+header a {
+	font-size:1.3em;
+	font-weight: bold;
+	color:white;
+	text-decoration: none;
+}
+
+header a:hover {
+	background: #d3d3d3;
+}
+
+header li:last-of-type a {
+	text-decoration:underline;
+}
+
+h1 {
+	color:white;
+}
+
+section footer a {
+	color:black;
+	text-decoration:none;
+}
+
+body > footer {
+	text-align:center;
+}

@@ -1,0 +1,87 @@
+﻿/*Reset*/
+
+body, label, ul, li, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:#203740;
+}
+
+section {
+    padding: 1em 2em;
+}
+
+/*Removing all the bullets*/
+
+label {
+    display:inline-block;
+    position:relative;
+    padding: 0.7em 1em 0.7em 1em;     
+}
+
+a {
+    background:#5f7583;
+    display:inline-block;
+    color: white;
+    text-decoration:none;   
+}
+
+a:hover {
+    background: #203740;
+    border:none;
+    outline:0;
+}
+
+label:first-of-type a {
+    border-radius: 0.5em 0 0 0;
+}
+
+
+input {
+    display:none;
+}
+
+ul.side_nav {
+    list-style-type:none;
+    position:relative;
+    display: none;
+    width:21em;
+    top:0.1em;
+}
+
+    ul.side_nav a {
+        padding: 0.7em 1em 0.7em 1em;
+        width:100%;
+        border-bottom:1px solid #325563;
+    }
+
+    ul.side_nav li:last-of-type a {
+        border:none;
+    }
+
+input:checked + ul.side_nav {
+    display: block;
+}
+
+    input:checked + ul.side_nav > li {
+        display: block;
+        width:100%;        
+    }
+
+img {
+    display:none;
+    position:absolute;
+    left:23em;
+    top:0;
+    height:25em;
+}
+
+div.tab:focus ul.side_nav > li:hover {
+    cursor: pointer;
+}
+
+ a:hover + img {
+    display:inline-block;
+}

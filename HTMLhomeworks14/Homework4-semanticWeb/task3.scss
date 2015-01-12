@@ -1,0 +1,91 @@
+body {
+
+	#wrapper {
+		border:1px solid black;
+		padding:0.5em 0.5em 0.2em 0.5em;
+		-webkit-border-radius: 0.5em;
+		-moz-border-radius: 0.5em;
+		-ms-border-radius: 0.5em;
+		-o-border-radius: 0.5em;
+		border-radius: 0.5em;
+		//Here I used css3pie to fix
+		//the border-radius for IE6
+		behavior: url(PIE.htc);
+
+		& > header {
+			border-bottom:2px solid gray;
+
+			h1 {
+				margin:0;
+				padding:0;
+				font-size:1.5em;
+			}
+
+		}
+
+		section {
+			//I'm putting this background
+			//for testing the semantic tags
+			//on IE6
+			background:skyblue;
+
+			header {
+				
+				h2 {
+					font-size:1.9em;
+				}
+
+				h3 {
+					font-size:100%;
+					color:gray;
+				}
+
+				ul {
+
+				}
+			}
+
+			article {
+
+				h3 {
+					font-size:1.5em;
+				}
+
+				form {
+
+					ul {
+						
+						li {
+
+							input,label {
+								display:block;
+
+							}
+
+							&:last-of-type {
+								list-style-type:none;
+								margin-top:1.5em;
+							}
+
+						}
+
+					}
+
+					p {
+					
+							a {
+								margin-left:0.5em;						
+							}
+
+						}
+				}
+			}
+
+		}
+
+		footer {
+
+		}
+	}
+
+}

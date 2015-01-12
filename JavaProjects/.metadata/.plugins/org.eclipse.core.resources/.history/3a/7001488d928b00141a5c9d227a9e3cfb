@@ -1,0 +1,19 @@
+package geometry.planeShapes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import geometry.Shape;
+import geometry.Interfaces.AreaMeasurable;
+import geometry.Interfaces.PerimeterMeasurable;
+
+public abstract class PlaneShape extends Shape
+implements PerimeterMeasurable, AreaMeasurable  {
+	
+	private final int MAX_VETEX_COUNT = 2;
+	private Vertex[] vertexArray = new PlaneVertex[MAX_VETEX_COUNT];
+	
+		public PlaneShape() {
+			
+	}
+}

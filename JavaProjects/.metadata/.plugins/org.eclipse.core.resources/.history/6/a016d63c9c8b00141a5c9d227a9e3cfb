@@ -1,0 +1,7 @@
+package geometry;
+
+public class GeometryTester {
+	public static void main(String[] args) {
+		
+	}
+}

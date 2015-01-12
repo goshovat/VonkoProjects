@@ -1,0 +1,75 @@
+html,
+body,
+div,
+h1,
+img,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+  font-size: 16px;
+}
+body div#wrapper {
+  width: 960px;
+}
+body div#wrapper div {
+  position: relative;
+  width: 933px;
+  background: #de28ff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #de28ff 0%, #de28ff 15%, #f9dbff 74%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #de28ff), color-stop(15%, #de28ff), color-stop(74%, #f9dbff));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #de28ff 0%, #de28ff 15%, #f9dbff 74%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #de28ff 0%, #de28ff 15%, #f9dbff 74%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #de28ff 0%, #de28ff 15%, #f9dbff 74%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #de28ff 0%, #de28ff 15%, #f9dbff 74%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ea2eaf', endColorstr='#7db9e8', GradientType=0);
+  /* IE6-9 */
+  border: 1px solid #000000;
+  border-radius: 15px;
+  margin: 25px 25px;
+  padding: 15px 0 31px 0;
+}
+body div#wrapper div h1 {
+  font-size: 29px;
+  margin-left: 35px;
+}
+body div#wrapper div img {
+  position: relative;
+  top: 34px;
+}
+body div#wrapper div img.left-arrow {
+  float: left;
+}
+body div#wrapper div img.right-arrow {
+  float: right;
+}
+body div#wrapper div p.postedby {
+  display: inline-block;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding: 5px 15px;
+  margin: 5px 0 0 20px;
+}
+body div#wrapper div p.info {
+  display: inline-block;
+  text-align: justify;
+  margin: 21px 0 0 35px;
+  width: 863px;
+}
+/*# sourceMappingURL=task1.css.map */

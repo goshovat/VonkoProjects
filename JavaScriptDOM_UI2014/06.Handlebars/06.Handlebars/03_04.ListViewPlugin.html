@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>List View Plugin</title>
+    <link rel="stylesheet" type="text/css" href="styles/task1.css" />
+    <script src="handlebarsjs/handlebars-v1.3.0.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <!--case 1-->
+    <ul id="books-list" data-template="book-item-template"></ul>
+
+    <script id="book-item-template" type="text/x-handlebars-template">
+        <li class="book-item">
+            <a href="/#books/{{id}}">
+                <strong>{{title}}</strong>
+            </a>  
+        </li>
+    </script>
+
+    <!--case 2-->
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Mark</th>
+            </tr>
+        </thead>
+        <tbody id="students-table" data-template="students-row-template">
+
+        </tbody>
+    </table>
+
+    <script id="students-row-template" type="text/x-handlebars-template">
+        <tr class="students-row">
+            <td>{{number}}</td>
+            <td>{{name}}</td>
+            <td>{{mark}}</td>
+        </tr>
+    </script>
+
+    <!--case for task 4-->
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Mark</th>
+            </tr>
+        </thead>
+        <tbody id="students-table-nodata">
+            <tr class="students-row">
+                <td>{{number}}</td>
+                <td>{{name}}</td>
+                <td>{{mark}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="scripts/t3_4_ListViewTemplate.js"></script>
+    <script src="scripts/task3_4.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+div#condition {
+	font-size:22px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	margin-bottom:20px;
+	width:1000px;
+}
+
+input {
+	outline:none;
+	margin-right:50px;
+	padding:5px 10px;
+}
+
+input:focus {
+	background: #ffffee;
+}
+
+button {
+	border-radius:5px;
+	border:2px inset black;
+	padding:3px 8px;
+	outline: none;
+}
+
+button:hover {
+	cursor:pointer;
+}
+
+ul {
+	width:600px;
+	list-style-type:none;
+}
+
+li {
+	padding:3px 0 3px 20px;
+	border-radius:3px;
+}
+
+li:hover {
+	cursor:pointer;
+	background:gray;
+}
+

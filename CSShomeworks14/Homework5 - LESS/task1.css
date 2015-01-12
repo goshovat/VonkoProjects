@@ -1,0 +1,199 @@
+/*The usual resets*/
+body,
+header,
+nav,
+div,
+h1,
+h2,
+a,
+section,
+article,
+footer,
+p,
+span,
+ul,
+li,
+img,
+form,
+button,
+aside {
+  margin: 0;
+  padding: 0;
+}
+header,
+nav,
+section,
+article,
+footer,
+aside {
+  display: block;
+}
+/*some variables*/
+/*some mixins*/
+/*The styling of the page using selector nesting*/
+body {
+  color: #ffffff;
+  background: #d392fd;
+  background: -moz-linear-gradient(top, #d392fd 0%, #d392fd 0%, #9215f2 20%, #9215f2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d392fd), color-stop(0%, #d392fd), color-stop(20%, #9215f2), color-stop(100%, #9215f2));
+  background: -webkit-linear-gradient(top, #d392fd 0%, #d392fd 0%, #9215f2 20%, #9215f2 100%);
+  background: -o-linear-gradient(top, #d392fd 0%, #d392fd 0%, #9215f2 20%, #9215f2 100%);
+  background: -ms-linear-gradient(top, #d392fd 0%, #d392fd 0%, #9215f2 20%, #9215f2 100%);
+  background: linear-gradient(to bottom, #d392fd 0%, #d392fd 0%, #9215f2 20%, #9215f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@from-color', endColorstr='@to-color', GradientType=0);
+}
+body > header {
+  padding: 2em 2em 0 1em;
+}
+body > header div#header-container {
+  zoom: 1;
+}
+body > header div#header-container:after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+body > header div#header-container div#logo-container {
+  float: left;
+}
+body > header div#header-container div#reg-form-container {
+  float: right;
+  margin-right: 3em;
+}
+body > header div#header-container div#reg-form-container input {
+  background: #b35ef3;
+  border-radius: 3em;
+  border: 1px solid #603382;
+  margin-left: 0.5em;
+}
+body > header div#header-container div#reg-form-container input:first-of-type {
+  margin-bottom: 0.5em;
+}
+body > header div#header-container div#reg-form-container input:nth-of-type(2) {
+  margin-left: 0.6em;
+}
+body > header div#header-container div#reg-form-container button {
+  background: #c381f4;
+  color: #ffffff;
+  margin-top: 0.5em;
+  border-radius: 0.6em;
+  padding: 0.3em 0.8em 0.3em 0.8em;
+  border: 1px outset #603382;
+}
+body > header nav {
+  margin-top: 1.5em;
+}
+body > header nav > ul {
+  list-style-type: none;
+  border: 1px solid #000000;
+  border-radius: 0.8em;
+  width: 75%;
+  margin-left: 1em;
+}
+body > header nav > ul li {
+  display: inline-block;
+  padding: 0.6em;
+  margin-right: 0.2em;
+}
+body > header nav > ul li:first-of-type {
+  padding-left: 1.5em;
+}
+body > header nav > ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+body > header nav > ul li:hover a {
+  text-decoration: underline;
+}
+body > header nav > ul li ul {
+  display: none;
+  position: absolute;
+}
+body > header nav > ul li:hover > ul {
+  padding: 0 0.2em 0 0.2em;
+  background: #9215f2;
+  z-index: 3;
+  display: block;
+  border-radius: 0.6em;
+  border: 1px solid #603382;
+}
+body > header nav > ul li:hover > ul li {
+  display: block;
+  border-top: 1px solid #603382;
+}
+body > header nav > ul li:hover > ul li:first-of-type {
+  padding-left: 0.6em;
+  border: none;
+}
+body section {
+  float: left;
+  width: 68%;
+  margin-left: 1em;
+}
+body section article {
+  border: 1px solid #000000;
+  margin-bottom: 1em;
+  border-radius: 0.8em;
+  padding: 1.5em 1.1em 1.5em 1.2em;
+}
+body section article:first-of-type {
+  margin-top: 2em;
+}
+body section article h1 {
+  margin: 0 0 0.4em 0.5em;
+}
+body section article footer {
+  text-align: right;
+  margin-top: 0.5em;
+}
+body section article footer a {
+  text-decoration: none;
+  color: #d4a3f8;
+}
+body section article footer a:hover {
+  text-decoration: underline;
+}
+body aside {
+  float: right;
+  width: 25%;
+  margin: 3em 2em 0 0;
+}
+body aside > ul > li {
+  list-style-type: none;
+  border: 1px solid #000000;
+  border-radius: 0.2em;
+  margin-bottom: 0.8em;
+  padding: 1em 1.2em 1em 1em;
+}
+body aside > ul > li h2 {
+  margin-bottom: 0.5em;
+}
+body aside > ul > li p {
+  margin-left: 0.5em;
+}
+body aside > ul > li ul {
+  list-style-type: none;
+}
+body aside > ul > li ul li {
+  padding-left: 2em;
+  background-image: url(images/li-dot.png);
+  background-repeat: no-repeat;
+  background-position: 8px 5px;
+}
+body aside > ul > li a {
+  text-decoration: none;
+  color: #d4a3f8;
+}
+body > footer {
+  zoom: 1;
+  text-align: center;
+  padding-bottom: 1em;
+}
+body > footer:before {
+  content: "";
+  height: 0;
+  clear: both;
+  display: block;
+}
+/*# sourceMappingURL=task1.css.map */

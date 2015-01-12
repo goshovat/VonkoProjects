@@ -1,0 +1,68 @@
+﻿//Some media queries for optimizing the design on smaller resolutions
+
+@media only screen and (max-width:1100px) {
+
+    html {
+
+        body {
+            overflow-x: scroll;
+        }
+    }
+}
+
+
+@media only screen and (max-width:950px) {
+
+    html {
+        width: 950px;
+
+        body {
+            width: 950px;
+
+            div#wrapper {
+                width: 100%;
+                overflow: hidden;
+                padding: 0 2px 0 2px;
+                margin-left: 4px;
+
+                div#inner_wrapper {
+
+                    section {
+
+                        div#main_section_top {
+                            left: -6px;
+                        }
+
+                        div#main_section {
+
+                            div.tab {
+                                left: -6px;
+                                padding: 3px 28px;
+
+                                &:first-of-type {
+                                    padding: 3px 23px 6px 19px;
+                                }
+
+                                &:nth-of-type(2) {
+                                    padding: 3px 36px 6px 30px;
+                                }
+
+                                &:nth-of-type(3) {
+                                    padding: 3px 38px 5px 43px;
+                                }
+
+                                &:nth-of-type(4) {
+                                    padding: 3px 22px 6px 22px;
+                                }
+
+                                &:nth-of-type(5) {
+                                    padding: 3px 32px 6px 33px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

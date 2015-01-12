@@ -1,0 +1,34 @@
+package geometry.spaceShapes;
+
+public class Sphere extends SpaceShape  {
+
+	private double radius;
+	
+	public Sphere
+	(double col, double row, double layer, double radius) {
+		SpaceVertex vertex = new SpaceVertex(col, row, layer);
+		super.vertices.add(vertex);
+		this.radius = radius;
+	}
+	
+	public double getRadius() {
+		return this.radius;
+	}
+
+	@Override
+	public double getArea() {
+		return 4 * Math.PI * this.radius * this.radius;
+	}
+
+	@Override
+	public double getVolume() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+}

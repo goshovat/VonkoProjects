@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="geometry.AreaMeasurable"/>
+<fullyQualifiedTypeName name="geometry.Interfaces.PerimeterMeasurable"/>
+<fullyQualifiedTypeName name="geometry.Interfaces.AreaMeasurable"/>
+<fullyQualifiedTypeName name="geometry.Shape"/>
+<fullyQualifiedTypeName name="geometry.Vertex"/>
+<fullyQualifiedTypeName name="geometry.planeShapes.PlaneVertex"/>
+<fullyQualifiedTypeName name="geometry.planeShapes.Rectangle"/>
+<fullyQualifiedTypeName name="geometry.planeShapes.Circle"/>
+<fullyQualifiedTypeName name="geometry.Interfaces.VolumeMeasurable"/>
+<fullyQualifiedTypeName name="geometry.planeShapes.PlaneShape"/>
+<fullyQualifiedTypeName name="geometry.spaceShapes.SpaceShape"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="oneLevShop.AgeRestriction"/>
+<fullyQualifiedTypeName name="oneLevShop.interfaces.Buyable"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="oneLevShop.products.ElectronicsProduct"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.portable.ApplicationException"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="oneLevShop.products.FoodProduct"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="oneLevShop.products.Product"/>
+<fullyQualifiedTypeName name="oneLevShop.products.Computer"/>
+<fullyQualifiedTypeName name="oneLevShop.products.Appliance"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="oneLevShop.interfaces.Expirable"/>
+<fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,27 @@
+package oneLevShop.products;
+
+import java.util.Date;
+
+import oneLevShop.AgeRestriction;
+import oneLevShop.interfaces.Expirable;
+
+public class FoodProduct extends Product 
+implements Expirable {
+
+	private DateTime expirationDate;
+	
+	public FoodProduct
+	(String name, double price, int quantity, AgeRestriction ageRestriction) {
+		super(name, price, quantity, ageRestriction);
+	}
+	
+	@Override
+	public double getPrice() {
+		if (this.expirationDate.)
+	}
+	
+	@Override
+	public Date getExpirationDate() {
+		return this.expirationDate;
+	}
+}

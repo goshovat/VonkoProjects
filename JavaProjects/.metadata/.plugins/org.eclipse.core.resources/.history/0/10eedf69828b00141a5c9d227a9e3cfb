@@ -1,0 +1,5 @@
+package geometry.planeShapes;
+
+public class PlaneShape {
+
+}

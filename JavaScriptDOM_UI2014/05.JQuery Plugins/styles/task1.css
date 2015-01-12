@@ -1,0 +1,34 @@
+select {
+	color: blue;
+}
+
+ul {
+	list-style-type: none;
+	width:400px;
+	padding:0;
+	margin:20px;
+}
+
+li {
+	background: pink;
+	border:1px outset red;
+	border-bottom: none;
+	text-align: center;
+	font-family:'Segoe UI';
+	font-size:18px;
+	padding: 5px 0 5px 0;
+}
+
+li:hover {
+	background: white;
+	cursor:pointer;
+}
+
+li:first-of-type {
+	border-radius: 5px 5px 0 0;
+}
+
+li:last-of-type {
+	border-radius: 0 0 5px 5px;
+	border-bottom:1px outset red;
+}

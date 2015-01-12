@@ -1,0 +1,6 @@
+package geometry.planeShapes;
+package geometry;
+
+public class PlaneVertex extends Vertex {
+	
+}

@@ -1,0 +1,81 @@
+body {
+  background: black;
+  color: #36445D;
+}
+
+div#wrapper {
+  background: #CCECFF;
+  margin: 20px;
+  border-radius: 15px;
+  padding: 5px 0 5px 5px;
+  width: 390px;
+}
+div#wrapper header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+div#wrapper header nav ul li {
+  display: inline;
+  margin-right: 75px;
+}
+div#wrapper header nav ul li:last-of-type {
+  margin-right: 0;
+  padding-right: 0;
+}
+div#wrapper header nav ul li a {
+  color: #36445D;
+}
+div#wrapper header nav ul li a:visited {
+  color: blue;
+}
+div#wrapper section h1 {
+  font-style: Italic;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #9FAAAD;
+  border-bottom: 1px solid #9FAAAD;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+div#wrapper section img {
+  height: 8em;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+div#wrapper section ul {
+  margin-top: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+div#wrapper section ul li {
+  margin-bottom: 10px;
+}
+div#wrapper section ul li:last-of-type {
+  margin-bottom: 5px;
+}
+div#wrapper section ul.info {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+div#wrapper section ul.info li {
+  margin-bottom: 5px;
+}
+div#wrapper section ul.info li a {
+  font-style: Italic;
+  color: #36445D;
+}
+div#wrapper section ul.info li a:visited {
+  color: blue;
+}
+div#wrapper section dl {
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+div#wrapper section dl dt {
+  margin-left: 20px;
+  font-style: italic;
+}
+div#wrapper section dl dd {
+  margin-left: 70px;
+}

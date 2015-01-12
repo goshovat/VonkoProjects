@@ -1,0 +1,90 @@
+package oneLevShop;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import oneLevShop.interfaces.Expirable;
+import oneLevShop.products.Appliance;
+import oneLevShop.products.Computer;
+import oneLevShop.products.FoodProduct;
+import oneLevShop.products.Product;
+
+public class OneLevShopTester {
+	
+	public static void main(String[] args) {
+		try {
+			Calendar ciggarsExpiry = getCalendar(2014, 12, 26);
+			FoodProduct cigars = new FoodProduct("420 Blaze it fgt", 6.90, 1400, 
+					AgeRestriction.Adult, ciggarsExpiry);
+			Customer pecata = new Customer("Pecata", 17, 30.00);
+			Customer gopeto = new Customer("Gopeto", 18, 0.44);
+						
+			try {
+				PurchaseManager.processPurchase(pecata, cigars);
+			}
+			catch(RuntimeException runExc) {
+				System.out.println(runExc.getMessage());
+			}
+						
+			try {
+				PurchaseManager.processPurchase(gopeto, cigars);
+			}
+			catch(RuntimeException runExc) {
+				System.out.println(runExc.getMessage());
+			}
+			
+			Calendar cheeseExpiry = getCalendar(2014, 12, 29);
+			//use some lambda expressions to sort and filter
+			Product cheese = new FoodProduct("Elena", 6.90, 1400, 
+					AgeRestriction.None, cheeseExpiry);
+			
+			Calendar salamExpiry = getCalendar(2014, 12, 29);
+			Product salam = new FoodProduct("Smqrovo", 5.30, 350, 
+					AgeRestriction.None, salamExpiry);
+			Product laptop = new Computer("lenovo", 1300, 2, AgeRestriction.None);
+			Product mixer = new Appliance("braun", 250, 10, AgeRestriction.None);
+			Product vibrator = new Appliance("Vaginal Vibrator", 340, 3, AgeRestriction.Adult);
+			Product whisky = new FoodProduct("Bushmill", 30, 3, AgeRestriction.Adult);
+			
+			List<Product> products = new ArrayList<Product>();
+			products.add(cheese);
+			products.add(salam);
+			products.add(laptop);
+			products.add(mixer);
+			products.add(cigars);
+
+			Product productWithMostRecentExpirationDate = products.stream()
+					.filter(p -> p instanceof Expirable)
+					.map(p -> (Expirable) p)
+					.sorted((p1, p2) -> p1.getExpirationDate().compareTo(p2.getExpirationDate()))
+					.map(p -> (Product) p)
+					.findFirst()
+					.get();
+			
+			System.out.println(productWithMostRecentExpirationDate.getName());
+			System.out.println();
+			
+			products.stream()
+					.filter(p -> p.getAgeRestriction() == AgeRestriction.Adult)
+					.sorted((p1, p2) -> Double.compare(p1.getPrice(), p2.getPrice()))
+					.collect(Collectors.toList())
+					.forEach(p -> System.out.println(p.getName() + " price: " + p.getPrice()));
+		}
+		catch (IllegalArgumentException argExc) {
+			System.out.println(argExc.getMessage());
+		}
+		catch (Exception exc) {
+			System.out.println(exc.getMessage());
+			System.out.println(exc.getStackTrace());
+		}
+	}
+	private static Calendar getCalendar(int year, int month, int day) {
+	    Calendar c = Calendar.getInstance();
+	    c.set(Calendar.YEAR, year);
+	    c.set(Calendar.MONTH, month);
+	    c.set(Calendar.DAY_OF_MONTH, day);
+	    return c;
+	}
+}

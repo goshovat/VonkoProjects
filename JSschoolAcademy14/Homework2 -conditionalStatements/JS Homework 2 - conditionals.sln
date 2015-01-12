@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JS Homework 2 - conditionals", "JS Homework 2 - conditionals", "{8CD8C7C1-85B5-46BD-AA03-197439FACEFD}"
+	ProjectSection(SolutionItems) = preProject
+		5. Conditional-Statements.pptx = 5. Conditional-Statements.pptx
+		js-console.js = js-console.js
+		task1.css = task1.css
+		task1.html = task1.html
+		task1.js = task1.js
+		task2.html = task2.html
+		task2.js = task2.js
+		task3.html = task3.html
+		task3.js = task3.js
+		task4.html = task4.html
+		task4.js = task4.js
+		task5.html = task5.html
+		task5.js = task5.js
+		task6.html = task6.html
+		task6.js = task6.js
+		task7.html = task7.html
+		task7.js = task7.js
+		task8.html = task8.html
+		task8.js = task8.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

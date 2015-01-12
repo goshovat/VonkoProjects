@@ -1,0 +1,141 @@
+html,
+body,
+div,
+form,
+fieldset,
+legend,
+label,
+input,
+br,
+button {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 18px;
+  font-family: Cambria, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', serif;
+  color: #ffffff;
+}
+body div#wrapper {
+  width: 960px;
+}
+body div#wrapper form {
+  display: inline-block;
+  margin: 25px 25px;
+  padding: 15px 15px 15px 15px;
+  background: #ebff5b;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #ebff5b 0%, #444444 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ebff5b), color-stop(100%, #444444));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ebff5b 0%, #444444 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ebff5b 0%, #444444 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ebff5b 0%, #444444 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ebff5b 0%, #444444 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@from-color', endColorstr='@to-color', GradientType=0);
+  /* IE6-8 */
+  border: 1px solid #555555;
+  border-radius: 15px;
+  text-align: right;
+  font-size: 16px;
+}
+body div#wrapper form fieldset {
+  position: relative;
+  border: 3px solid #555555;
+  border-radius: 5px;
+  padding: 10px 15px 0 48px;
+}
+body div#wrapper form fieldset legend {
+  position: relative;
+  padding: 0 15px;
+  margin-right: 10px;
+  font-style: italic;
+  font-size: 21px;
+  font-weight: bold;
+}
+body div#wrapper form fieldset label {
+  font-size: 16px;
+}
+body div#wrapper form fieldset input {
+  background: #ebff5b;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #ebff5b 0%, #444444 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ebff5b), color-stop(100%, #444444));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ebff5b 0%, #444444 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ebff5b 0%, #444444 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ebff5b 0%, #444444 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ebff5b 0%, #444444 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@from-color', endColorstr='@to-color', GradientType=0);
+  /* IE6-8 */
+  border: 2px solid #3a3939;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 5px 15px 5px 15px;
+  margin-bottom: 5px;
+}
+body div#wrapper form fieldset input:focus {
+  outline: none;
+}
+body div#wrapper form fieldset input[type="number"] {
+  width: 30px;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+body div#wrapper form fieldset:last-of-type {
+  margin-bottom: 10px;
+}
+body div#wrapper form input[type="radio"] {
+  display: none;
+}
+body div#wrapper form input[type="radio"]:checked + label {
+  font-weight: bold;
+  font-size: 18px;
+}
+body div#wrapper form button,
+body div#wrapper form input[type="reset"] {
+  background: #def729;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #def729 0%, #444444 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #def729), color-stop(100%, #444444));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #def729 0%, #444444 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #def729 0%, #444444 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #def729 0%, #444444 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #def729 0%, #444444 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@from-color', endColorstr='@to-color', GradientType=0);
+  /* IE6-8 */
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  font-size: 19px;
+  color: #333333;
+  padding: 5px 15px;
+  margin-top: 15px;
+}
+body div#wrapper form button:hover,
+body div#wrapper form input[type="reset"]:hover {
+  background: #f1ff8e;
+}
+/*# sourceMappingURL=task3.css.map */

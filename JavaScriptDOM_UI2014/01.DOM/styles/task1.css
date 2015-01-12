@@ -1,0 +1,33 @@
+div {
+	padding:15px;
+	border-radius: 10px;
+	display:inline-block;
+	margin-bottom:10px;
+}
+
+div#condition {
+	display:block;
+	font-size:25px;
+}
+
+div.innerDiv {
+	border:2px solid blue;
+}
+
+div.outterDiv {
+	border:2px solid red;
+}
+
+input[type="button"] {
+	padding:5px;
+	border-radius:5px;
+	border:1px solid blue;
+	box-shadow:3px 5px 2px blue;
+	background: yellow;
+	color:blue;
+	outline: none;
+}
+
+input[type="button"]:hover {
+	cursor: pointer;
+}

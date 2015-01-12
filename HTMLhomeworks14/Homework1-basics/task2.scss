@@ -1,0 +1,38 @@
+body {
+	background:black;
+}
+
+div#wrapper {
+	border:1px solid black;
+	border-radius:10px;
+	width:300px;
+	padding:10px;
+	background:white;
+	
+
+	& > ol {
+		list-style-type: upper-roman;
+		padding-left:40px;
+		padding-right:0;
+
+		ol#nested_1 {
+			list-style-type:lower-alpha;
+		}
+
+		ol#nested_2 {
+
+			ul#nested_2_2 {
+				list-style-type: circle;
+
+				ul#nested_2_2_2 {
+					list-style-type: square;
+				}
+			}
+		}
+
+		ul#nested_3 {
+			list-style-type:disc;
+		}
+		
+	}
+}

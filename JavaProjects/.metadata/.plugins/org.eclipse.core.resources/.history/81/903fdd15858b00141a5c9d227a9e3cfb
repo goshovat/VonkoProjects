@@ -1,0 +1,8 @@
+package geometry.spaceShapes;
+
+import java.util.List;
+import geometry.Shape;
+
+public class SpaceShape extends Shape {
+
+}

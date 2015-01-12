@@ -1,0 +1,71 @@
+package geometry.planeShapes;
+
+import geometry.Shape;
+import geometry.Vertex;
+import geometry.Interfaces.AreaMeasurable;
+import geometry.Interfaces.PerimeterMeasurable;
+
+public class Triangle extends Shape
+implements AreaMeasurable, PerimeterMeasurable{
+	
+	public Triangle
+	(double col1, double row1, double col2, double row2, double col3, double row3) {
+		Vertex vertex1 = new PlaneVertex(col1, row1);
+		Vertex vertex2 = new PlaneVertex(col2, row2);
+		Vertex vertex3 = new PlaneVertex(col3, row3);
+		
+		super.vertices.add(vertex1);
+	}
+
+	public Vertex getVertex1() {
+		return super.vertices.get(0);
+	}
+	
+	public Vertex getVertex2() {
+		return super.vertices.get(1);
+	}
+	
+	public Vertex getVertex3() {
+		return super.vertices.get(3);
+	}
+	
+	public double getSide1() {
+		return Math.sqrt((this.getVertex1().getCol() - this.getVertex2().getCol()) * 
+				(this.getVertex1().getCol() - this.getVertex2().getCol()) +
+				(this.getVertex1().getRow() - this.getVertex2().getRow()) * 
+				(this.getVertex1().getRow() - this.getVertex2().getRow()));
+	}
+	
+	public double getSide2() {
+		return Math.sqrt((this.getVertex1().getCol() - this.getVertex3().getCol()) 
+				* (this.getVertex1().getCol() - this.getVertex3().getCol()) +
+				(this.getVertex1().getRow() - this.getVertex3().getRow()) * 
+				(this.getVertex1().getRow() - this.getVertex3().getRow()));
+	}
+	
+	public double getSide3() {
+		return Math.sqrt((this.getVertex2().getCol() - this.getVertex3().getCol()) *
+				(this.getVertex2().getCol() - this.getVertex3().getCol()) +
+				(this.getVertex2().getRow() - this.getVertex3().getRow()) * 
+				(this.getVertex2().getRow() - this.getVertex3().getRow()));
+	}
+	
+	@Override
+	public double getPerimeter() {
+		return this.getSide1() + this.getSide2() + this.getSide3();
+	}
+
+	@Override
+	public double getArea() {
+		double halfPerimeter = this.getPerimeter() /2 ;
+		return Math.sqrt(halfPerimeter * (halfPerimeter - this.getSide1()) *
+				(halfPerimeter - this.getSide2()) *
+				(halfPerimeter - this.getSide3()));
+	}
+	
+	@Override
+	public String toString() {
+		return "Triangle: " + this.getSide1() + ", " 
+	+ this.getSide2() + ", " + this.getSide3();
+	}
+}

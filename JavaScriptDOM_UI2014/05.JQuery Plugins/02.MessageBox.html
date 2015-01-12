@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Message Box</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/task2.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+	<div id="message-box">Vonko Message Box</div>
+	<div id="button-container">
+		<button id="successBtn">Success</button>
+		<button id="errorBtn">Error</button>
+	</div>
+    <script src="scripts/messageboxPlugin.js"></script>
+    <script type="text/javascript">   	
+    	var $msgBox = $('#message-box').messageBox();
+    	$('#successBtn').on('click', function() {$msgBox.success('Success message')} );
+    	$('#errorBtn').on('click', function() {$msgBox.error('Error message')} );
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+﻿/*Removing the bullets for all menu items*/
+
+ul {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-family: 'Times New Roman';
+}
+
+    /*When we hover on a link 
+ the link to become underlined*/
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/*Initially we want to hide the sub menus*/
+
+ul li ul {
+    display: none;
+}
+
+/*When we hover the mouse over the list item, 
+  the menu inside it will become visible.
+  If we do not put it only for the direct child,
+  when you hover on the first list item all menus
+  below it will become visible. No matter
+  how many more sub menus you put inside
+  this will work*/
+
+
+ul li:hover > ul {
+    display: block;
+}
+
+/*Some text styling for easy distinction of the 
+  different sub-menus*/
+
+ul ul li a {
+    color: #929292;
+}
+
+ul ul ul li a {
+    color: blue;
+}
+
+ul ul ul ul li a {
+    color: red;
+}
+
+ul ul ul ul ul li a {
+    color: green;
+}

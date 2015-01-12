@@ -1,0 +1,52 @@
+--CREATE DATABASE iCard_task3;
+USE [iCard_task3];
+
+--create the table in which to store the numbers
+CREATE TABLE [RandomNumbers]
+(
+[RowNo] int,
+[GeneratedNumbers] int
+);
+CREATE UNIQUE INDEX NumbersIndex
+ON [RandomNumbers] ([RowNo]);
+
+DECLARE @minRange int SET @minRange = 1;
+DECLARE @maxRange int SET @maxRange = 1000;
+
+--declare the procedure for generating random number
+GO
+CREATE PROCEDURE [getRandomNumber] 
+ (@minRange int, @maxRange int)
+AS
+BEGIN
+   DECLARE @pick int SET @pick = @minRange + FLOOR(RAND() * (@maxRange - @minRange + 1));
+   RETURN @pick;
+END
+
+----this variable will helps us determine when the table is full
+DECLARE @counter int SET @counter = 0;
+DECLARE @generatedNumber int;
+
+WHILE @counter < 1000
+BEGIN
+	DECLARE @numberUnique bit SET @numberUnique = 'false';
+
+	--until the generated number is unique, we try generating new one
+	WHILE @numberUnique = 'false'
+	BEGIN
+		--find the number
+		EXEC @generatedNumber = getRandomNumber @minRange = @minRange, @maxRange = @maxRange;
+	
+		IF NOT EXISTS( SELECT [GeneratedNumbers] FROM [RandomNumbers] 
+					WHERE [GeneratedNumbers] = @generatedNumber)
+		SET @numberUnique = 'true';
+	END
+
+	SET @counter = @counter + 1;
+	INSERT INTO [RandomNumbers] ([RowNo],[GeneratedNumbers]) 
+	VALUES (@counter, @generatedNumber);
+END
+
+SELECT [GeneratedNumbers] as [Random Number] 
+	FROM [RandomNumbers]
+	Order By [RowNo]

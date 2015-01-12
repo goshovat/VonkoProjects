@@ -1,0 +1,46 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: black;
+}
+
+header, nav, section, article, footer, aside {
+    display:block;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a:hover,
+nav a:visited {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.clearfixBefore, .clearfixAfter {
+    *zoom: 1;
+}
+
+.clearfixBefore:before,
+.clearfixAfter:after {
+    content: " ";
+    display:block;
+    clear:both;
+    height:0;
+}

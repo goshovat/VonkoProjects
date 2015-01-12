@@ -1,0 +1,74 @@
+body {
+	background:url(https://raw.githubusercontent.com/bobbykolev/Advanced-javaScript/master/02.jQuery/01.Slider/images/gray_jean.png);
+	font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+	padding-left:50px;
+}
+
+div#condition {
+	display:block;
+	width:800px;
+	font-size:25px;
+	margin-bottom:20px;
+}
+
+button {
+	color:black;
+	border:1px solid black;
+	border-radius:4px;
+	padding:5px 8px;
+	outline:none;
+}
+
+button:hover {
+	cursor:pointer;
+	background: gray;
+	box-shadow: 5px 5px 5px gray;
+}
+
+table {
+	position: absolute;
+	top:200px;
+	border-spacing:0;
+	border:1px solid black;
+	border-radius:5px;
+	box-shadow: box-shadow: 5px 5px 5px black;
+}
+
+table table {
+	position:relative;
+	top:0;
+	left:0;
+}
+
+body > table {
+	display:none;
+}
+
+body > table.selected {
+	display:block;
+}
+
+td,th {
+	border:1px solid black;
+	padding:5px 10px;
+}
+
+a {
+	color:black;
+	text-decoration: none;
+	border:1px solid transparent;
+	border-radius:3px;
+	padding:3px 8px;
+	margin:3px 6px;
+}
+
+a:hover {
+	border:1px solid black;
+}
+
+p.viewLinks {
+	display:inline-block;
+	border:1px solid black;
+	border-radius:4px;
+	padding:5px 10px;
+}

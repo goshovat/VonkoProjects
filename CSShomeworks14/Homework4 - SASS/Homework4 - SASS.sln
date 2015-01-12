@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2017B64B-5EFE-4A96-B53B-4B2F454BB7F6}"
+	ProjectSection(SolutionItems) = preProject
+		Homework.png = Homework.png
+		task1.css = task1.css
+		task1.html = task1.html
+		task1.scss = task1.scss
+		task2.css = task2.css
+		task2.html = task2.html
+		task2.scss = task2.scss
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

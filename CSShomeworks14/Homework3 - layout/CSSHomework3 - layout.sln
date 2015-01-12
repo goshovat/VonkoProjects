@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSSHomework 3 - layout", "..\..\..\documents\visual studio 2012\Projects\WebApplication1\WebApplication1\CSSHomework 3 - layout.csproj", "{31D26BC1-B884-4D5F-81EA-B2781D415EC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSSHomework3 - layout", "CSSHomework3 - layout", "{A7F6341D-6640-4BBE-BD2E-CFB8EE4C4DD2}"
+	ProjectSection(SolutionItems) = preProject
+		task1.css = task1.css
+		task1.html = task1.html
+		task2.css = task2.css
+		task2.html = task2.html
+		task3.css = task3.css
+		task3.html = task3.html
+		task4.css = task4.css
+		task4.html = task4.html
+		task5.css = task5.css
+		task5.html = task5.html
+		task6.css = task6.css
+		task6.html = task6.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31D26BC1-B884-4D5F-81EA-B2781D415EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31D26BC1-B884-4D5F-81EA-B2781D415EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31D26BC1-B884-4D5F-81EA-B2781D415EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31D26BC1-B884-4D5F-81EA-B2781D415EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

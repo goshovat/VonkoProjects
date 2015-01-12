@@ -1,0 +1,19 @@
+package geometry;
+
+import geometry.planeShapes.Circle;
+import geometry.planeShapes.Rectangle;
+import geometry.planeShapes.Triangle;
+import geometry.spaceShapes.Cuboid;
+import geometry.spaceShapes.Sphere;
+import geometry.spaceShapes.SquarePyramid;
+
+public class GeometryTester {
+	public static void main(String[] args) {
+		
+		Shape[] shapes = new Shape[6];
+		
+		//create some two-dimensional shapes
+		Shape circle = new Circle(3, 5, 7);
+		Shape rectangle = new Rectangle()
+	}
+}

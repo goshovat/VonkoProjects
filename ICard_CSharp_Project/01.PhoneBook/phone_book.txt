@@ -1,0 +1,5 @@
+Georgi; Radev; 0878563458; Burgas, Br. Miladinovi 90
+Stamat; Petkov; 0875345678; Sofia, Dondukov 13
+Ivan; Mihov; 0887555386; Varna, Mladost 63
+Stoyan; Georgiev; 0879555378; Varna, Vladislav Varnenchik 118
+Ilian; Ivanov; 0876768734; Veliko Turnov, Kokiche 43

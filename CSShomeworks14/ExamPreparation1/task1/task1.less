@@ -1,0 +1,161 @@
+﻿@gr1-from-color:#002d44;
+@gr1-to-color:#77d1ff;
+@gr2-from-color:#ffffff;
+@gr2-to-color:#77d1ff;
+@first-menu-hover:rgba(9,81,118,0.7);
+@first-menu-selected:rgba(0, 0, 0, 0.3);
+@second-menu-hover:rgba(17,82,115,0.7);
+@third-menu-hover:#46819f;
+
+.linear-gradient(@from-color, @to-color) {
+  background: @from-color; /* Old browsers */
+background: -moz-linear-gradient(top,  @from-color 0, @to-color 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0,@from-color), color-stop(100%,@to-color)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  @from-color 0,@to-color 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  @from-color 0,@to-color 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  @from-color 0,@to-color 100%); /* IE10+ */
+background: linear-gradient(to bottom,  @from-color 0,@to-color 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from-color', endColorstr='@to-color',GradientType=0 ); /* IE6-9 */
+
+}
+
+.clearfix() {
+    zoom:1;
+
+    &:after {
+        content:"";
+        display:block;
+        height:0;
+        clear:both;
+    }
+}
+
+html,body,div, header, nav, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display:inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type:none;
+}
+
+body {
+    font-family: Arial;
+    font-size: 18px;
+
+    div#wrapper {
+        width: 1024px;
+
+        header {
+            display: inline-block;
+            .linear-gradient(@gr1-from-color, @gr1-to-color);
+            padding: 50px 118px 103px 50px;
+
+            nav {
+
+                & > ul {
+                    position: relative;
+                    .clearfix();
+
+                    & > li {
+                        float: left;
+                        z-index: 3;
+                        margin-right: 9px;
+
+                        & > a {
+                            font-size: 32px;
+                            padding: 5px 10px;
+                            border-radius: 15px;
+                        }
+
+                        ul {
+                            display: none;
+                            position: absolute;
+                        }
+
+                        &:hover {
+
+                            & > a {
+                                background: @first-menu-hover;
+                            }
+                        }
+
+                        &.selected {
+                            & > a {
+                                background: @first-menu-selected;
+                            }
+
+                            & > ul {
+                                display: block;
+                                left: 0;
+                                top: 42px;
+                                width: 1000px;
+
+
+                                & > li {
+                                    position: relative;
+                                    float: left;
+                                    z-index: 1;
+                                    margin-right:9px;
+
+                                    & > a {
+                                        font-size: 32px;
+                                        padding: 5px 10px;
+                                        border-radius: 15px;
+                                    }
+
+                                    &:hover {
+
+                                        & > a {
+                                            background: @second-menu-hover;
+                                        }
+
+                                        & > ul {
+                                            display: block;
+                                            left: 0;
+                                            top:42px;
+                                            width:323px;
+                                            padding: 15px 30px 15px 29px;
+                                            .linear-gradient(@gr2-from-color,@gr2-to-color);
+                                            border-radius: 15px;
+
+                                            & > li {
+
+                                                & > a {
+                                                    font-size: 32px;
+                                                    border-bottom: 1px solid black;
+                                                    padding:5px 5px 5px 5px;
+                                                }
+
+                                                &:last-of-type {
+
+                                                    a {
+                                                        border-bottom: none;
+                                                    }
+                                                }
+
+                                                &:hover {
+
+                                                    & > a {
+                                                        border-radius: 15px;
+                                                        background: @third-menu-hover;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

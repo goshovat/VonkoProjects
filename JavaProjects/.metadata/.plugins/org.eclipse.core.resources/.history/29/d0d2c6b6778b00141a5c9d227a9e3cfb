@@ -1,0 +1,37 @@
+package geometry.planeShapes;
+
+import geometry.Shape;
+import geometry.Vertex;
+import geometry.Interfaces.AreaMeasurable;
+import geometry.Interfaces.PerimeterMeasurable;
+
+public class Circle extends Shape
+	implements AreaMeasurable, PerimeterMeasurable {
+	
+	public final double PI = Math.PI;
+	private double radius;
+	
+	public Circle(double col, double row, double radius) {
+		Vertex vertex = new PlaneVertex(col, row);
+		super.vertices.add(vertex);
+		this.radius = radius;
+	}
+	
+	public double getCol() {
+		return this.vertices.get(0).getCol();
+	}
+	
+	public double getRow() {
+		return this.vertices.get(0).getRow();
+	}
+	
+	@Override
+	public double getPerimeter() {
+		return 2 * PI * this.radius;
+	}	
+	
+	@Override
+	public double getArea() {
+		return PI * this.radius * this.radius;
+	}
+}

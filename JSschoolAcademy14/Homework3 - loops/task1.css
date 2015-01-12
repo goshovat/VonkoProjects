@@ -1,0 +1,63 @@
+div {
+	font-size: 2em;
+	font-weight:bold;
+	color:blue;
+	margin-bottom:2em;
+	width:25em;
+}
+
+
+div#condition {
+margin-bottom:1em;
+font-size:1.3em;
+}
+
+
+label, input {
+	display:block;
+}
+
+label {
+	font-size:1.8em;
+	font-style:italic;
+	margin-bottom:0.5em;
+}
+
+input {
+	margin-bottom:1em;
+	font-size:1.5em;
+}
+
+label.show, input.show {
+	display:inline;
+}
+
+
+input#check {
+	margin-left:1em;
+}
+
+a {
+	border-radius:0.4em;
+	padding:0.5em;
+	color:blue;
+	background-color:yellow;
+	text-decoration:none;
+	font-size:1.5em;
+	display:block;
+	width:8em;
+}
+
+textarea {
+	display:block;
+	margin-top:1em;
+	width:16em;
+	font-weight:bold;
+	font-family: Verdana;
+	font-size:1.5em;
+	background-color:blue;
+	color:white;
+	padding:0.4em;
+	border-radius:0.3em;
+	height:5em;
+}

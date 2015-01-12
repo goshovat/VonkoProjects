@@ -1,0 +1,34 @@
+package geometry.spaceShapes;
+
+public class Cuboid extends SpaceShape {
+
+	private double width;
+	private double height;
+	private double depth;
+	
+	public Cuboid
+	(double col, double row, double layer, double width, double height, double depth) {
+		SpaceVertex vertex = new SpaceVertex(col, row, layer);
+		this.width = width;
+		this.height = height;
+		this.depth = depth;
+	}
+	
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getVolume() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+}

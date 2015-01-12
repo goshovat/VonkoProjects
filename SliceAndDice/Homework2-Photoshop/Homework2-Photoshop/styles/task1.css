@@ -1,0 +1,48 @@
+﻿button,a {
+    height:47px;
+    border:none;
+    margin-bottom:5px;
+    padding:0 25px;
+    padding-left: 0;
+    padding-right: 0;
+    background:transparent;
+    display:block;
+    color:black;
+    outline:0;
+}
+
+button:hover, a:hover {
+    cursor:pointer;
+}
+
+div {
+    display:inline-block;
+}
+
+.left {
+    float:left;
+    background:url(../imgs/task1_left.png);
+}
+
+.right {
+    float:right;  
+    background:url(../imgs/task1_right.png);
+}
+
+.left, .right {
+    display:inline-block;
+    background-repeat:no-repeat;
+    height:47px;
+    width:25px;
+    left:0;
+    right:0;
+}
+
+.text {
+    display:inline-block;
+    height:47px;
+    line-height:47px;
+    background:url(../imgs/task1_middle.png);
+    font-size:24px;
+    font-family:'Segoe UI';
+}

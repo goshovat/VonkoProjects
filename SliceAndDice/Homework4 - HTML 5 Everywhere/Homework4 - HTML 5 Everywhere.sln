@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework4 - HTML 5 Everywhere", "Homework4 - HTML 5 Everywhere\Homework4 - HTML 5 Everywhere.csproj", "{B8049B80-EF9E-4229-B013-13E358E37359}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "styles", "styles", "{8EC1D23F-2F70-455A-A76B-38FA6F785974}"
+	ProjectSection(SolutionItems) = preProject
+		Homework4 - HTML 5 Everywhere\styles\task1.css = Homework4 - HTML 5 Everywhere\styles\task1.css
+		Homework4 - HTML 5 Everywhere\styles\task1.css.map = Homework4 - HTML 5 Everywhere\styles\task1.css.map
+		Homework4 - HTML 5 Everywhere\styles\task1.less = Homework4 - HTML 5 Everywhere\styles\task1.less
+		Homework4 - HTML 5 Everywhere\styles\task2.css = Homework4 - HTML 5 Everywhere\styles\task2.css
+		Homework4 - HTML 5 Everywhere\styles\task2.less = Homework4 - HTML 5 Everywhere\styles\task2.less
+		Homework4 - HTML 5 Everywhere\styles\task3.css = Homework4 - HTML 5 Everywhere\styles\task3.css
+		Homework4 - HTML 5 Everywhere\styles\task3.less = Homework4 - HTML 5 Everywhere\styles\task3.less
+		Homework4 - HTML 5 Everywhere\styles\test.css = Homework4 - HTML 5 Everywhere\styles\test.css
+		Homework4 - HTML 5 Everywhere\styles\test.css.map = Homework4 - HTML 5 Everywhere\styles\test.css.map
+		Homework4 - HTML 5 Everywhere\styles\test.less = Homework4 - HTML 5 Everywhere\styles\test.less
+		..\..\Additional Resources\vonkoBoilerPlate.css = ..\..\Additional Resources\vonkoBoilerPlate.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8049B80-EF9E-4229-B013-13E358E37359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8049B80-EF9E-4229-B013-13E358E37359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8049B80-EF9E-4229-B013-13E358E37359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8049B80-EF9E-4229-B013-13E358E37359}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

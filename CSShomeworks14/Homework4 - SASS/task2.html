@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Task2</title>
+    <link rel="stylesheet" type="text/css" href="task2.css" />
+</head>
+<body>
+    <section>
+        <label for="img1"><img src="img1.png" alt="Img1" /></label>
+
+        <label for="img2"><img src="img2.png" alt="Img2" /></label>
+        
+        <label for="img3"><img src="img3.png" alt="Img3" /></label>
+      
+        <label for="img4"><img src="img4.png" alt="Img4" /></label>
+      
+        <label for="img5"><img src="img5.png" alt="Img5" /></label>        
+        <label for="img6"><img src="img6.png" alt="Img6" /></label>     
+
+        <!-- The hidden checkboxes and big images need to be separated
+        from the labels, because the big images will be floated, and the lables - NOT. This way we avoid absolute positioning and achieve more responsive desing -->
+        <input type="radio" name="img" id="img1" value="img1" checked="checked"/>
+        <img src="img1.png" alt="img1" class="hidden" />
+
+        <input type="radio" name="img" id="img2" value="img2" />
+        <img src="img2.png" alt="img1" class="hidden" />
+
+        <input type="radio" name="img" id="img3" value="img3" />
+        <img src="img3.png" alt="img3" class="hidden" />
+
+        <input type="radio" name="img" id="img4" value="img4" />
+        <img src="img4.png" alt="img4" class="hidden" />
+
+        <input type="radio" name="img" id="img5" value="img5" />
+        <img src="img5.png" alt="img5" class="hidden" />
+
+          <input type="radio" name="img" id="img6" value="img6" />
+        <img src="img6.png" alt="img5" class="hidden" />
+    <section>
+</body>
+</html>

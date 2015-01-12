@@ -1,0 +1,5 @@
+package oneLevShop.interfaces;
+
+public interface Expirable {
+	public Date getExpirationDate();
+}

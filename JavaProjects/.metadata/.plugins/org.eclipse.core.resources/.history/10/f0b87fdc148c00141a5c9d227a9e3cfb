@@ -1,0 +1,13 @@
+package oneLevShop;
+
+import org.omg.CORBA.portable.ApplicationException;
+
+import oneLevShop.products.Product;
+
+public class PurchaseManager {
+	
+	public static void processPurchase(Product product, Customer customer) {
+		if(product.getQuantity() == 0)
+			throw new ApplicationException("The product is out of stock", product);
+	}
+}

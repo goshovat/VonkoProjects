@@ -1,0 +1,457 @@
+/*The usual resets*/
+html,
+body,
+div,
+header,
+img,
+nav,
+ul,
+li,
+a,
+p,
+time,
+aside,
+section,
+h1,
+h2,
+footer,
+span {
+  margin: 0;
+  padding: 0;
+}
+header,
+nav,
+section,
+footer,
+article,
+aside {
+  display: block;
+}
+div,
+header,
+nav,
+section,
+footer,
+article,
+aside {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+html,
+body,
+div#wrapper,
+div#background {
+  min-height: 100%;
+}
+ul {
+  list-style-type: none;
+}
+/*Some variables*/
+/*some mixins*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+body div#wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  background: #ffffff;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #ffffff 0%, #dfd3b5 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #dfd3b5));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #dfd3b5 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffffff 0%, #dfd3b5 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffffff 0%, #dfd3b5 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%, #dfd3b5 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@from_color', endColorstr='@to_color', GradientType=0);
+  /* IE6-8 */
+}
+body div#wrapper div#background {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  background: #c1ab75;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #c1ab75 0%, #9a8a65 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c1ab75), color-stop(100%, #9a8a65));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #c1ab75 0%, #9a8a65 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #c1ab75 0%, #9a8a65 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #c1ab75 0%, #9a8a65 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #c1ab75 0%, #9a8a65 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@from_color', endColorstr='@to_color', GradientType=0);
+  /* IE6-8 */
+  padding: 1%;
+  border-radius: 15px;
+  zoom: 1;
+  /*The header including the two logo images*/
+  /*This div contains everything but the header. I put it, 
+                so to make white the spaces at the bottom that are not with
+                white background.*/
+  /*The footer of the page*/
+}
+body div#wrapper div#background:after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+body div#wrapper div#background header {
+  padding-bottom: 18%;
+  border-top-right-radius: 10px;
+  /*The left logo pic*/
+  /*The right logo pic*/
+}
+body div#wrapper div#background header img#logo {
+  position: absolute;
+  width: 29%;
+  top: 0;
+}
+body div#wrapper div#background header img#header_pic {
+  position: absolute;
+  z-index: 4;
+  right: 1.1%;
+  top: 0.3%;
+  float: right;
+  width: 66.2%;
+}
+body div#wrapper div#background div#inner_wrapper {
+  position: relative;
+  height: 80%;
+  z-index: 1;
+  padding-bottom: 0.1%;
+  background: #ffffff;
+  border-top-left-radius: 15px;
+  zoom: 1;
+  /*The right section containing the articles*/
+  /*This container groups the navigation and sidebar
+                  at the left. I put it because they will be positioned
+                   absolutely so better they are positioned together.*/
+}
+body div#wrapper div#background div#inner_wrapper:after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+body div#wrapper div#background div#inner_wrapper section {
+  margin-top: 2.8%;
+  position: relative;
+  background: #ffffff;
+  padding: 16% 0 5% 0;
+  width: 63%;
+  float: right;
+  /*The main heading in the section*/
+  /*Article needs to be clearfixed because the image is floated*/
+}
+body div#wrapper div#background div#inner_wrapper section h1 {
+  color: #bc8801;
+  font-size: 1.8em;
+  font-weight: normal;
+  padding-bottom: 1.6%;
+  border-bottom: 3px solid #cfbd93;
+}
+body div#wrapper div#background div#inner_wrapper section article {
+  padding: 2% 0 3% 0;
+  zoom: 1;
+  /*The heading below h1*/
+  /*The paragraphs in the first article are grouped in a div
+                            so the can be correctli positioned around the floated picture*/
+  /*The image holders will create the borders around
+                          the pictures*/
+  /*The images and paragraphs in the second article
+                          have different styles*/
+}
+body div#wrapper div#background div#inner_wrapper section article:after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+body div#wrapper div#background div#inner_wrapper section article h2 {
+  color: #d0b671;
+  font-size: 1.5em;
+  font-weight: normal;
+  padding-bottom: 1.6%;
+  border-bottom: 3px solid #cfbd93;
+  margin-bottom: 2.6%;
+}
+body div#wrapper div#background div#inner_wrapper section article:first-of-type div#paragraphs {
+  display: inline-block;
+  width: 55%;
+  text-align: justify;
+  margin-left: 3%;
+}
+body div#wrapper div#background div#inner_wrapper section article a {
+  display: block;
+  clear: left;
+  color: #5a491a;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: right;
+  margin-right: 6%;
+}
+body div#wrapper div#background div#inner_wrapper section article div.image_holder1 {
+  display: inline-block;
+  float: left;
+  width: 35%;
+  background: #e7e0ce;
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid #c6b387;
+}
+body div#wrapper div#background div#inner_wrapper section article div.image_holder1 div.image_holder2 {
+  display: block;
+  background: #ffffff;
+  padding: 4px;
+  border-radius: 10px 10px 0 0;
+}
+body div#wrapper div#background div#inner_wrapper section article div.image_holder1 div.image_holder2 img {
+  display: block;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+body div#wrapper div#background div#inner_wrapper section article:nth-of-type(2) {
+  zoom: 1;
+}
+body div#wrapper div#background div#inner_wrapper section article:nth-of-type(2):after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+body div#wrapper div#background div#inner_wrapper section article:nth-of-type(2) div.image_holder1 {
+  width: 20%;
+  margin-right: 3%;
+}
+body div#wrapper div#background div#inner_wrapper section article:nth-of-type(2) div.image_holder1 span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #958149;
+  background: white;
+  border-top: 2px solid #b8b19d;
+  border-radius: 0 0 10px 10px;
+}
+body div#wrapper div#background div#inner_wrapper section article:nth-of-type(2) p {
+  display: inline-block;
+  width: 22%;
+  font-size: 0.9em;
+  margin-right: 3%;
+}
+body div#wrapper div#background div#inner_wrapper section article:nth-of-type(2) p,
+body div#wrapper div#background div#inner_wrapper section article:nth-of-type(2) div.image_holder1 {
+  float: left;
+}
+body div#wrapper div#background div#inner_wrapper section article:nth-of-type(2) a {
+  clear: both;
+}
+body div#wrapper div#background div#inner_wrapper div#left_container {
+  position: absolute;
+  margin-top: -2.3%;
+  float: left;
+  width: 32.3%;
+  zoom: 1;
+  /*The sidebar below the navigation*/
+}
+body div#wrapper div#background div#inner_wrapper div#left_container:after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+body div#wrapper div#background div#inner_wrapper div#left_container nav {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  background: #cdc4aa;
+  padding: 8% 0 6% 0;
+}
+body div#wrapper div#background div#inner_wrapper div#left_container nav ul li {
+  position: relative;
+  background: #2a2a2a;
+  border-bottom: 1px solid #717171;
+  padding: 0.8% 0 0 3.68%;
+  background-position: 80% center;
+  background-repeat: no-repeat;
+  /*This span will create the borders left of
+                                    the links. That's why we positioned the li
+                                    relatevely*/
+}
+body div#wrapper div#background div#inner_wrapper div#left_container nav ul li:last-of-type {
+  border-bottom: none;
+}
+body div#wrapper div#background div#inner_wrapper div#left_container nav ul li span.border_span {
+  position: absolute;
+  bottom: 0;
+  width: 5%;
+  height: 50%;
+  border-right: 1px solid #717171;
+}
+body div#wrapper div#background div#inner_wrapper div#left_container nav ul li a {
+  width: 80%;
+  font-size: 1.2em;
+  color: white;
+  padding: 0.6% 0 0.6% 8%;
+  /*The right arrow right from the links'text*/
+}
+body div#wrapper div#background div#inner_wrapper div#left_container nav ul li a:hover {
+  color: #e5c077;
+}
+body div#wrapper div#background div#inner_wrapper div#left_container nav ul li a span {
+  float: right;
+  font-size: 0.5em;
+  margin-top: 4px;
+}
+body div#wrapper div#background div#inner_wrapper div#left_container aside {
+  width: 100%;
+  background: #fdfbf2;
+  color: #6f5f36;
+  /*The picture at the bottom of the sidebar*/
+}
+body div#wrapper div#background div#inner_wrapper div#left_container aside ul {
+  padding: 7% 5% 4% 9%;
+}
+body div#wrapper div#background div#inner_wrapper div#left_container aside ul li {
+  padding: 6% 8% 8% 0;
+  font-size: 1.1em;
+  text-align: justify;
+  /*Weput this tag to stress semantic meaning
+                                  on the date*/
+}
+body div#wrapper div#background div#inner_wrapper div#left_container aside ul li:first-of-type {
+  border-bottom: 1px dotted #ceccc7;
+}
+body div#wrapper div#background div#inner_wrapper div#left_container aside ul li time {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 4.5%;
+}
+body div#wrapper div#background div#inner_wrapper div#left_container aside ul li a {
+  color: #6f5f36;
+  font-weight: bold;
+  text-decoration: underline;
+  float: right;
+}
+body div#wrapper div#background div#inner_wrapper div#left_container aside img {
+  width: 100%;
+}
+body div#wrapper div#background footer {
+  position: relative;
+  background: #dfd4b5;
+  color: #7d6b44;
+  clear: both;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+/*Some media queries for responsive design*/
+@media only screen and (max-width: 960px) {
+  body div#wrapper div#background {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 840px) {
+  body div#wrapper div#background header img#header_pic {
+    width: 66.25%;
+  }
+  body div#wrapper div#background div#left-container {
+    margin-top: -3%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  body div#wrapper div#background {
+    border-radius: 5px;
+  }
+  body div#wrapper div#background header {
+    padding: 0;
+  }
+  body div#wrapper div#background header img#header_pic,
+  body div#wrapper div#background header img#logo {
+    display: none;
+  }
+  body div#wrapper div#background div#inner_wrapper section {
+    float: none;
+    width: 100%;
+    padding-top: 56%;
+  }
+  body div#wrapper div#background div#inner_wrapper div#left_container {
+    top: 0;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  body div#wrapper div#background div#inner_wrapper div#left_container nav {
+    border-radius: 5px;
+  }
+  body div#wrapper div#background div#inner_wrapper div#left_container aside {
+    display: none;
+  }
+}
+@media only screen and (max-width: 440px) {
+  body div#wrapper div#background div#inner_wrapper section {
+    padding-top: 63%;
+  }
+}
+@media only screen and (max-width: 380px) {
+  body div#wrapper div#background div#inner_wrapper section {
+    padding-top: 66%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  body div#wrapper div#background div#inner_wrapper section {
+    padding-top: 70%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body div#wrapper div#background {
+    padding: 0;
+  }
+  body div#wrapper div#background div#inner_wrapper section {
+    padding: 0;
+    padding-top: 90%;
+  }
+  body div#wrapper div#background div#inner_wrapper section article {
+    padding-right: 0;
+  }
+  body div#wrapper div#background div#inner_wrapper section article div.image_holder1 {
+    display: none;
+  }
+  body div#wrapper div#background div#inner_wrapper section article:first-of-type div#paragraphs {
+    width: 90%;
+  }
+  body div#wrapper div#background div#inner_wrapper section article:nth-of-type(2) p {
+    width: 46%;
+  }
+  body div#wrapper div#background div#inner_wrapper section a {
+    display: inline;
+    margin-right: 0;
+  }
+}
+/*# sourceMappingURL=task2.css.map */

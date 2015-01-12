@@ -1,0 +1,68 @@
+/*Instead of giving classes or IDs, I will use complicated selectors 
+because the presentation was about selectors*/
+table {
+	background:#595959;
+	font-family:Arial;
+}
+
+th {
+	color:#bec0c0;
+	padding:0.5em 0 1em 0;
+	font-size:1.3em;
+	font-family: Segoe Ui, Arial;
+	font-weight: lighter;
+}
+
+tr td:first-of-type {
+	vertical-align: top;
+	font-style: italic;
+	color:#e5e8e8;
+}
+
+tr td:nth-of-type(2) {
+	padding-right:10em;
+	padding-bottom:0.8em;
+}
+
+tr:first-of-type {
+	color:#ff000f;
+}
+
+tr:first-of-type td:nth-of-type(2) span {
+	color:#e7e0a6;
+}
+
+span.circle {
+	border-radius:50%;
+	background:#71b47a;
+	display:inline-block;
+	height:1.2em;
+	margin-right:0.3em;
+}
+
+tr:nth-of-type(2) td:nth-of-type(2) a {
+	color:#e7e0a6;
+	text-decoration:none;
+}
+
+tr:nth-of-type(3) td:nth-of-type(2) {
+	color:#b6c0bd;
+}
+
+tr:nth-of-type(4) td:nth-of-type(2) {
+	color:#b6c0bd;
+}
+
+tr:nth-of-type(5) td:nth-of-type(2) {
+	color:#e7e0a6;
+}
+
+tr:nth-of-type(6) td:nth-of-type(2) {
+	color:#dd6a25;
+}
+
+tr:last-of-type td:nth-of-type(2) {
+	padding-bottom:0.3em;
+}
+
+

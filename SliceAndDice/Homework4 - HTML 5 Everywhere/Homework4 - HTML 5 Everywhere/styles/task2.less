@@ -1,0 +1,30 @@
+body, div {
+    margin:0;
+    padding:0;
+    border:black;
+}
+
+@default-font-size: 16px;
+@defaoult-color1:blue;
+@default-color2:yellow;
+
+body {
+
+    button {
+        margin:10px 20px;
+        padding:5px 15px;
+        font-size:@default-font-size;
+        color:@default-color2;
+        border:2px solid @default-color2;
+        background:@defaoult-color1;
+
+        &:focus {
+            outline:0;
+        }
+    }
+
+    div#location-result {
+        border:2px solid @defaoult-color1;
+        color:@defaoult-color1;
+    }
+}

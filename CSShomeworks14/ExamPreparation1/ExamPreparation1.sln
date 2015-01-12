@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamPreparation1", "ExamPreparation1\ExamPreparation1.csproj", "{864423AB-7581-4EAE-A162-32C6A19FF53B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExamPreparation_1", "ExamPreparation_1", "{D1CBFA26-0E30-4C8C-92C9-62FCAA450C9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FAEADCD4-10E1-4B53-9FA5-7E15138FD71B}"
+	ProjectSection(SolutionItems) = preProject
+		task1\jquery-1.9.0.js = task1\jquery-1.9.0.js
+		task2\jquery-1.9.0.js = task2\jquery-1.9.0.js
+		task3\jquery-1.9.0.js = task3\jquery-1.9.0.js
+		task1\task1.html = task1\task1.html
+		task1\task1.less = task1\task1.less
+		task2\task2.css = task2\task2.css
+		task2\task2.html = task2\task2.html
+		task3\task3.css = task3\task3.css
+		task3\task3.html = task3\task3.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{864423AB-7581-4EAE-A162-32C6A19FF53B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{864423AB-7581-4EAE-A162-32C6A19FF53B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{864423AB-7581-4EAE-A162-32C6A19FF53B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{864423AB-7581-4EAE-A162-32C6A19FF53B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

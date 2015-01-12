@@ -1,0 +1,14 @@
+package geometry.spaceShapes;
+
+import java.util.List;
+import geometry.Shape;
+import geometry.Interfaces.AreaMeasurable;
+import geometry.Interfaces.VolumeMeasurable;
+
+public abstract class SpaceShape extends Shape
+implements AreaMeasurable, VolumeMeasurable {
+	
+	public SpaceShape(Vertex[] verticies) {
+		super()
+	}
+}

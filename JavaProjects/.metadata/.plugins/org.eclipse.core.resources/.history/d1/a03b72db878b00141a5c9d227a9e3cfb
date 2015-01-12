@@ -1,0 +1,11 @@
+package geometry.spaceShapes;
+
+import java.util.List;
+import geometry.Shape;
+
+public class SpaceShape extends Shape {
+	
+	public SpaceShape() {
+		super.vertices = new List<Vertex>();
+	}
+}

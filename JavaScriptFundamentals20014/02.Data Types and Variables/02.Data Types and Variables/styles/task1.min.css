@@ -1,0 +1,1 @@
+body{font-size:18px;font-family:'Segoe UI';font-style:italic}body input{color:#000;background:#d9d8d8;border:none;border-radius:5px;padding:5px 15px;margin:10px 20px}body input:focus{outline:none}body input:hover{cursor:pointer}body div#output{display:block;color:#fff;background:#000;border:3px solid gray;border-radius:5px;margin:10px 20px;width:600px;height:500px;padding:10px}

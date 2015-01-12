@@ -1,0 +1,150 @@
+td {
+  padding: 0.3em;
+}
+
+input[type="image"] {
+  width: 2em;
+  vertical-align: center;
+  margin-left: 0.2em;
+  margin-bottom: -0.5em;
+}
+
+body {
+  background: black;
+}
+body form table {
+  margin: 4em 0 0 4em;
+  background: white;
+  border: 1px solid gray;
+  border-spacing: 0;
+  border-radius: 0.8em;
+}
+body form table thead {
+  border-radius: 0.8em;
+}
+body form table thead tr th {
+  border: 1px solid gray;
+  border-bottom: none;
+  border-left: none;
+  text-align: left;
+  font-weight: normal;
+  padding: 0.3em;
+}
+body form table thead tr th:last-of-type {
+  border-right: none;
+}
+body form table thead tr:first-of-type th:first-of-type {
+  border-radius: 0.8em 0.8em 0 0;
+  border-top: none;
+  background: #dfe3e8;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #dfe3e8 0%, #f0f1f2 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dfe3e8), color-stop(100%, #f0f1f2));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #dfe3e8 0%, #f0f1f2 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #dfe3e8 0%, #f0f1f2 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #dfe3e8 0%, #f0f1f2 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #dfe3e8 0%, #f0f1f2 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfe3e8', endColorstr='#f0f1f2',GradientType=0 );
+  /* IE6-9 */
+}
+body form table thead tr:nth-of-type(2) {
+  background: #f0f1f2;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f0f1f2 0%, #dfe3e8 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f1f2), color-stop(100%, #dfe3e8));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f0f1f2 0%, #dfe3e8 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f0f1f2 0%, #dfe3e8 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f0f1f2 0%, #dfe3e8 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #f0f1f2 0%, #dfe3e8 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f1f2', endColorstr='#dfe3e8',GradientType=0 );
+  /* IE6-9 */
+}
+body form table thead tr:nth-of-type(3) {
+  padding: 0;
+  background: #DFE3E8;
+}
+body form table thead tr:nth-of-type(3) th {
+  padding-right: 3em;
+}
+body form table thead tr:nth-of-type(3) th:first-of-type input {
+  width: 2em;
+}
+body form table thead tr:nth-of-type(3) th:nth-of-type(2) input {
+  width: 9em;
+}
+body form table thead tr:nth-of-type(3) th:nth-of-type(3) input[type="text"] {
+  width: 7em;
+}
+body form table thead tr:nth-of-type(3) th:nth-of-type(4) input {
+  width: 9em;
+}
+body form table thead tr:nth-of-type(3) th:nth-of-type(5) input[type="text"] {
+  width: 7em;
+}
+body form table thead tr:nth-of-type(3) th:nth-of-type(6) {
+  padding-right: 2em;
+}
+body form table thead tr:nth-of-type(3) th:nth-of-type(6) input[type="text"] {
+  width: 7em;
+}
+body form table tfoot tr td {
+  border: 1px solid gray;
+  border-radius: 0 0 0.8em 0.8em;
+  border-bottom: none;
+  padding: 0.4em;
+  border-radius: 0 0 0.8em 0.8em;
+  background: #f0f1f2;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f0f1f2 0%, #dfe3e8 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f1f2), color-stop(100%, #dfe3e8));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f0f1f2 0%, #dfe3e8 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f0f1f2 0%, #dfe3e8 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f0f1f2 0%, #dfe3e8 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #f0f1f2 0%, #dfe3e8 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f1f2', endColorstr='#dfe3e8',GradientType=0 );
+  /* IE6-9 */
+}
+body form table tfoot tr td:first-of-type {
+  border-left: none;
+}
+body form table tfoot tr td:last-of-type {
+  border-right: none;
+}
+body form table tfoot tr td input {
+  width: 2em;
+}
+body form table tfoot tr td a {
+  padding: 0.2em;
+}
+body form table tfoot tr td a:hover {
+  border: 1px solid red;
+}
+body form table tfoot tr td span {
+  float: right;
+}
+body form table tbody tr td {
+  border: 1px solid gray;
+  border-bottom: none;
+  border-left: none;
+}
+body form table tbody tr td:last-of-type {
+  border-right: none;
+}

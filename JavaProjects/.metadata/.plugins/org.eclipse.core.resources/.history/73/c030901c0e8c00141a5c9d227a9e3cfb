@@ -1,0 +1,54 @@
+package oneLevShop.products;
+
+import oneLevShop.AgeRestriction;
+import oneLevShop.interfaces.Buyable;
+
+public abstract class Product implements Buyable {
+	private String name; 
+	private double price;
+	private int quantity;
+	private AgeRestriction ageRestriction;
+	
+	public Product
+		(String name, double price, int quantity, AgeRestriction ageRestriction) {
+		this.setName(name);
+		this.setPrice(price);
+		this.setQuantity(quantity);
+		this.setAgeRestriction(ageRestriction);
+	}
+
+	protected String getName() {
+		return name;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+	
+	protected double getQuantity() {
+		return this.quantity;
+	}
+	
+	protected AgeRestriction getAgeRestriction() {
+		return ageRestriction;
+	}
+	
+	protected void setName(String name) {
+		if (name.isEmpty())
+			throw new IllegalArgumentException("Error! Product name cannot be empty");
+		
+		this.name = name;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+	protected void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	protected void setAgeRestriction(AgeRestriction ageRestriction) {
+		this.ageRestriction = ageRestriction;
+	}
+}

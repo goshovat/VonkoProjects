@@ -1,0 +1,44 @@
+ul {
+	list-style-type:none;
+}
+
+ul#top-list {
+	margin: 20px 50px;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+a {
+	text-decoration: none;
+	font-family: "Segoe UI", Arial, sans-serif;
+	color:black;
+	font-size:18px;
+}
+
+a:hover {
+	cursor:pointer;
+}
+
+ul ul a {
+	font-size:16x;
+}
+
+ul ul ul a {
+	font-size: 14px;
+}
+
+a:visited {
+	color:black;
+}
+
+span.arrow {
+	display:inline-block;
+	background: gray;
+	border:1px solid black;
+	border-radius:60%;
+	padding:3px;
+	margin-right: 5px;
+	color:white;
+}

@@ -1,0 +1,109 @@
+﻿/*Resets*/
+body, div, header, h1, section, p {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background: black;
+    font-family: Verdana;
+    font-size: 0.8em;
+    padding: 0.5em;
+}
+
+/*The div holding the integrity of the design*/
+div#wrapper {
+    width: 600px;
+}
+
+/*This is the rounded outter window*/
+
+div#window {
+    background: #eeedef;
+    display: inline-block;
+    padding: 1em 0.8em 0 1em;
+    border-radius: 0.5em;
+}
+
+h1 {
+    font-size: 1.3em;
+    font-weight: lighter;
+    margin-bottom: 2.6em;
+}
+
+/*The styling of the three articles*/
+
+article {
+    background: white;
+    border: 1px solid #a5a5a5;
+    margin-bottom: 3.2em;
+    padding: 1.4em 1.4em 1.4em 1.2em;
+}
+
+/*Unless this clearfix is here, the articles will
+collapse from the float*/
+.clearfix {
+    zoom: 1;
+}
+
+    .clearfix:after {
+        display: block;
+        content: "";
+        clear: both;
+        height: 0;
+    }
+
+/*We float the image so the paragraph
+ and div below can wrap around it*/
+
+img {
+    float: left;
+}
+
+/*We give the p specific width so it will
+go up next to the floated image*/
+
+p {
+    display:inline-block;
+    width: 16em;
+    margin-left: 1.2em;
+}
+
+a {
+    text-decoration:none;
+    color:black;
+    font-weight: bold;
+}
+
+/*Unless we put this div the buttons will go
+next to the p because the p is inline-block
+ and the buttons are inline elements*/
+
+div.buttonHolder {
+    margin-top: 1em;
+    text-align: right;
+}
+
+article:first-of-type div.buttonHolder {
+    margin-top: 1.8em;
+}
+
+/*In the condition of the task is specified we 
+need to use image for the buttons*/
+
+input {
+    background-image: url("button1.png");
+    background-repeat: no-repeat;
+    border: none;
+    color: white;
+    width: 6.1em;
+    height: 2em;
+    font-weight: lighter;
+}
+
+/*This is for the "Add" button because it has different source*/
+    input.button2 {
+        background-image: url("button2.png");
+        width: 4.5em;
+    }

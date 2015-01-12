@@ -1,0 +1,26 @@
+body {
+  background: black;
+}
+
+div#wrapper {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 500px;
+  padding: 15px 5px 10px 5px;
+  background: white;
+}
+div#wrapper section h1 {
+  margin-top: 20px;
+  font-size: 200%;
+}
+div#wrapper section article ul {
+  margin-top: 0;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 15px;
+  border-bottom: 2px solid gray;
+}
+div#wrapper section article ul li:before {
+  content: "- ";
+}

@@ -1,0 +1,36 @@
+package geometry.spaceShapes;
+
+import geometry.Vertex;
+
+public class SpaceVertex extends Vertex {
+	public SpaceVertex(int col, int row, int layer) {
+		super(3);
+		super.coordinates[0] = col;
+		super.coordinates[1] = row;
+		super.coordinates[2] = layer;
+	}
+	
+	public double getCol() {
+		return super.coordinates[1];
+	}
+	
+	public void setCol(double value) {
+		super.coordinates[1] = value;
+	}
+	
+	public double getRow() {
+		return super.coordinates[0];
+	}
+	
+	public void setRow(double value) {
+		super.coordinates[0] = value;
+	}
+	
+	public double getDepth() {
+		return super.coordinates[0];
+	}
+	
+	public void setDepth(double value) {
+		super.coordinates[0] = value;
+	}
+}
