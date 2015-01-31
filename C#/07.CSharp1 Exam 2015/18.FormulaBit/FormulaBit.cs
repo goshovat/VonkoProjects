@@ -9,7 +9,107 @@ class FormulaBit
     {
         FillGrid();
 
-        PrintGrid();
+        //PrintGrid();
+
+        int row = 0;
+        int col = ROWS_COLS_COUNT - 1;
+
+        string direction = "south";
+        string lastDirection = "south";
+
+        int numberTurns = 0;
+        int trackLength = 0;
+
+        if (grid[row, col] == 1)
+        {
+            Console.WriteLine("No {0}", trackLength);
+        }
+        else
+        {
+            trackLength++;
+            bool IsFinished = false;
+
+            while (!IsFinished)
+            {
+                if (row == ROWS_COLS_COUNT - 1 && col == 0)
+                {
+                    Console.WriteLine("{0} {1}", trackLength, numberTurns);
+                    break;
+                }
+
+                switch (direction)
+                {
+                    case "south":
+                        if (row + 1 < ROWS_COLS_COUNT && grid[row + 1, col] == 0)
+                        {
+                            row++;
+                            trackLength++;
+                        }
+                        else if (col - 1 >= 0 && grid[row, col - 1] == 0)
+                        {
+                            direction = "west";
+                            trackLength++;
+                            numberTurns++;
+                            col--;
+                        }
+                        else
+                        {
+                            Console.WriteLine("No {0}", trackLength);
+                            IsFinished = true;
+                        }
+                        break;
+                    case "west":
+                        if (col - 1 >= 0 && grid[row, col - 1] == 0)
+                        {
+                            col--;
+                            trackLength++;
+                        }
+                        else if (lastDirection == "south" &&
+                            row - 1 >= 0 && grid[row - 1, col] == 0)
+                        {
+                            direction = "north";
+                            lastDirection = "north";
+                            trackLength++;
+                            numberTurns++;
+                            row--;
+                        }
+                        else if (lastDirection == "north" &&
+                            row + 1 < ROWS_COLS_COUNT && grid[row + 1, col] == 0)
+                        {
+                            direction = "south";
+                            lastDirection = "south";
+                            trackLength++;
+                            numberTurns++;
+                            row++;
+                        }
+                        else
+                        {
+                            Console.WriteLine("No {0}", trackLength);
+                            IsFinished = true;
+                        }
+                        break;
+                    case "north":
+                        if (row - 1 >= 0 && grid[row - 1, col] == 0)
+                        {
+                            row--;
+                            trackLength++;
+                        }
+                        else if (col - 1 >= 0 && grid[row, col - 1] == 0)
+                        {
+                            direction = "west";
+                            trackLength++;
+                            numberTurns++;
+                            col--;
+                        }
+                        else
+                        {
+                            Console.WriteLine("No {0}", trackLength);
+                            IsFinished = true;
+                        }
+                        break;
+                }
+            }
+        }
     }
 
     private static void FillGrid()

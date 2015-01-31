@@ -19,6 +19,12 @@ class AdvancedBitsExchange
         int q = int.Parse(Console.ReadLine());
         Console.WriteLine("Enter the length of the sequences(k):");
         int k = int.Parse(Console.ReadLine());
+        if (p > q)
+        {
+            int temp = p;
+            p = q;
+            q = temp;
+        }
 
         if (p < 0 || p + k > 32 || q < 0 || q + k > 32)
         {
