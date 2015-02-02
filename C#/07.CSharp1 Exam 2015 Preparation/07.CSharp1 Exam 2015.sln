@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "27.Warhead", "27.Warhead\27
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "28.BitBall", "28.BitBall\28.BitBall.csproj", "{27ECA7F8-6D17-4D29-844D-365775852E94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "29.DrunkenNumbers", "29.DrunkenNumbers\29.DrunkenNumbers.csproj", "{E33C9742-8970-4077-A6C8-3AE78BE4341C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,10 @@ Global
 		{27ECA7F8-6D17-4D29-844D-365775852E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27ECA7F8-6D17-4D29-844D-365775852E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27ECA7F8-6D17-4D29-844D-365775852E94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E33C9742-8970-4077-A6C8-3AE78BE4341C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E33C9742-8970-4077-A6C8-3AE78BE4341C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E33C9742-8970-4077-A6C8-3AE78BE4341C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E33C9742-8970-4077-A6C8-3AE78BE4341C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

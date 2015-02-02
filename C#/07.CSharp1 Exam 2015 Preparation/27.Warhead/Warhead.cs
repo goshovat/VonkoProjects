@@ -99,8 +99,8 @@ class Warhead
 
     private static int CheckNumberShapesRed()
     {
-        //make copy of the half we need
-        int[,] copyBoard = new int[BOARD_WIDTH_HEIGHT, BOARD_WIDTH_HEIGHT/2];
+        //make copy of the half we need + one more column
+        int[,] copyBoard = new int[BOARD_WIDTH_HEIGHT, BOARD_WIDTH_HEIGHT/2 + 1];
         for (int row = 0; row < copyBoard.GetLength(0); row++)
         {
             for (int col = 0; col < copyBoard.GetLength(1); col++)
@@ -108,7 +108,6 @@ class Warhead
                 copyBoard[row, col] = board[row, col];
             }
         }
-        //PrintBoard(copyBoard);
 
         int redShapes = 0;
         for (int row = 0; row < copyBoard.GetLength(0); row++)
@@ -124,16 +123,15 @@ class Warhead
 
     private static int CheckNumberShapesBlue()
     {
-        //make copy of the half we need
-        int[,] copyBoard = new int[BOARD_WIDTH_HEIGHT, BOARD_WIDTH_HEIGHT / 2];
+        //make copy of the half we need + one more column
+        int[,] copyBoard = new int[BOARD_WIDTH_HEIGHT, BOARD_WIDTH_HEIGHT / 2 + 1];
         for (int row = 0; row < copyBoard.GetLength(0); row++)
         {
             for (int col = 0; col < copyBoard.GetLength(1); col++)
             {
-                copyBoard[row, col] = board[row, col + BOARD_WIDTH_HEIGHT / 2];
+                copyBoard[row, col] = board[row, col + BOARD_WIDTH_HEIGHT / 2 - 1];
             }
         }
-        //PrintBoard(copyBoard);
 
         int blueShapes = 0;
         for (int row = 0; row < copyBoard.GetLength(0); row++)
