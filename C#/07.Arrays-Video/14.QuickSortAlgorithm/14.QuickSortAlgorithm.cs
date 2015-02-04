@@ -2,6 +2,8 @@
 
 class QuickSortAlgorithm
 {
+    /*This is relatively optimized way for the algorithm without
+    allocating new list on each new step*/
     static int[] testArray = { 99, 8, -8, 16, 543, 2, 41, 0, 1 };
 
     static void Main()

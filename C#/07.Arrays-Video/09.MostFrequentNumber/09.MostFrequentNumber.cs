@@ -6,12 +6,11 @@ class MostFrequentNumber
     static void Main()
     {
         int[] testArray = { 4, 1, 1, 1 ,1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3 };
-
         int len = testArray.Length;
 
         //create an array to store the how many times is met the element on each position
-
         int[] lensArray = new int[len];
+
         for (int i = 0; i < len; i++)
         {
             lensArray[i] = 1;
@@ -47,7 +46,8 @@ class MostFrequentNumber
             }
         }
 
-        //we continue from the first encouter of the index with biggest count; to find if there are others of the same count
+        //we continue from the first encouter of the index with biggest count; 
+        //to find if there are others of the same count
         for (int i = maxIndex + 1; i < len; i++)
 		{
 			 if (lensArray[i] == maxCount) 

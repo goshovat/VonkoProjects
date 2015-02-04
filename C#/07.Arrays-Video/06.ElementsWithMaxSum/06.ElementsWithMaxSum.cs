@@ -8,7 +8,6 @@ class ElementsWithMaxSum
         //get the input data
         //Console.WriteLine("Enter the length of the array:");
         //int len = int.Parse(Console.ReadLine());
-
         Console.WriteLine("Enter the sum of how many elements yow will check: ");
         int numberOfElements = int.Parse(Console.ReadLine());
 

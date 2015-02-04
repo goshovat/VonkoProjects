@@ -2,7 +2,6 @@
 
 class BinarySearch
 {
-
     static int[] testArray = { -99, -1, 1, 2, 3, 4, 6, 8, 90, 110, 990 };
 
     static void Main()

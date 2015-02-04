@@ -7,7 +7,6 @@ class SortByRemovingElements
     {
         List<int> originalList = new List<int>() { 6, 1, 4, 3, 0, 3, 6, 4, 5 };
         int len = originalList.Count;
-
         List<int> resulltList = new List<int>();
 
         int numberOfCombinations = (int)Math.Pow(2, originalList.Count);
@@ -27,7 +26,9 @@ class SortByRemovingElements
                     counter++;
                 }
 
-                if (IsSorted(currentSequence) && counter > maxCounter)
+                if (currentSequence.Length > 1 &&
+                    currentSequence[currentSequence.Length - 1] > currentSequence[currentSequence.Length - 2]
+                    && counter > maxCounter)
                 {
                     resulltList = currentSequence;
                     maxCounter = counter;
@@ -39,19 +40,19 @@ class SortByRemovingElements
         Console.WriteLine("The sorted array is: {0}", string.Join(", ", resulltList));
     }
 
-    private static bool IsSorted(List<int> currentSequence)
-    {
-        bool isSorted = true; 
+    //private static bool IsSorted(List<int> currentSequence)
+    //{
+    //    bool isSorted = true; 
 
-        for (int i = 0; i < currentSequence.Count - 1; i++)
-        {
-            if (currentSequence[i] > currentSequence[i + 1])
-            {
-                isSorted = false;
-                break;
-            }
-        }
+    //    for (int i = 0; i < currentSequence.Count - 1; i++)
+    //    {
+    //        if (currentSequence[i] > currentSequence[i + 1])
+    //        {
+    //            isSorted = false;
+    //            break;
+    //        }
+    //    }
 
-        return isSorted;
-    }
+    //    return isSorted;
+    //}
 }

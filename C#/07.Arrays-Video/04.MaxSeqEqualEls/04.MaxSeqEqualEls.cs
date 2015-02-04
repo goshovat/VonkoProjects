@@ -5,10 +5,9 @@ class MaxSeqEqualEls
     static void Main()
     {
         //a sample input array to test the program
-        int[] testArray = {2, 1, 1, 2, 3, 3, 3, 3, 2, 2, 2, 2, 1};
+        int[] testArray = { 2, 1, 1, 2, 3, 3, 2, 2, 2, 1 };
 
         int len = testArray.Length;
-
         //in  this array we store how long will be the sequence of equal elements on each position
         int[] lensArray = new int[len];
 

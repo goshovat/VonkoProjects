@@ -13,7 +13,6 @@ class IndexOfLetters
 
         //get the input word
         string word = Console.ReadLine();
-
         char[] wordArray = word.ToCharArray();
 
         for (int i = 0; i < wordArray.Length; i++)

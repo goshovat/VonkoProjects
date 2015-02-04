@@ -5,7 +5,6 @@ class SieveOfEratosthenes
     static void Main()
     {
         int limit = 10000000;
-
         bool[] primeOrNot = new bool[limit];
 
         //initially assume all numbers are prime
