@@ -15,7 +15,6 @@ class PermutationsOfSet
         }
 
         int current = 0;
-
         Permutate(numbersArray, current);
     }
 

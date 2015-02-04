@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.RemoveElementsFromArray"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19.PermutationsOfSet", "19.PermutationsOfSet\19.PermutationsOfSet.csproj", "{F4C11A3D-184C-4E50-AD7F-F27160A4DD86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20.VariationsOfSet", "20.VariationsOfSet\20.VariationsOfSet.csproj", "{BA930354-F5DE-4DB9-ABF9-554A8F06256E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21.CombinationsOfSet", "21.CombinationsOfSet\21.CombinationsOfSet.csproj", "{0302ECDF-9F08-49DB-9FD5-DE534032A770}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,14 @@ Global
 		{F4C11A3D-184C-4E50-AD7F-F27160A4DD86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4C11A3D-184C-4E50-AD7F-F27160A4DD86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4C11A3D-184C-4E50-AD7F-F27160A4DD86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA930354-F5DE-4DB9-ABF9-554A8F06256E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA930354-F5DE-4DB9-ABF9-554A8F06256E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA930354-F5DE-4DB9-ABF9-554A8F06256E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA930354-F5DE-4DB9-ABF9-554A8F06256E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0302ECDF-9F08-49DB-9FD5-DE534032A770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0302ECDF-9F08-49DB-9FD5-DE534032A770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0302ECDF-9F08-49DB-9FD5-DE534032A770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0302ECDF-9F08-49DB-9FD5-DE534032A770}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
