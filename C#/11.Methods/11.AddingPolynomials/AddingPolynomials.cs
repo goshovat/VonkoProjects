@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 
-class SumPolinoms
+class AddingPolynomials
 {
     static void Main()
     {
@@ -42,7 +41,6 @@ class SumPolinoms
             {
                 result += "+ ";
             }
-
             if (resultCoefficents[i] != 0)
             {
                 if (i != 0 && i != 1)

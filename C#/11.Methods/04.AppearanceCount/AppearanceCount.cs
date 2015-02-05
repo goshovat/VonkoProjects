@@ -1,6 +1,6 @@
 ﻿using System;
 
-class CountNumberInArray
+class AppearanceCount
 {
     static void Main()
     {
@@ -56,7 +56,7 @@ class CountNumberInArray
     //third test method
     static void Test3()
     {
-        int[] myArray = {1, 3, 6, 3, 9, 8 };
+        int[] myArray = { 1, 3, 6, 3, 9, 8 };
 
         int number = 3;
 
@@ -66,4 +66,3 @@ class CountNumberInArray
             , number, string.Join(",", myArray), encounters);
     }
 }
-

@@ -1,6 +1,6 @@
 ﻿using System;
 
-class ReversedDecimalNumber
+class ReverseNumber
 {
     static void Main()
     {
@@ -19,7 +19,7 @@ class ReversedDecimalNumber
     }
 
     //testing our method
-    static void Test1() 
+    static void Test1()
     {
         decimal number = 576;
         Console.WriteLine("The original number is: {0}\r\nThe reversed number is: {1}",
@@ -35,4 +35,3 @@ class ReversedDecimalNumber
         Console.WriteLine();
     }
 }
-

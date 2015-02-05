@@ -1,6 +1,6 @@
 ﻿using System;
 
-class NameOfLastDigit
+class EnglishDigit
 {
     static void Main()
     {
@@ -19,7 +19,7 @@ class NameOfLastDigit
 
         int lastDigit = int.Parse(numberInDigits[indexOflastDigit].ToString());
         string[] namesArray = { "Zero", "One", "Two", "three", "Four", "Five", 
-                                  "Six", "Seven", "Eight", "Nine"}; 
+                                  "Six", "Seven", "Eight", "Nine"};
 
         name = namesArray[lastDigit];
         return name;

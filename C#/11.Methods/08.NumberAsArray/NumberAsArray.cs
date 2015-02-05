@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Numerics;
 
-class SumOfBigNumbers
+class NumberAsArray
 {
     static void Main()
     {
@@ -14,7 +14,6 @@ class SumOfBigNumbers
     static BigInteger SumIntegersBigInt(int[] number1, int[] number2)
     {
         BigInteger result = 0;
-
         Array.Reverse(number1);
         Array.Reverse(number2);
 
@@ -27,7 +26,6 @@ class SumOfBigNumbers
     static List<int> SumIntegersOwnMethod(int[] number1, int[] number2)
     {
         List<int> result = new List<int>();
-
         int maxLen = number1.Length;
         int[] maxNumber = number1;
 
@@ -36,7 +34,6 @@ class SumOfBigNumbers
             maxLen = number2.Length;
             maxNumber = number2;
         }
-
         int minLen = number1.Length + number2.Length - maxLen;
         bool carry = false;
 
@@ -127,7 +124,7 @@ class SumOfBigNumbers
     static void Test2()
     {
         int[] number1 = { 4, 5, 6, 2, 6, 6, 7, 8, 9, 7, 4, 8 };
-        int[] number2 = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 9, 8, 5, 4, 3, 2, 1, 2};
+        int[] number2 = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 9, 8, 5, 4, 3, 2, 1, 2 };
 
         Console.WriteLine("The sum calculated with our method is:  {0}",
                         string.Join("", SumIntegersOwnMethod(number1, number2)));
@@ -136,4 +133,3 @@ class SumOfBigNumbers
           string.Join("", SumIntegersBigInt(number1, number2)));
     }
 }
-

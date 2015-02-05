@@ -1,6 +1,6 @@
 ﻿using System;
 
-class GetMaxNumber
+class GetLargestNumber
 {
     static void Main()
     {
@@ -13,7 +13,6 @@ class GetMaxNumber
         int thirdNumber = int.Parse(Console.ReadLine());
 
         int maxNumber = GetMax(GetMax(firstNumber, secondNumber), thirdNumber);
-
         Console.WriteLine("The max number is: {0}", maxNumber);
     }
 
@@ -28,4 +27,3 @@ class GetMaxNumber
         return maxNumber;
     }
 }
-
