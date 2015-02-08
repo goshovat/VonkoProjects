@@ -1,0 +1,13 @@
+Strings in C# are refeence types. But they are little bit different than other reference types.
+For example if you have one array and make another reference to it, it you change it from the first reference
+you will see the change from the second reference too. This is because you have two references pointing to the same piece of memory.
+With strings it's different. When you declare a new string, the CLR sweeps your memory to see if the strng with the same value
+is already declared. If it is it makes a reference to the same piece of memory. This is made to save memory! 
+BUT if you change one of the two references pointing to the same string in memory, a new string will be made in new place
+in the memory with the change inside. This is why we say the STRINGS are immutable. It means when a string is declared in a
+piece of memory, the string in this piece of memory cannot be edited. If you want to edit it, a new memory will be relocated
+and the reference to the old one dropped. After that the garbage collectore will erase the contents of the old memory.
+Because of this operations with strings are very slow. Each change causes the strin to be coppied in a new piece of memory, going trhough
+a temporary object of special type. Because of this for large number of consecutive operations over a string
+it's better to use a StringBuilder. It keeps the contents of the string in something like array, when the operations are much faster.
+When we are done we can turn it into immutable string.
