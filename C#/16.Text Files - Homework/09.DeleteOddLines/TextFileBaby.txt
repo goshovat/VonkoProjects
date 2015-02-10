@@ -1,0 +1,5 @@
+1.Gosho
+2.Penio
+3.Stamat
+4.Mincho
+5.Strahil
