@@ -28,11 +28,9 @@
                 maxJumpsCount = currentJumpsCount;
             }
         }
-
     }
 
     var field = args[0].split(',');
-
     field = field.map(Number);
 
     var maxJumpsCount = 0;
