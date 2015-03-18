@@ -71,7 +71,7 @@ namespace MobilePhone
 
         public Call GetCallNumber(int number)
         {
-            if (number >= this.callHistory.Count)
+            if (number >= this.callHistory.Count || number < 0)
                 throw new ArgumentException("Error! There is no such call in the history");
 
             return this.callHistory[number];
@@ -79,7 +79,7 @@ namespace MobilePhone
 
         public void DeleteCallNumber(int number)
         {
-            if (number >= this.callHistory.Count)
+            if (number >= this.callHistory.Count || number < 0)
                 throw new ArgumentException("Error! There is no such call in the history");
 
             this.callHistory.RemoveAt(number);
