@@ -215,7 +215,7 @@
                 .AppendFormat("Rating: {0}", song.Ratings.Count == 0 ? 0 : Math.Floor((song.Ratings.Average(r => r)) + 0.5)).AppendLine()
                 .AppendFormat("Supplies: {0}, Sold: {1}", songSalesInfo.Supplies, songSalesInfo.QuantitySold);
 
-            return songInfo.ToString();
+            return songInfo.ToString().Trim();
         }
 
         protected virtual string GetAlbumReport(IAlbum album)
@@ -240,7 +240,7 @@
                 }
             }
 
-            return albumInfo.ToString();
+            return albumInfo.ToString().Trim();
         }
 
         protected override void ExecuteReportPerformerCommand(string[] commandWords)
@@ -299,7 +299,7 @@
                 bandInfo.Append("no songs");
             }
 
-            return bandInfo.ToString();
+            return bandInfo.ToString().Trim();
         }
 
         #endregion
@@ -361,7 +361,7 @@
                     var album = this.media.FirstOrDefault(a => a is IAlbum && a.Title == commandWords[2]);
                     if (album == null)
                     {
-                        this.Printer.PrintLine("The salbum does not exist in the database.");
+                        this.Printer.PrintLine("The album does not exist in the database.");
                         return;
                     }
 
