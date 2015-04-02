@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.WarMachines", "07.WarMac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.TradeAndTravel", "08.TradeAndTravel\08.TradeAndTravel.csproj", "{7781AF8A-3225-487B-906F-660371E55FE0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.DocumentSystem", "09.DocumentSystem\09.DocumentSystem.csproj", "{53B89152-BE0D-4EC5-B9AA-8D918F35CF41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.Estates", "10.Estates\10.Estates.csproj", "{D43347A6-4C17-4EE1-9290-45DBE2502A19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{7781AF8A-3225-487B-906F-660371E55FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7781AF8A-3225-487B-906F-660371E55FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7781AF8A-3225-487B-906F-660371E55FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B89152-BE0D-4EC5-B9AA-8D918F35CF41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B89152-BE0D-4EC5-B9AA-8D918F35CF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B89152-BE0D-4EC5-B9AA-8D918F35CF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B89152-BE0D-4EC5-B9AA-8D918F35CF41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D43347A6-4C17-4EE1-9290-45DBE2502A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D43347A6-4C17-4EE1-9290-45DBE2502A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D43347A6-4C17-4EE1-9290-45DBE2502A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D43347A6-4C17-4EE1-9290-45DBE2502A19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

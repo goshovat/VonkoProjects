@@ -43,7 +43,7 @@ namespace TradeAndTravel
                     location = new Mine(locationName);
                     break;
                 case "forest":
-                    location = new Mine(locationName);
+                    location = new Forest(locationName);
                     break;
                 default:
                     break;
@@ -201,48 +201,6 @@ namespace TradeAndTravel
 
         protected void HandleGatherInteraction(string[] commandWords, Person actor)
         {
-            //var targetLocation = actor.Location;
-
-            //if (targetLocation != null)
-            //{
-            //    string newItemName = commandWords[2];
-
-            //    if (targetLocation.LocationType == LocationType.Forest)
-            //    {
-            //        bool hasWeapon = false;
-            //        foreach (Item item in actor.ListInventory())
-            //        {
-            //            if (item.ItemType == ItemType.Weapon)
-            //            {
-            //                hasWeapon = true;
-            //                break;
-            //            }
-            //        }
-
-            //        if (hasWeapon)
-            //        {
-            //            base.AddToPerson(actor, new Wood(newItemName));
-            //        }
-            //    }
-            //    else if (targetLocation.LocationType == LocationType.Mine)
-            //    {
-            //        bool hasArmor = false;
-            //        foreach (Item item in actor.ListInventory())
-            //        {
-            //            if (item.ItemType == ItemType.Armor)
-            //            {
-            //                hasArmor = true;
-            //                break;
-            //            }
-            //        }
-
-            //        if (hasArmor)
-            //        {
-            //            base.AddToPerson(actor, new Iron(newItemName));
-            //        }
-            //    }
-            //}
-
             string chosenItemName = commandWords[2];
             var gatheringLocation = actor.Location as IGatheringLocation;
             if (gatheringLocation != null)
