@@ -6,32 +6,39 @@ namespace FarmersCreed.Units
 
     public abstract class FarmUnit : GameObject, IProductProduceable 
     {
+        private int health;
+
         public FarmUnit(string id, int health, int productionQuantity)
             : base(id)
         {
-            throw new NotImplementedException();
+            this.Health = health;
+            this.ProductionQuantity = productionQuantity;
+            this.IsAlive = true;
         }
 
         public int Health
         {
-            get { throw new NotImplementedException(); }
-            set { throw new NotImplementedException(); }
+            get { return this.health; }
+            set
+            {
+                //if (value < 0)
+                //{
+                //    throw new ArgumentException("Cannot set negative health");
+                //}
+
+                this.health = value;
+
+                if (this.health <= 0)
+                {
+                    this.IsAlive = false;
+                }
+            }
         }
 
-        public bool IsAlive
-        {
-            get { throw new NotImplementedException(); }
-        }
+        public bool IsAlive { get; protected set; }
 
-        public int ProductionQuantity
-        {
-            get { throw new NotImplementedException(); }
-            set { throw new NotImplementedException(); }
-        }
+        public int ProductionQuantity { get; set; }
 
-        public Product GetProduct()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract Product GetProduct();
     }
 }

@@ -1,39 +1,71 @@
 ﻿namespace FarmersCreed.Units
 {
     using System;
+    using System.Text;
 
-    public class Plant : FarmUnit
+    public abstract class Plant : FarmUnit
     {
         public Plant(string id, int health, int productionQuantity, int growTime)
             : base(id, health, productionQuantity)
         {
-            throw new NotImplementedException();
+            this.GrowTime = growTime;
         }
 
         public bool HasGrown
         {
-            get { throw new NotImplementedException(); }
+            get { return this.GrowTime == 0; }
         }
 
-        public int GrowTime
+        public int GrowTime { get; set; }
+
+        public virtual void Water()
         {
-            get { throw new NotImplementedException(); }
-            set { throw new NotImplementedException(); }
+            this.Health++;
+            this.Health++;
         }
 
-        public void Water()
+        public virtual void Wither()
         {
-            throw new NotImplementedException();
+            this.Health--;
         }
 
-        public void Wither()
+        public virtual void Grow()
         {
-            throw new NotImplementedException();
+            if (this.GrowTime > 0)
+            {
+                this.GrowTime--;
+            }
+            else
+            {
+                throw new ApplicationException("Cannot grow grown plant");
+            }
         }
 
-        public void Grow()
+        public override abstract Product GetProduct();
+
+        public override string ToString()
         {
-            throw new NotImplementedException();
+            StringBuilder result = new StringBuilder();
+            result.Append(base.ToString());
+
+            if (this.Health <= 0)
+            {
+                result.AppendFormat(", DEAD");
+            }
+            else
+            {
+                result.AppendFormat(", Health: {0}, ", this.Health);
+                if (this.GrowTime > 0)
+                {
+                    result.AppendFormat("Grown: {0}", "No");
+                }
+                else
+                {
+                    result.AppendFormat("Grown: {0}", "Yes");
+                }
+            }
+
+            return result.ToString();
         }
     }
 }

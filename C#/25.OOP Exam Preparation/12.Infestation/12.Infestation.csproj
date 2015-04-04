@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A9D93AEB-D75E-4820-BB74-E16E9676470A}</ProjectGuid>
+    <ProjectGuid>{6085CB30-FF4A-4D17-87B6-6D21209A4AB0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_11.FarmersCreed</RootNamespace>
-    <AssemblyName>11.FarmersCreed</AssemblyName>
+    <RootNamespace>_12.Infestation</RootNamespace>
+    <AssemblyName>12.Infestation</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,32 +41,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FarmersCreedMain.cs" />
-    <Compile Include="Interfaces\IEdible.cs" />
-    <Compile Include="Interfaces\IFarm.cs" />
-    <Compile Include="Interfaces\IProduct.cs" />
-    <Compile Include="Interfaces\IProductProducable.cs" />
+    <Compile Include="AggressionCatalyst.cs" />
+    <Compile Include="Dog.cs" />
+    <Compile Include="ExtendedHoldingPen.cs" />
+    <Compile Include="HealthCatalyst.cs" />
+    <Compile Include="HoldingPen.cs" />
+    <Compile Include="Human.cs" />
+    <Compile Include="InfestableUnit.cs" />
+    <Compile Include="InfestationRequirements.cs" />
+    <Compile Include="InfestationSpores.cs" />
+    <Compile Include="Interaction.cs" />
+    <Compile Include="InteractionType.cs" />
+    <Compile Include="ISupplement.cs" />
+    <Compile Include="Marine.cs" />
+    <Compile Include="Parasite.cs" />
+    <Compile Include="PowerCatalyst.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Simulator\ExtendedFarmSimulator.cs" />
-    <Compile Include="Simulator\FarmSimulator.cs" />
-    <Compile Include="Units\Animal.cs" />
-    <Compile Include="Units\CherryTree.cs" />
-    <Compile Include="Units\Cow.cs" />
-    <Compile Include="Units\Farm.cs" />
-    <Compile Include="Units\FarmUnit.cs" />
-    <Compile Include="Units\Food.cs" />
-    <Compile Include="Units\FoodPlant.cs" />
-    <Compile Include="Units\FoodType.cs" />
-    <Compile Include="Units\GameObject.cs" />
-    <Compile Include="Units\Plant.cs" />
-    <Compile Include="Units\Product.cs" />
-    <Compile Include="Units\ProductType.cs" />
-    <Compile Include="Units\Swine.cs" />
-    <Compile Include="Units\TobaccoPlant.cs" />
+    <Compile Include="Queen.cs" />
+    <Compile Include="Supplement.cs" />
+    <Compile Include="Tank.cs" />
+    <Compile Include="Unit.cs" />
+    <Compile Include="UnitClassification.cs" />
+    <Compile Include="UnitInfo.cs" />
+    <Compile Include="Weapon.cs" />
+    <Compile Include="WeaponrySkill.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="FarmDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -2,6 +2,7 @@
 {
     using System;
     using FarmersCreed.Interfaces;
+    using System.Text;
 
     public class Food : Product, IEdible
     {
@@ -25,6 +26,15 @@
         {
             get { return this.healthEffect; }
             set { this.healthEffect = value; }
+        }
+
+          public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            result.Append(base.ToString());
+            result.AppendFormat(", Food Type: {2}, Health Effect: {3}",
+                this.Quantity, this.ProductType, this.FoodType, this.HealthEffect);
+            return result.ToString();
         }
     }
 }
